@@ -12,24 +12,41 @@
 #include "CW_Interface_Definitions.h"
 
 /** Unsigned 32 - bit integer */
-typedef uint32_t CW_uint32_t;
+typedef unsigned long CW_uint32_t;
 
 /** Unsigned 16 - bit integer */
-typedef uint16_t CW_uint16_t;
+typedef unsigned int CW_uint16_t;
 
 /** Unsigned 8 - bit integer */
-typedef uint8_t CW_uint8_t;
+typedef unsigned char CW_uint8_t;
 
 /** Signed 32 - bit integer */
-typedef int32_t CW_int32_t;
+typedef signed long CW_int32_t;
 
 /** Signed 16 - bit integer */
-typedef int16_t CW_int16_t;
+typedef signed int CW_int16_t;
 
 /** Signed 8 - bit integer */
-typedef int8_t CW_int8_t;
+typedef signed char CW_int8_t;
 
 /** Double precision number */
 typedef double CW_double;
+
+/** String type */
+typedef char* CW_string_t;
+
+/** Character type */
+typedef char CW_char_t;
+
+/** Error structure */
+typedef struct CW_Error
+{
+	/** Error code */
+	CW_uint32_t CW_error_code;
+
+	/** Error description */
+	CW_string_t CW_what;
+
+} CW_Error;
 
 #endif /* _CW_INTERFACE_TYPES_H__ */

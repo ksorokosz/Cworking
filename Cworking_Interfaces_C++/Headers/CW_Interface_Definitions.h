@@ -9,9 +9,8 @@
 #ifndef _CW_INTERFACE_DEFINITIONS_H__
 #define _CW_INTERFACE_DEFINITIONS_H__
 
-#include <string.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include <stdint.h>
+#include <cstring>
+#include <cstdio>
+#include <cstdlib>
 
 #endif /* _CW_INTERFACE_DEFINITIONS_H__ */
