@@ -2,11 +2,13 @@
 
 void* CW_allocate_memory( CW_uint32_t CW_memory_size, const char* CW_file, CW_uint32_t CW_line )
 {
+	void* p = NULL;
+
 	/* Trace - it can be called in case error e.g out of memory */
 	LOG( stderr, "Info: MALLOC called from %s %u", CW_file, CW_line );
 
 	/* Allocate memory */
-	void* p = malloc( CW_memory_size );
+	p = malloc( CW_memory_size );
 	if(p == NULL)
 	{
 		LOG( stderr, "Out of memory: MALLOC called from %s %u", CW_file, CW_line );

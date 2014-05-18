@@ -12,14 +12,11 @@
 #include "CW_Interface_Definitions.h"
 #include "CW_Interface_Types.h"
 
-/** Debug mode - it could be set globally in Eclipse project properties or makefile */
-#define DEBUG_MODE 1
-
 /** Logger tool */
 #ifdef DEBUG_MODE
-#define LOG(stream, pattern, params...) fprintf( stream,"%20s:%3u | " pattern "\n", __FILE__, __LINE__, ##params )
+#define LOG(stream, pattern, ...) fprintf( stream,"%20s:%3u | " pattern "\n", __FILE__, __LINE__, ##__VA_ARGS__ )
 #else
-#define LOG(stream, dummy, params...)
+#define LOG(stream, dummy, ...)
 #endif
 
 
@@ -34,6 +31,6 @@ void CW_free_memory( void** CW_pointer, const char* CW_file, CW_uint32_t CW_line
 		                                                                     __FILE__, __LINE__ );
 
 /** FREE macro which should be used instead of free */
-#define FREE( pointer ) CW_free_memory( &pointer, __FILE__, __LINE__ );
+#define FREE( pointer ) CW_free_memory( (void**)&pointer, __FILE__, __LINE__ );
 
 #endif /* _CW_MACROS_DEFINITIONS_H_ */

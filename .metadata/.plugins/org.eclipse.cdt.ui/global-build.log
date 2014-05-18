@@ -1,0 +1,416 @@
+
+**** Build of configuration Default for project Cworking_Interfaces_C ****
+
+make all 
+make: *** Brak reguł do wykonania obiektu `all'. Stop.
+
+**** Build Finished ****
+
+**** Build of configuration Default for project Cworking_Interfaces_C++ ****
+
+make all 
+make: *** Brak reguł do wykonania obiektu `all'. Stop.
+
+**** Build Finished ****
+
+**** Build of configuration Default for project Cworking_Macros_C ****
+
+make all 
+make: *** Brak reguł do wykonania obiektu `all'. Stop.
+
+**** Build Finished ****
+
+**** Build of configuration Default for project Cworking_Interfaces_C ****
+
+make all 
+make: Nie ma nic do zrobienia w `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Default for project Cworking_Interfaces_C++ ****
+
+make all 
+make: Nie ma nic do zrobienia w `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Default for project Cworking_Macros_C ****
+
+make all 
+make: Nie ma nic do zrobienia w `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Default for project Cworking_Interfaces_C ****
+
+make all 
+Building file: ../Sources/CW_Interface_Main.c
+Invoking: GCC C Compiler
+gcc -O2 -g -Wall -c -fmessage-length=0 -MMD -MP -MF"Sources/CW_Interface_Main.d" -MT"Sources/CW_Interface_Main.d" -o "Sources/CW_Interface_Main.o" "../Sources/CW_Interface_Main.c"
+../Sources/CW_Interface_Main.c:1:31: fatal error: CW_Interface_Main.h: Nie ma takiego pliku ani katalogu
+compilation terminated.
+make: *** [Sources/CW_Interface_Main.o] Błąd 1
+
+**** Build Finished ****
+
+**** Build of configuration Default for project Cworking_Interfaces_C++ ****
+
+make all 
+Building file: ../Sources/CW_Interface_Main.cpp
+Invoking: GCC C++ Compiler
+g++ -O2 -g -Wall -c -fmessage-length=0 -MMD -MP -MF"Sources/CW_Interface_Main.d" -MT"Sources/CW_Interface_Main.d" -o "Sources/CW_Interface_Main.o" "../Sources/CW_Interface_Main.cpp"
+../Sources/CW_Interface_Main.cpp:1:31: fatal error: CW_Interface_Main.h: Nie ma takiego pliku ani katalogu
+compilation terminated.
+make: *** [Sources/CW_Interface_Main.o] Błąd 1
+
+**** Build Finished ****
+
+**** Build of configuration Default for project Cworking_Macros_C ****
+
+make all 
+Building file: ../Sources/CW_Interface_Main.c
+Invoking: GCC C Compiler
+gcc -O2 -g -Wall -c -fmessage-length=0 -MMD -MP -MF"Sources/CW_Interface_Main.d" -MT"Sources/CW_Interface_Main.d" -o "Sources/CW_Interface_Main.o" "../Sources/CW_Interface_Main.c"
+../Sources/CW_Interface_Main.c:2:31: fatal error: CW_Interface_Main.h: Nie ma takiego pliku ani katalogu
+compilation terminated.
+make: *** [Sources/CW_Interface_Main.o] Błąd 1
+
+**** Build Finished ****
+
+**** Build of configuration Default for project Cworking_Interfaces_C ****
+
+make all 
+Building file: ../Sources/CW_Interface_Main.c
+Invoking: GCC C Compiler
+gcc -I"/home/kamil/workspace/Cworking/Cworking_Interfaces_C/Headers" -O2 -g -Wall -c -fmessage-length=0 -MMD -MP -MF"Sources/CW_Interface_Main.d" -MT"Sources/CW_Interface_Main.d" -o "Sources/CW_Interface_Main.o" "../Sources/CW_Interface_Main.c"
+Finished building: ../Sources/CW_Interface_Main.c
+ 
+Building file: ../Sources/CW_Interface_PersonalData.c
+Invoking: GCC C Compiler
+gcc -I"/home/kamil/workspace/Cworking/Cworking_Interfaces_C/Headers" -O2 -g -Wall -c -fmessage-length=0 -MMD -MP -MF"Sources/CW_Interface_PersonalData.d" -MT"Sources/CW_Interface_PersonalData.d" -o "Sources/CW_Interface_PersonalData.o" "../Sources/CW_Interface_PersonalData.c"
+Finished building: ../Sources/CW_Interface_PersonalData.c
+ 
+Building target: Cworking_Interfaces_C
+Invoking: GCC C++ Linker
+g++ -shared -o "Cworking_Interfaces_C"  ./Sources/CW_Interface_Main.o ./Sources/CW_Interface_PersonalData.o   
+/usr/bin/ld: ./Sources/CW_Interface_Main.o: relocation R_X86_64_32S against `CW_PersonalData_Init_1' can not be used when making a shared object; recompile with -fPIC
+./Sources/CW_Interface_Main.o: could not read symbols: Bad value
+collect2: ld returned 1 exit status
+make: *** [Cworking_Interfaces_C] Błąd 1
+
+**** Build Finished ****
+
+**** Build of configuration Default for project Cworking_Interfaces_C++ ****
+
+make all 
+Building file: ../Sources/CW_Interface_Main.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/kamil/workspace/Cworking/Cworking_Interfaces_C++/Headers" -O2 -g -Wall -c -fmessage-length=0 -MMD -MP -MF"Sources/CW_Interface_Main.d" -MT"Sources/CW_Interface_Main.d" -o "Sources/CW_Interface_Main.o" "../Sources/CW_Interface_Main.cpp"
+Finished building: ../Sources/CW_Interface_Main.cpp
+ 
+Building file: ../Sources/CW_Interface_PersonalData.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/kamil/workspace/Cworking/Cworking_Interfaces_C++/Headers" -O2 -g -Wall -c -fmessage-length=0 -MMD -MP -MF"Sources/CW_Interface_PersonalData.d" -MT"Sources/CW_Interface_PersonalData.d" -o "Sources/CW_Interface_PersonalData.o" "../Sources/CW_Interface_PersonalData.cpp"
+Finished building: ../Sources/CW_Interface_PersonalData.cpp
+ 
+Building target: Cworking_Interfaces_C++
+Invoking: GCC C++ Linker
+g++  -o "Cworking_Interfaces_C++"  ./Sources/CW_Interface_Main.o ./Sources/CW_Interface_PersonalData.o   
+Finished building target: Cworking_Interfaces_C++
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Default for project Cworking_Macros_C ****
+
+make all 
+Building file: ../Sources/CW_Interface_Main.c
+Invoking: GCC C Compiler
+gcc -I"/home/kamil/workspace/Cworking/Cworking_Macros_C/Headers" -O2 -g -Wall -c -fmessage-length=0 -MMD -MP -MF"Sources/CW_Interface_Main.d" -MT"Sources/CW_Interface_Main.d" -o "Sources/CW_Interface_Main.o" "../Sources/CW_Interface_Main.c"
+Finished building: ../Sources/CW_Interface_Main.c
+ 
+Building file: ../Sources/CW_Interface_PersonalData.c
+Invoking: GCC C Compiler
+gcc -I"/home/kamil/workspace/Cworking/Cworking_Macros_C/Headers" -O2 -g -Wall -c -fmessage-length=0 -MMD -MP -MF"Sources/CW_Interface_PersonalData.d" -MT"Sources/CW_Interface_PersonalData.d" -o "Sources/CW_Interface_PersonalData.o" "../Sources/CW_Interface_PersonalData.c"
+Finished building: ../Sources/CW_Interface_PersonalData.c
+ 
+Building file: ../Sources/CW_Macros_Definitions.c
+Invoking: GCC C Compiler
+gcc -I"/home/kamil/workspace/Cworking/Cworking_Macros_C/Headers" -O2 -g -Wall -c -fmessage-length=0 -MMD -MP -MF"Sources/CW_Macros_Definitions.d" -MT"Sources/CW_Macros_Definitions.d" -o "Sources/CW_Macros_Definitions.o" "../Sources/CW_Macros_Definitions.c"
+Finished building: ../Sources/CW_Macros_Definitions.c
+ 
+Building target: Cworking_Macros_C
+Invoking: GCC C++ Linker
+g++  -o "Cworking_Macros_C"  ./Sources/CW_Interface_Main.o ./Sources/CW_Interface_PersonalData.o ./Sources/CW_Macros_Definitions.o   
+Finished building target: Cworking_Macros_C
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Default for project Cworking_Interfaces_C ****
+
+make all 
+Building file: ../Sources/CW_Interface_Main.c
+Invoking: GCC C Compiler
+gcc -I"/home/kamil/workspace/Cworking/Cworking_Interfaces_C/Headers" -O2 -g -Wall -c -fmessage-length=0 -MMD -MP -MF"Sources/CW_Interface_Main.d" -MT"Sources/CW_Interface_Main.d" -o "Sources/CW_Interface_Main.o" "../Sources/CW_Interface_Main.c"
+Finished building: ../Sources/CW_Interface_Main.c
+ 
+Building file: ../Sources/CW_Interface_PersonalData.c
+Invoking: GCC C Compiler
+gcc -I"/home/kamil/workspace/Cworking/Cworking_Interfaces_C/Headers" -O2 -g -Wall -c -fmessage-length=0 -MMD -MP -MF"Sources/CW_Interface_PersonalData.d" -MT"Sources/CW_Interface_PersonalData.d" -o "Sources/CW_Interface_PersonalData.o" "../Sources/CW_Interface_PersonalData.c"
+Finished building: ../Sources/CW_Interface_PersonalData.c
+ 
+Building target: Cworking_Interfaces_C
+Invoking: GCC C++ Linker
+g++ -shared -o "Cworking_Interfaces_C"  ./Sources/CW_Interface_Main.o ./Sources/CW_Interface_PersonalData.o   
+/usr/bin/ld: ./Sources/CW_Interface_Main.o: relocation R_X86_64_32S against `CW_PersonalData_Init_1' can not be used when making a shared object; recompile with -fPIC
+./Sources/CW_Interface_Main.o: could not read symbols: Bad value
+collect2: ld returned 1 exit status
+make: *** [Cworking_Interfaces_C] Błąd 1
+
+**** Build Finished ****
+
+**** Build of configuration Default for project Cworking_Interfaces_C++ ****
+
+make all 
+make: Nie ma nic do zrobienia w `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Default for project Cworking_Macros_C ****
+
+make all 
+make: Nie ma nic do zrobienia w `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Default for project Cworking_Interfaces_C ****
+
+make all 
+Building file: ../Sources/CW_Interface_Main.c
+Invoking: GCC C Compiler
+gcc -I"/home/kamil/workspace/Cworking/Cworking_Interfaces_C/Headers" -O2 -g -pedantic-errors -Wall -c -fmessage-length=0 -MMD -MP -MF"Sources/CW_Interface_Main.d" -MT"Sources/CW_Interface_Main.d" -o "Sources/CW_Interface_Main.o" "../Sources/CW_Interface_Main.c"
+Finished building: ../Sources/CW_Interface_Main.c
+ 
+Building file: ../Sources/CW_Interface_PersonalData.c
+Invoking: GCC C Compiler
+gcc -I"/home/kamil/workspace/Cworking/Cworking_Interfaces_C/Headers" -O2 -g -pedantic-errors -Wall -c -fmessage-length=0 -MMD -MP -MF"Sources/CW_Interface_PersonalData.d" -MT"Sources/CW_Interface_PersonalData.d" -o "Sources/CW_Interface_PersonalData.o" "../Sources/CW_Interface_PersonalData.c"
+Finished building: ../Sources/CW_Interface_PersonalData.c
+ 
+Building target: Cworking_Interfaces_C
+Invoking: GCC C++ Linker
+g++  -o "Cworking_Interfaces_C"  ./Sources/CW_Interface_Main.o ./Sources/CW_Interface_PersonalData.o   
+Finished building target: Cworking_Interfaces_C
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Default for project Cworking_Interfaces_C++ ****
+
+make all 
+Building file: ../Sources/CW_Interface_Main.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/kamil/workspace/Cworking/Cworking_Interfaces_C++/Headers" -O2 -g -pedantic-errors -Wall -c -fmessage-length=0 -MMD -MP -MF"Sources/CW_Interface_Main.d" -MT"Sources/CW_Interface_Main.d" -o "Sources/CW_Interface_Main.o" "../Sources/CW_Interface_Main.cpp"
+Finished building: ../Sources/CW_Interface_Main.cpp
+ 
+Building file: ../Sources/CW_Interface_PersonalData.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/kamil/workspace/Cworking/Cworking_Interfaces_C++/Headers" -O2 -g -pedantic-errors -Wall -c -fmessage-length=0 -MMD -MP -MF"Sources/CW_Interface_PersonalData.d" -MT"Sources/CW_Interface_PersonalData.d" -o "Sources/CW_Interface_PersonalData.o" "../Sources/CW_Interface_PersonalData.cpp"
+Finished building: ../Sources/CW_Interface_PersonalData.cpp
+ 
+Building target: Cworking_Interfaces_C++
+Invoking: GCC C++ Linker
+g++  -o "Cworking_Interfaces_C++"  ./Sources/CW_Interface_Main.o ./Sources/CW_Interface_PersonalData.o   
+Finished building target: Cworking_Interfaces_C++
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Default for project Cworking_Macros_C ****
+
+make all 
+Building file: ../Sources/CW_Interface_Main.c
+Invoking: GCC C Compiler
+gcc -I"/home/kamil/workspace/Cworking/Cworking_Macros_C/Headers" -O2 -g -pedantic-errors -Wall -c -fmessage-length=0 -MMD -MP -MF"Sources/CW_Interface_Main.d" -MT"Sources/CW_Interface_Main.d" -o "Sources/CW_Interface_Main.o" "../Sources/CW_Interface_Main.c"
+In file included from /home/kamil/workspace/Cworking/Cworking_Macros_C/Headers/CW_Interface_Main.h:16:0,
+                 from ../Sources/CW_Interface_Main.c:2:
+/home/kamil/workspace/Cworking/Cworking_Macros_C/Headers/CW_Macros_Definitions.h:20:30: error: anonymous variadic macros were introduced in C99 [-Wvariadic-macros]
+make: *** [Sources/CW_Interface_Main.o] Błąd 1
+
+**** Build Finished ****
+
+**** Build of configuration Default for project Cworking_Interfaces_C ****
+
+make all 
+Building file: ../Sources/CW_Interface_Main.c
+Invoking: GCC C Compiler
+gcc -I"/home/kamil/workspace/Cworking/Cworking_Interfaces_C/Headers" -O2 -g -pedantic -Wall -c -fmessage-length=0 -MMD -MP -MF"Sources/CW_Interface_Main.d" -MT"Sources/CW_Interface_Main.d" -o "Sources/CW_Interface_Main.o" "../Sources/CW_Interface_Main.c"
+Finished building: ../Sources/CW_Interface_Main.c
+ 
+Building file: ../Sources/CW_Interface_PersonalData.c
+Invoking: GCC C Compiler
+gcc -I"/home/kamil/workspace/Cworking/Cworking_Interfaces_C/Headers" -O2 -g -pedantic -Wall -c -fmessage-length=0 -MMD -MP -MF"Sources/CW_Interface_PersonalData.d" -MT"Sources/CW_Interface_PersonalData.d" -o "Sources/CW_Interface_PersonalData.o" "../Sources/CW_Interface_PersonalData.c"
+Finished building: ../Sources/CW_Interface_PersonalData.c
+ 
+Building target: Cworking_Interfaces_C
+Invoking: GCC C++ Linker
+g++  -o "Cworking_Interfaces_C"  ./Sources/CW_Interface_Main.o ./Sources/CW_Interface_PersonalData.o   
+Finished building target: Cworking_Interfaces_C
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Default for project Cworking_Interfaces_C++ ****
+
+make all 
+Building file: ../Sources/CW_Interface_Main.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/kamil/workspace/Cworking/Cworking_Interfaces_C++/Headers" -O2 -g -pedantic -Wall -c -fmessage-length=0 -MMD -MP -MF"Sources/CW_Interface_Main.d" -MT"Sources/CW_Interface_Main.d" -o "Sources/CW_Interface_Main.o" "../Sources/CW_Interface_Main.cpp"
+Finished building: ../Sources/CW_Interface_Main.cpp
+ 
+Building file: ../Sources/CW_Interface_PersonalData.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/kamil/workspace/Cworking/Cworking_Interfaces_C++/Headers" -O2 -g -pedantic -Wall -c -fmessage-length=0 -MMD -MP -MF"Sources/CW_Interface_PersonalData.d" -MT"Sources/CW_Interface_PersonalData.d" -o "Sources/CW_Interface_PersonalData.o" "../Sources/CW_Interface_PersonalData.cpp"
+Finished building: ../Sources/CW_Interface_PersonalData.cpp
+ 
+Building target: Cworking_Interfaces_C++
+Invoking: GCC C++ Linker
+g++  -o "Cworking_Interfaces_C++"  ./Sources/CW_Interface_Main.o ./Sources/CW_Interface_PersonalData.o   
+Finished building target: Cworking_Interfaces_C++
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Default for project Cworking_Macros_C ****
+
+make all 
+Building file: ../Sources/CW_Interface_Main.c
+Invoking: GCC C Compiler
+gcc -I"/home/kamil/workspace/Cworking/Cworking_Macros_C/Headers" -O2 -g -pedantic -Wall -c -fmessage-length=0 -MMD -MP -MF"Sources/CW_Interface_Main.d" -MT"Sources/CW_Interface_Main.d" -o "Sources/CW_Interface_Main.o" "../Sources/CW_Interface_Main.c"
+In file included from /home/kamil/workspace/Cworking/Cworking_Macros_C/Headers/CW_Interface_Main.h:16:0,
+                 from ../Sources/CW_Interface_Main.c:2:
+/home/kamil/workspace/Cworking/Cworking_Macros_C/Headers/CW_Macros_Definitions.h:20:30: warning: anonymous variadic macros were introduced in C99 [-Wvariadic-macros]
+Finished building: ../Sources/CW_Interface_Main.c
+ 
+Building file: ../Sources/CW_Interface_PersonalData.c
+Invoking: GCC C Compiler
+gcc -I"/home/kamil/workspace/Cworking/Cworking_Macros_C/Headers" -O2 -g -pedantic -Wall -c -fmessage-length=0 -MMD -MP -MF"Sources/CW_Interface_PersonalData.d" -MT"Sources/CW_Interface_PersonalData.d" -o "Sources/CW_Interface_PersonalData.o" "../Sources/CW_Interface_PersonalData.c"
+Finished building: ../Sources/CW_Interface_PersonalData.c
+ 
+Building file: ../Sources/CW_Macros_Definitions.c
+Invoking: GCC C Compiler
+gcc -I"/home/kamil/workspace/Cworking/Cworking_Macros_C/Headers" -O2 -g -pedantic -Wall -c -fmessage-length=0 -MMD -MP -MF"Sources/CW_Macros_Definitions.d" -MT"Sources/CW_Macros_Definitions.d" -o "Sources/CW_Macros_Definitions.o" "../Sources/CW_Macros_Definitions.c"
+In file included from ../Sources/CW_Macros_Definitions.c:1:0:
+/home/kamil/workspace/Cworking/Cworking_Macros_C/Headers/CW_Macros_Definitions.h:20:30: warning: anonymous variadic macros were introduced in C99 [-Wvariadic-macros]
+Finished building: ../Sources/CW_Macros_Definitions.c
+ 
+Building target: Cworking_Macros_C
+Invoking: GCC C++ Linker
+g++  -o "Cworking_Macros_C"  ./Sources/CW_Interface_Main.o ./Sources/CW_Interface_PersonalData.o ./Sources/CW_Macros_Definitions.o   
+Finished building target: Cworking_Macros_C
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Default for project Cworking_Interfaces_C ****
+
+make all 
+make: Nie ma nic do zrobienia w `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Default for project Cworking_Interfaces_C++ ****
+
+make all 
+make: Nie ma nic do zrobienia w `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Default for project Cworking_Macros_C ****
+
+make all 
+Building file: ../Sources/CW_Interface_Main.c
+Invoking: GCC C Compiler
+gcc -I"/home/kamil/workspace/Cworking/Cworking_Macros_C/Headers" -O2 -g -pedantic -Wall -c -fmessage-length=0 -MMD -MP -MF"Sources/CW_Interface_Main.d" -MT"Sources/CW_Interface_Main.d" -o "Sources/CW_Interface_Main.o" "../Sources/CW_Interface_Main.c"
+In file included from /home/kamil/workspace/Cworking/Cworking_Macros_C/Headers/CW_Interface_Main.h:16:0,
+Finished building: ../Sources/CW_Interface_Main.c
+                 from ../Sources/CW_Interface_Main.c:2:
+ 
+/home/kamil/workspace/Cworking/Cworking_Macros_C/Headers/CW_Macros_Definitions.h:19:28: warning: anonymous variadic macros were introduced in C99 [-Wvariadic-macros]
+Building file: ../Sources/CW_Macros_Definitions.c
+In file included from ../Sources/CW_Macros_Definitions.c:1:0:
+Invoking: GCC C Compiler
+/home/kamil/workspace/Cworking/Cworking_Macros_C/Headers/CW_Macros_Definitions.h:19:28: warning: anonymous variadic macros were introduced in C99 [-Wvariadic-macros]
+gcc -I"/home/kamil/workspace/Cworking/Cworking_Macros_C/Headers" -O2 -g -pedantic -Wall -c -fmessage-length=0 -MMD -MP -MF"Sources/CW_Macros_Definitions.d" -MT"Sources/CW_Macros_Definitions.d" -o "Sources/CW_Macros_Definitions.o" "../Sources/CW_Macros_Definitions.c"
+Finished building: ../Sources/CW_Macros_Definitions.c
+ 
+Building target: Cworking_Macros_C
+Invoking: GCC C++ Linker
+g++  -o "Cworking_Macros_C"  ./Sources/CW_Interface_Main.o ./Sources/CW_Interface_PersonalData.o ./Sources/CW_Macros_Definitions.o   
+Finished building target: Cworking_Macros_C
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Default for project Cworking_Macros_C ****
+
+make all 
+Building target: Cworking_Macros_C
+Invoking: GCC C++ Linker
+g++  -o "Cworking_Macros_C"  ./Sources/CW_Interface_Main.o ./Sources/CW_Interface_PersonalData.o ./Sources/CW_Macros_Definitions.o   
+Finished building target: Cworking_Macros_C
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Default for project Cworking_Interfaces_C ****
+
+make all 
+make: Nie ma nic do zrobienia w `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Default for project Cworking_Interfaces_C++ ****
+
+make all 
+make: Nie ma nic do zrobienia w `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Default for project Cworking_Macros_C ****
+
+make all 
+Building file: ../Sources/CW_Interface_Main.c
+Invoking: GCC C Compiler
+gcc -DDEBUG_MODE -I"/home/kamil/workspace/Cworking/Cworking_Macros_C/Headers" -O2 -g -pedantic -Wall -c -fmessage-length=0 -MMD -MP -MF"Sources/CW_Interface_Main.d" -MT"Sources/CW_Interface_Main.d" -o "Sources/CW_Interface_Main.o" "../Sources/CW_Interface_Main.c"
+In file included from /home/kamil/workspace/Cworking/Cworking_Macros_C/Headers/CW_Interface_Main.h:16:0,
+                 from ../Sources/CW_Interface_Main.c:2:
+Finished building: ../Sources/CW_Interface_Main.c
+/home/kamil/workspace/Cworking/Cworking_Macros_C/Headers/CW_Macros_Definitions.h:17:30: warning: anonymous variadic macros were introduced in C99 [-Wvariadic-macros]
+ 
+Building file: ../Sources/CW_Interface_PersonalData.c
+Invoking: GCC C Compiler
+gcc -DDEBUG_MODE -I"/home/kamil/workspace/Cworking/Cworking_Macros_C/Headers" -O2 -g -pedantic -Wall -c -fmessage-length=0 -MMD -MP -MF"Sources/CW_Interface_PersonalData.d" -MT"Sources/CW_Interface_PersonalData.d" -o "Sources/CW_Interface_PersonalData.o" "../Sources/CW_Interface_PersonalData.c"
+Finished building: ../Sources/CW_Interface_PersonalData.c
+ 
+Building file: ../Sources/CW_Macros_Definitions.c
+Invoking: GCC C Compiler
+gcc -DDEBUG_MODE -I"/home/kamil/workspace/Cworking/Cworking_Macros_C/Headers" -O2 -g -pedantic -Wall -c -fmessage-length=0 -MMD -MP -MF"Sources/CW_Macros_Definitions.d" -MT"Sources/CW_Macros_Definitions.d" -o "Sources/CW_Macros_Definitions.o" "../Sources/CW_Macros_Definitions.c"
+In file included from ../Sources/CW_Macros_Definitions.c:1:0:
+Finished building: ../Sources/CW_Macros_Definitions.c
+ 
+Building target: Cworking_Macros_C
+Invoking: GCC C++ Linker
+/home/kamil/workspace/Cworking/Cworking_Macros_C/Headers/CW_Macros_Definitions.h:17:30: warning: anonymous variadic macros were introduced in C99 [-Wvariadic-macros]
+g++  -o "Cworking_Macros_C"  ./Sources/CW_Interface_Main.o ./Sources/CW_Interface_PersonalData.o ./Sources/CW_Macros_Definitions.o   
+Finished building target: Cworking_Macros_C
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Default for project Cworking_Macros_C ****
+
+make all 
+make: Nie ma nic do zrobienia w `all'.
+
+**** Build Finished ****
