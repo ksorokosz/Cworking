@@ -414,3 +414,222 @@ make all
 make: Nie ma nic do zrobienia w `all'.
 
 **** Build Finished ****
+
+**** Build of configuration Default for project Cworking_Interfaces_C ****
+
+make all 
+make: Nie ma nic do zrobienia w `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Default for project Cworking_Interfaces_C++ ****
+
+make all 
+make: Nie ma nic do zrobienia w `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Default for project Cworking_Macros_C ****
+
+make all 
+Building file: ../Sources/CW_Interface_Main.c
+Invoking: GCC C Compiler
+gcc -DDEBUG_MODE -I"/home/kamil/workspace/Cworking/Cworking_Macros_C/Headers" -O2 -g -pedantic -Wall -c -fmessage-length=0 -MMD -MP -MF"Sources/CW_Interface_Main.d" -MT"Sources/CW_Interface_Main.d" -o "Sources/CW_Interface_Main.o" "../Sources/CW_Interface_Main.c"
+In file included from /home/kamil/workspace/Cworking/Cworking_Macros_C/Headers/CW_Interface_Main.h:16:0,
+Finished building: ../Sources/CW_Interface_Main.c
+                 from ../Sources/CW_Interface_Main.c:2:
+ 
+/home/kamil/workspace/Cworking/Cworking_Macros_C/Headers/CW_Macros_Definitions.h:17:30: warning: anonymous variadic macros were introduced in C99 [-Wvariadic-macros]
+Building target: Cworking_Macros_C
+Invoking: GCC C++ Linker
+g++  -o "Cworking_Macros_C"  ./Sources/CW_Interface_Main.o ./Sources/CW_Interface_PersonalData.o ./Sources/CW_Macros_Definitions.o   
+../Sources/CW_Interface_Main.c: In function ‘main’:
+../Sources/CW_Interface_Main.c:29:25: warning: ISO C99 requires rest arguments to be used [enabled by default]
+Finished building target: Cworking_Macros_C
+../Sources/CW_Interface_Main.c:29:25: warning: invoking macro LOG argument 3: empty macro arguments are undefined in ISO C90 and ISO C++98 [enabled by default]
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Cworkint_Static_Allocator ****
+
+Nothing to build for project Cworkint_Static_Allocator
+
+**** Build of configuration Default for project Cworking_Interfaces_C ****
+
+make all 
+make: Nie ma nic do zrobienia w `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Default for project Cworking_Interfaces_C++ ****
+
+make all 
+make: Nie ma nic do zrobienia w `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Default for project Cworking_Macros_C ****
+
+make all 
+Building file: ../Sources/CW_Interface_Main.c
+Invoking: GCC C Compiler
+gcc -DDEBUG_MODE -I"/home/kamil/workspace/Cworking/Cworking_Macros_C/Headers" -O2 -g -pedantic -Wall -c -fmessage-length=0 -MMD -MP -MF"Sources/CW_Interface_Main.d" -MT"Sources/CW_Interface_Main.d" -o "Sources/CW_Interface_Main.o" "../Sources/CW_Interface_Main.c"
+In file included from /home/kamil/workspace/Cworking/Cworking_Macros_C/Headers/CW_Interface_Main.h:16:0,
+                 from ../Sources/CW_Interface_Main.c:2:
+/home/kamil/workspace/Cworking/Cworking_Macros_C/Headers/CW_Macros_Definitions.h:17:30: warning: anonymous variadic macros were introduced in C99 [-Wvariadic-macros]
+Finished building: ../Sources/CW_Interface_Main.c
+ 
+Building target: Cworking_Macros_C
+Invoking: GCC C++ Linker
+g++  -o "Cworking_Macros_C"  ./Sources/CW_Interface_Main.o ./Sources/CW_Interface_PersonalData.o ./Sources/CW_Macros_Definitions.o   
+Finished building target: Cworking_Macros_C
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Cworking_Memory_Allocator ****
+
+make all 
+Building file: ../Sources/CW_Memory_Allocator_Main.c
+Invoking: GCC C Compiler
+gcc -DDEBUG_MODE -I"/home/kamil/workspace/Cworking/Cworking_Memory_Allocator/Headers" -O0 -g3 -pedantic -Wall -c -fmessage-length=0 -MMD -MP -MF"Sources/CW_Memory_Allocator_Main.d" -MT"Sources/CW_Memory_Allocator_Main.d" -o "Sources/CW_Memory_Allocator_Main.o" "../Sources/CW_Memory_Allocator_Main.c"
+Finished building: ../Sources/CW_Memory_Allocator_Main.c
+ 
+Building target: Cworking_Memory_Allocator
+Invoking: GCC C Linker
+gcc  -o "Cworking_Memory_Allocator"  ./Sources/CW_Memory_Allocator_Main.o   
+/usr/bin/ld: /usr/lib/debug/usr/lib/x86_64-linux-gnu/crt1.o(.debug_info): relocation 0 has invalid symbol index 10
+/usr/bin/ld: /usr/lib/debug/usr/lib/x86_64-linux-gnu/crt1.o(.debug_info): relocation 1 has invalid symbol index 11
+/usr/bin/ld: /usr/lib/debug/usr/lib/x86_64-linux-gnu/crt1.o(.debug_info): relocation 2 has invalid symbol index 2
+/usr/bin/ld: /usr/lib/debug/usr/lib/x86_64-linux-gnu/crt1.o(.debug_info): relocation 3 has invalid symbol index 2
+/usr/bin/ld: /usr/lib/debug/usr/lib/x86_64-linux-gnu/crt1.o(.debug_info): relocation 4 has invalid symbol index 10
+/usr/bin/ld: /usr/lib/debug/usr/lib/x86_64-linux-gnu/crt1.o(.debug_info): relocation 5 has invalid symbol index 12
+/usr/bin/ld: /usr/lib/debug/usr/lib/x86_64-linux-gnu/crt1.o(.debug_info): relocation 6 has invalid symbol index 12
+/usr/bin/ld: /usr/lib/debug/usr/lib/x86_64-linux-gnu/crt1.o(.debug_info): relocation 7 has invalid symbol index 12
+/usr/bin/ld: /usr/lib/debug/usr/lib/x86_64-linux-gnu/crt1.o(.debug_info): relocation 8 has invalid symbol index 2
+/usr/bin/ld: /usr/lib/debug/usr/lib/x86_64-linux-gnu/crt1.o(.debug_info): relocation 9 has invalid symbol index 2
+/usr/bin/ld: /usr/lib/debug/usr/lib/x86_64-linux-gnu/crt1.o(.debug_info): relocation 10 has invalid symbol index 11
+/usr/bin/ld: /usr/lib/debug/usr/lib/x86_64-linux-gnu/crt1.o(.debug_info): relocation 11 has invalid symbol index 12
+/usr/bin/ld: /usr/lib/debug/usr/lib/x86_64-linux-gnu/crt1.o(.debug_info): relocation 12 has invalid symbol index 12
+/usr/bin/ld: /usr/lib/debug/usr/lib/x86_64-linux-gnu/crt1.o(.debug_info): relocation 13 has invalid symbol index 12
+/usr/bin/ld: /usr/lib/debug/usr/lib/x86_64-linux-gnu/crt1.o(.debug_info): relocation 14 has invalid symbol index 12
+/usr/bin/ld: /usr/lib/debug/usr/lib/x86_64-linux-gnu/crt1.o(.debug_info): relocation 15 has invalid symbol index 12
+/usr/bin/ld: /usr/lib/debug/usr/lib/x86_64-linux-gnu/crt1.o(.debug_info): relocation 16 has invalid symbol index 12
+/usr/bin/ld: /usr/lib/debug/usr/lib/x86_64-linux-gnu/crt1.o(.debug_info): relocation 17 has invalid symbol index 12
+/usr/bin/ld: /usr/lib/debug/usr/lib/x86_64-linux-gnu/crt1.o(.debug_info): relocation 18 has invalid symbol index 12
+/usr/bin/ld: /usr/lib/debug/usr/lib/x86_64-linux-gnu/crt1.o(.debug_info): relocation 19 has invalid symbol index 12
+/usr/bin/ld: /usr/lib/debug/usr/lib/x86_64-linux-gnu/crt1.o(.debug_info): relocation 20 has invalid symbol index 19
+/usr/lib/gcc/x86_64-linux-gnu/4.6/../../../x86_64-linux-gnu/crt1.o: In function `_start':
+(.text+0x20): undefined reference to `main'
+collect2: ld returned 1 exit status
+make: *** [Cworking_Memory_Allocator] Błąd 1
+
+**** Build Finished ****
+
+**** Build of configuration Default for project Cworking_Interfaces_C ****
+
+make all 
+make: Nie ma nic do zrobienia w `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Default for project Cworking_Interfaces_C++ ****
+
+make all 
+make: Nie ma nic do zrobienia w `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Default for project Cworking_Macros_C ****
+
+make all 
+make: Nie ma nic do zrobienia w `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Cworking_Memory_Allocator ****
+
+make all 
+Building file: ../Sources/CW_Memory_Allocator_Main.c
+Invoking: GCC C Compiler
+gcc -DDEBUG_MODE -I"/home/kamil/workspace/Cworking/Cworking_Memory_Allocator/Headers" -O0 -g3 -pedantic -Wall -c -fmessage-length=0 -MMD -MP -MF"Sources/CW_Memory_Allocator_Main.d" -MT"Sources/CW_Memory_Allocator_Main.d" -o "Sources/CW_Memory_Allocator_Main.o" "../Sources/CW_Memory_Allocator_Main.c"
+Finished building: ../Sources/CW_Memory_Allocator_Main.c
+ 
+Building target: Cworking_Memory_Allocator
+Invoking: GCC C Linker
+gcc  -o "Cworking_Memory_Allocator"  ./Sources/CW_Memory_Allocator_Main.o   
+Finished building target: Cworking_Memory_Allocator
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Default for project Cworking_Interfaces_C ****
+
+make all 
+make: Nie ma nic do zrobienia w `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Default for project Cworking_Interfaces_C++ ****
+
+make all 
+make: Nie ma nic do zrobienia w `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Default for project Cworking_Macros_C ****
+
+make all 
+make: Nie ma nic do zrobienia w `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Cworking_Memory_Allocator ****
+
+make all 
+make: Nie ma nic do zrobienia w `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Default for project Cworking_Interfaces_C ****
+
+make all 
+Building file: ../Sources/CW_Interface_Main.c
+Invoking: GCC C Compiler
+gcc -I"/home/kamil/workspace/Cworking/Cworking_Interfaces_C/Headers" -O2 -g -Wall -c -fmessage-length=0 -MMD -MP -MF"Sources/CW_Interface_Main.d" -MT"Sources/CW_Interface_Main.d" -o "Sources/CW_Interface_Main.o" "../Sources/CW_Interface_Main.c"
+Finished building: ../Sources/CW_Interface_Main.c
+ 
+Building file: ../Sources/CW_Interface_PersonalData.c
+Invoking: GCC C Compiler
+gcc -I"/home/kamil/workspace/Cworking/Cworking_Interfaces_C/Headers" -O2 -g -Wall -c -fmessage-length=0 -MMD -MP -MF"Sources/CW_Interface_PersonalData.d" -MT"Sources/CW_Interface_PersonalData.d" -o "Sources/CW_Interface_PersonalData.o" "../Sources/CW_Interface_PersonalData.c"
+Finished building: ../Sources/CW_Interface_PersonalData.c
+ 
+Building target: Cworking_Interfaces_C
+Invoking: GCC C++ Linker
+g++  -o "Cworking_Interfaces_C"  ./Sources/CW_Interface_Main.o ./Sources/CW_Interface_PersonalData.o   
+Finished building target: Cworking_Interfaces_C
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Default for project Cworking_Interfaces_C++ ****
+
+make all 
+make: Nie ma nic do zrobienia w `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Default for project Cworking_Macros_C ****
+
+make all 
+make: Nie ma nic do zrobienia w `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Cworking_Memory_Allocator ****
+
+make all 
+make: Nie ma nic do zrobienia w `all'.
+
+**** Build Finished ****

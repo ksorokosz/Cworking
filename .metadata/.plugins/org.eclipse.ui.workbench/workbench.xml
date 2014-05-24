@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="17" version="2.0">
+<workbench progressCount="23" version="2.0">
 <workbenchAdvisor/>
 <window height="744" maximized="true" width="1020" x="70" y="24">
 <fastViewData fastViewLocation="1024"/>
@@ -29,13 +29,18 @@
 <folder appearance="1" expanded="2">
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
+<part id="1"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="CW_Interface_Main.c" partName="CW_Interface_Main.c" path="/home/kamil/workspace/Cworking/Cworking_Interfaces_C/Sources/CW_Interface_Main.c" title="CW_Interface_Main.c" tooltip="Cworking_Interfaces_C/Sources/CW_Interface_Main.c" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Cworking_Interfaces_C/Sources/CW_Interface_Main.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="594" selectionTopPixel="253"/>
+<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="CW_Memory_Allocator_FIFO.h" partName="CW_Memory_Allocator_FIFO.h" path="/home/kamil/workspace/Cworking/Cworking_Memory_Allocator/Headers/CW_Memory_Allocator_FIFO.h" title="CW_Memory_Allocator_FIFO.h" tooltip="Cworking_Memory_Allocator/Headers/CW_Memory_Allocator_FIFO.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Cworking_Memory_Allocator/Headers/CW_Memory_Allocator_FIFO.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="224" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="CW_Memory_Allocator_Main.c" partName="CW_Memory_Allocator_Main.c" path="/home/kamil/workspace/Cworking/Cworking_Memory_Allocator/Sources/CW_Memory_Allocator_Main.c" title="CW_Memory_Allocator_Main.c" tooltip="Cworking_Memory_Allocator/Sources/CW_Memory_Allocator_Main.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Cworking_Memory_Allocator/Sources/CW_Memory_Allocator_Main.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="66" selectionTopPixel="0"/>
 </editor>
 </editors>
 <views>
@@ -45,13 +50,17 @@
 <view id="org.eclipse.ui.views.PropertySheet" partName="Properties"/>
 <view id="org.eclipse.cdt.make.ui.views.MakeView" partName="Make Target"/>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
-<viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
-<columnWidths org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="687" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.resourceField="90" org.eclipse.ui.ide.severityAndDescriptionField="300"/>
+<viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.resourceField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
+<expanded>
+<category IMemento.internal.id="Errors"/>
+</expanded>
+<columnWidths org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="687" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.resourceField="90" org.eclipse.ui.ide.severityAndDescriptionField="655"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.pathField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.locationField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.markerType"/>
+<DESCENDING_FIELDS IMemento.internal.id="org.eclipse.ui.ide.pathField"/>
 </viewState>
 </view>
 <view id="org.eclipse.ui.console.ConsoleView" partName="Console">
@@ -219,7 +228,7 @@
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.24980666" ratioLeft="323" ratioRight="970" relationship="2" relative="topLeft"/>
 <info folder="true" part="bottom" ratio="0.74883723" ratioLeft="483" ratioRight="162" relationship="4" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.ui.views.ProblemView" appearance="2" expanded="2">
+<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
 <page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
@@ -232,7 +241,7 @@
 </presentation>
 </folder>
 </info>
-<info folder="true" part="topRight" ratio="0.74948454" ratioLeft="727" ratioRight="243" relationship="2" relative="org.eclipse.ui.editorss">
+<info folder="true" part="topRight" ratio="0.7479253" ratioLeft="721" ratioRight="243" relationship="2" relative="org.eclipse.ui.editorss">
 <folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
 <page content="org.eclipse.cdt.make.ui.views.MakeView" label="Make Target"/>
@@ -249,10 +258,177 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Cworking_Interfaces_C/Sources/CW_Interface_Main.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Cworking_Macros_C/Headers/CW_Interface_Types.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Cworking_Macros_C/Headers/CW_Interface_Definitions.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Cworking_Memory_Allocator/Sources/CW_Interface_Main.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Cworking_Memory_Allocator/Headers/CW_Memory_Allocator_Definitions.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Cworking_Memory_Allocator/Headers/CW_Memory_Allocator_Macros_Definitions.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Cworking_Memory_Allocator/Headers/CW_Memory_Allocator_FIFO.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Cworking_Memory_Allocator/Sources/CW_Memory_Allocator_Main.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Cworking_Interfaces_C++/Headers/CW_Interface_Main.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Cworking_Interfaces_C++/Headers/CW_Interface_Definitions.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Cworking_Interfaces_C++/Headers/CW_Interface.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Cworking_Interfaces_C++/Headers/CW_Interface_Types.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Cworking_Macros_C/Headers/CW_Interface_Definitions.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Cworking_Macros_C/Headers/CW_Interface_Main.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Cworking_Macros_C/Headers/CW_Interface_PersonalData.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Cworking_Macros_C/Headers/CW_Interface_Types.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Cworking_Macros_C/Headers/CW_Interface_Types.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Cworking_Memory_Allocator/Headers/CW_Memory_Allocator_FIFO.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Cworking_Memory_Allocator/Headers/CW_Memory_Allocator_Definitions.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Cworking_Memory_Allocator/Headers/CW_Memory_Allocator_Macros_Definitions.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Cworking_Memory_Allocator/Headers/CW_Memory_Allocator_Main.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Cworking_Memory_Allocator/Headers/CW_Memory_Allocator_Types.h"/>
 </editors>
-<item active="true" historyLabel="CW_Interface_Main.c" index="0">
+<item historyLabel="CW_Memory_Allocator_Macros_Definitions.h" index="4">
+<position/>
+</item>
+<item historyLabel="CW_Interface_Main.c" index="2">
+<position info="not_deleted" x="38" y="0"/>
+</item>
+<item historyLabel="CW_Memory_Allocator_FIFO.h" index="5">
 <position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="CW_Interface_Types.h" index="0">
+<position/>
+</item>
+<item historyLabel="CW_Memory_Allocator_FIFO.h" index="5">
+<position info="not_deleted" x="224" y="0"/>
+</item>
+<item historyLabel="CW_Memory_Allocator_Macros_Definitions.h" index="4">
+<position info="not_deleted" x="1274" y="0"/>
+</item>
+<item historyLabel="CW_Memory_Allocator_FIFO.h" index="5">
+<position info="not_deleted" x="160" y="0"/>
+</item>
+<item historyLabel="CW_Interface_Main.c" index="2">
+<position info="not_deleted" x="38" y="0"/>
+</item>
+<item historyLabel="CW_Memory_Allocator_FIFO.h" index="5">
+<position info="not_deleted" x="88" y="0"/>
+</item>
+<item historyLabel="CW_Memory_Allocator_Definitions.h" index="3">
+<position info="not_deleted" x="349" y="0"/>
+</item>
+<item historyLabel="CW_Memory_Allocator_FIFO.h" index="5">
+<position info="not_deleted" x="224" y="0"/>
+</item>
+<item historyLabel="CW_Interface_Types.h" index="0">
+<position/>
+</item>
+<item historyLabel="CW_Memory_Allocator_FIFO.h" index="5">
+<position info="not_deleted" x="224" y="0"/>
+</item>
+<item historyLabel="CW_Memory_Allocator_Main.c" index="6">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="CW_Memory_Allocator_Main.c" index="6">
+<position info="not_deleted" x="63" y="0"/>
+</item>
+<item historyLabel="CW_Interface_Types.h" index="0">
+<position info="not_deleted" x="382" y="0"/>
+</item>
+<item historyLabel="CW_Interface_Definitions.h" index="1">
+<position info="not_deleted" x="284" y="0"/>
+</item>
+<item historyLabel="CW_Interface_Types.h" index="0">
+<position info="not_deleted" x="382" y="0"/>
+</item>
+<item historyLabel="CW_Memory_Allocator_Main.c" index="6">
+<position info="not_deleted" x="63" y="0"/>
+</item>
+<item historyLabel="CW_Interface_Main.h" index="7">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="CW_Interface_Definitions.h" index="8">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="CW_Interface.h" index="9">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="CW_Interface_Types.h" index="10">
+<position info="not_deleted" x="174" y="0"/>
+</item>
+<item historyLabel="CW_Interface_Definitions.h" index="8">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="CW_Interface_Types.h" index="10">
+<position info="not_deleted" x="174" y="0"/>
+</item>
+<item historyLabel="CW_Interface.h" index="9">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="CW_Interface_Main.h" index="7">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="CW_Memory_Allocator_Main.c" index="6">
+<position info="not_deleted" x="66" y="0"/>
+</item>
+<item historyLabel="CW_Interface_Definitions.h" index="11">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="CW_Interface_Main.h" index="12">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="CW_Interface_PersonalData.h" index="13">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="CW_Interface_Types.h" index="14">
+<position/>
+</item>
+<item historyLabel="CW_Interface_Definitions.h" index="11">
+<position info="not_deleted" x="202" y="0"/>
+</item>
+<item historyLabel="CW_Interface_Types.h" index="14">
+<position/>
+</item>
+<item historyLabel="CW_Interface_Definitions.h" index="11">
+<position info="not_deleted" x="202" y="0"/>
+</item>
+<item historyLabel="CW_Memory_Allocator_Main.c" index="6">
+<position info="not_deleted" x="66" y="0"/>
+</item>
+<item historyLabel="CW_Interface_Types.h" index="14">
+<position info="not_deleted" x="297" y="0"/>
+</item>
+<item historyLabel="CW_Memory_Allocator_Main.c" index="6">
+<position info="not_deleted" x="66" y="0"/>
+</item>
+<item historyLabel="CW_Interface_Types.h" index="15">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="CW_Memory_Allocator_FIFO.h" index="16">
+<position info="not_deleted" x="224" y="0"/>
+</item>
+<item historyLabel="CW_Memory_Allocator_Definitions.h" index="17">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="CW_Memory_Allocator_Macros_Definitions.h" index="18">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="CW_Memory_Allocator_Main.h" index="19">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="CW_Memory_Allocator_Types.h" index="20">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="CW_Memory_Allocator_Main.h" index="19">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="CW_Memory_Allocator_Macros_Definitions.h" index="18">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="CW_Memory_Allocator_Definitions.h" index="17">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="CW_Memory_Allocator_FIFO.h" index="16">
+<position info="not_deleted" x="224" y="0"/>
+</item>
+<item historyLabel="CW_Interface_Types.h" index="15">
+<position info="not_deleted" x="604" y="0"/>
+</item>
+<item active="true" historyLabel="CW_Memory_Allocator_FIFO.h" index="16">
+<position info="not_deleted" x="224" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -271,23 +447,50 @@
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="CW_Interface_Main.c" tooltip="Cworking_Interfaces_C/Sources/CW_Interface_Main.c">
-<persistable path="/Cworking_Interfaces_C/Sources/CW_Interface_Main.c"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="CW_Memory_Allocator_Types.h" tooltip="Cworking_Memory_Allocator/Headers/CW_Memory_Allocator_Types.h">
+<persistable path="/Cworking_Memory_Allocator/Headers/CW_Memory_Allocator_Types.h"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="CW_Interface_Main.cpp" tooltip="Cworking_Interfaces_C++/Sources/CW_Interface_Main.cpp">
-<persistable path="/Cworking_Interfaces_C++/Sources/CW_Interface_Main.cpp"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="CW_Memory_Allocator_Main.h" tooltip="Cworking_Memory_Allocator/Headers/CW_Memory_Allocator_Main.h">
+<persistable path="/Cworking_Memory_Allocator/Headers/CW_Memory_Allocator_Main.h"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="CW_Interface_Definitions.h" tooltip="Cworking_Interfaces_C/Headers/CW_Interface_Definitions.h">
-<persistable path="/Cworking_Interfaces_C/Headers/CW_Interface_Definitions.h"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="CW_Memory_Allocator_Macros_Definitions.h" tooltip="Cworking_Memory_Allocator/Headers/CW_Memory_Allocator_Macros_Definitions.h">
+<persistable path="/Cworking_Memory_Allocator/Headers/CW_Memory_Allocator_Macros_Definitions.h"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="CW_Macros_Definitions.c" tooltip="Cworking_Macros_C/Sources/CW_Macros_Definitions.c">
-<persistable path="/Cworking_Macros_C/Sources/CW_Macros_Definitions.c"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="CW_Memory_Allocator_Definitions.h" tooltip="Cworking_Memory_Allocator/Headers/CW_Memory_Allocator_Definitions.h">
+<persistable path="/Cworking_Memory_Allocator/Headers/CW_Memory_Allocator_Definitions.h"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="CW_Macros_Definitions.h" tooltip="Cworking_Macros_C/Headers/CW_Macros_Definitions.h">
-<persistable path="/Cworking_Macros_C/Headers/CW_Macros_Definitions.h"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="CW_Interface_Types.h" tooltip="Cworking_Macros_C/Headers/CW_Interface_Types.h">
+<persistable path="/Cworking_Macros_C/Headers/CW_Interface_Types.h"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="CW_Interface_Main.c" tooltip="Cworking_Macros_C/Sources/CW_Interface_Main.c">
-<persistable path="/Cworking_Macros_C/Sources/CW_Interface_Main.c"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="CW_Interface_PersonalData.h" tooltip="Cworking_Macros_C/Headers/CW_Interface_PersonalData.h">
+<persistable path="/Cworking_Macros_C/Headers/CW_Interface_PersonalData.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="CW_Interface_Main.h" tooltip="Cworking_Macros_C/Headers/CW_Interface_Main.h">
+<persistable path="/Cworking_Macros_C/Headers/CW_Interface_Main.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="CW_Interface_Definitions.h" tooltip="Cworking_Macros_C/Headers/CW_Interface_Definitions.h">
+<persistable path="/Cworking_Macros_C/Headers/CW_Interface_Definitions.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="CW_Interface_Types.h" tooltip="Cworking_Interfaces_C++/Headers/CW_Interface_Types.h">
+<persistable path="/Cworking_Interfaces_C++/Headers/CW_Interface_Types.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="CW_Interface.h" tooltip="Cworking_Interfaces_C++/Headers/CW_Interface.h">
+<persistable path="/Cworking_Interfaces_C++/Headers/CW_Interface.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="CW_Interface_Definitions.h" tooltip="Cworking_Interfaces_C++/Headers/CW_Interface_Definitions.h">
+<persistable path="/Cworking_Interfaces_C++/Headers/CW_Interface_Definitions.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="CW_Interface_Main.h" tooltip="Cworking_Interfaces_C++/Headers/CW_Interface_Main.h">
+<persistable path="/Cworking_Interfaces_C++/Headers/CW_Interface_Main.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="CW_Memory_Allocator_Main.c" tooltip="Cworking_Memory_Allocator/Sources/CW_Memory_Allocator_Main.c">
+<persistable path="/Cworking_Memory_Allocator/Sources/CW_Memory_Allocator_Main.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="CW_Memory_Allocator_FIFO.h" tooltip="Cworking_Memory_Allocator/Headers/CW_Memory_Allocator_FIFO.h">
+<persistable path="/Cworking_Memory_Allocator/Headers/CW_Memory_Allocator_FIFO.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="CW_Macros_Definitions.h" tooltip="Cworking_Memory_Allocator/Headers/CW_Macros_Definitions.h">
+<persistable path="/Cworking_Memory_Allocator/Headers/CW_Macros_Definitions.h"/>
 </file>
 </mruList>
 </workbench>
