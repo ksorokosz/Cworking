@@ -11,6 +11,9 @@ void* CW_allocate_memory( CW_uint32_t CW_memory_size, const char* CW_file, CW_ui
 	p = malloc( CW_memory_size );
 	if(p == NULL)
 	{
+		/**
+		 * @todo error handling
+		 */
 		LOG( stderr, "Out of memory: MALLOC called from %s %u", CW_file, CW_line );
 		exit(EXIT_FAILURE);
 	}
@@ -30,6 +33,9 @@ void CW_free_memory( void** CW_pointer, const char* CW_file, CW_uint32_t CW_line
 	/* Check if not null */
 	if ( (*CW_pointer) == NULL )
 	{
+		/**
+		 * @todo error handling
+		 */
 		LOG( stderr, "Null pointer exception: FREE called from %s %u", CW_file, CW_line );
 		exit(EXIT_FAILURE);
 	}

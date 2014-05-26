@@ -1,22 +1,8 @@
 
-**** Build of configuration Default for project Cworking_Interfaces_C ****
+**** Build of configuration Debug for project Cworking_Memory_Allocator ****
 
 make all 
-make: *** Brak reguł do wykonania obiektu `all'. Stop.
-
-**** Build Finished ****
-
-**** Build of configuration Default for project Cworking_Interfaces_C++ ****
-
-make all 
-make: *** Brak reguł do wykonania obiektu `all'. Stop.
-
-**** Build Finished ****
-
-**** Build of configuration Default for project Cworking_Macros_C ****
-
-make all 
-make: *** Brak reguł do wykonania obiektu `all'. Stop.
+make: Nie ma nic do zrobienia w `all'.
 
 **** Build Finished ****
 
@@ -41,276 +27,35 @@ make: Nie ma nic do zrobienia w `all'.
 
 **** Build Finished ****
 
-**** Build of configuration Default for project Cworking_Interfaces_C ****
+**** Rebuild of configuration Debug for project Cworking_Memory_Allocator ****
 
-make all 
-Building file: ../Sources/CW_Interface_Main.c
-Invoking: GCC C Compiler
-gcc -O2 -g -Wall -c -fmessage-length=0 -MMD -MP -MF"Sources/CW_Interface_Main.d" -MT"Sources/CW_Interface_Main.d" -o "Sources/CW_Interface_Main.o" "../Sources/CW_Interface_Main.c"
-../Sources/CW_Interface_Main.c:1:31: fatal error: CW_Interface_Main.h: Nie ma takiego pliku ani katalogu
-compilation terminated.
-make: *** [Sources/CW_Interface_Main.o] Błąd 1
+**** Internal Builder is used for build               ****
+gcc -DDEBUG_MODE -I/home/kamil/workspace/Cworking/Cworking_Memory_Allocator/Headers -O0 -g3 -pedantic -Wall -c -fmessage-length=0 -o Sources/CW_Memory_Allocator_Main.o ../Sources/CW_Memory_Allocator_Main.c
+In file included from /home/kamil/workspace/Cworking/Cworking_Memory_Allocator/Headers/CW_Memory_Allocator_Main.h:12:0,
+                 from ../Sources/CW_Memory_Allocator_Main.c:1:
+/home/kamil/workspace/Cworking/Cworking_Memory_Allocator/Headers/CW_Memory_Allocator_Definitions.h:19:30: warning: anonymous variadic macros were introduced in C99 [-Wvariadic-macros]
+gcc -DDEBUG_MODE -I/home/kamil/workspace/Cworking/Cworking_Memory_Allocator/Headers -O0 -g3 -pedantic -Wall -c -fmessage-length=0 -o Sources/CW_Memory_Allocator_Memory_Management.o ../Sources/CW_Memory_Allocator_Memory_Management.c
+In file included from /home/kamil/workspace/Cworking/Cworking_Memory_Allocator/Headers/CW_Memory_Allocator_Memory_Management.h:13:0,
+                 from ../Sources/CW_Memory_Allocator_Memory_Management.c:1:
+/home/kamil/workspace/Cworking/Cworking_Memory_Allocator/Headers/CW_Memory_Allocator_Definitions.h:19:30: warning: anonymous variadic macros were introduced in C99 [-Wvariadic-macros]
+gcc -o Cworking_Memory_Allocator Sources/CW_Memory_Allocator_Memory_Management.o Sources/CW_Memory_Allocator_Main.o
+Build complete for project Cworking_Memory_Allocator
+Time consumed: 243  ms.  
 
-**** Build Finished ****
+**** Build of configuration Debug for project Cworking_Memory_Allocator ****
 
-**** Build of configuration Default for project Cworking_Interfaces_C++ ****
+**** Internal Builder is used for build               ****
+Nothing to build for Cworking_Memory_Allocator
 
-make all 
-Building file: ../Sources/CW_Interface_Main.cpp
-Invoking: GCC C++ Compiler
-g++ -O2 -g -Wall -c -fmessage-length=0 -MMD -MP -MF"Sources/CW_Interface_Main.d" -MT"Sources/CW_Interface_Main.d" -o "Sources/CW_Interface_Main.o" "../Sources/CW_Interface_Main.cpp"
-../Sources/CW_Interface_Main.cpp:1:31: fatal error: CW_Interface_Main.h: Nie ma takiego pliku ani katalogu
-compilation terminated.
-make: *** [Sources/CW_Interface_Main.o] Błąd 1
+**** Build of configuration Debug for project Cworking_Memory_Allocator ****
 
-**** Build Finished ****
+**** Internal Builder is used for build               ****
+Nothing to build for Cworking_Memory_Allocator
 
-**** Build of configuration Default for project Cworking_Macros_C ****
+**** Build of configuration Debug for project Cworking_Memory_Allocator ****
 
-make all 
-Building file: ../Sources/CW_Interface_Main.c
-Invoking: GCC C Compiler
-gcc -O2 -g -Wall -c -fmessage-length=0 -MMD -MP -MF"Sources/CW_Interface_Main.d" -MT"Sources/CW_Interface_Main.d" -o "Sources/CW_Interface_Main.o" "../Sources/CW_Interface_Main.c"
-../Sources/CW_Interface_Main.c:2:31: fatal error: CW_Interface_Main.h: Nie ma takiego pliku ani katalogu
-compilation terminated.
-make: *** [Sources/CW_Interface_Main.o] Błąd 1
-
-**** Build Finished ****
-
-**** Build of configuration Default for project Cworking_Interfaces_C ****
-
-make all 
-Building file: ../Sources/CW_Interface_Main.c
-Invoking: GCC C Compiler
-gcc -I"/home/kamil/workspace/Cworking/Cworking_Interfaces_C/Headers" -O2 -g -Wall -c -fmessage-length=0 -MMD -MP -MF"Sources/CW_Interface_Main.d" -MT"Sources/CW_Interface_Main.d" -o "Sources/CW_Interface_Main.o" "../Sources/CW_Interface_Main.c"
-Finished building: ../Sources/CW_Interface_Main.c
- 
-Building file: ../Sources/CW_Interface_PersonalData.c
-Invoking: GCC C Compiler
-gcc -I"/home/kamil/workspace/Cworking/Cworking_Interfaces_C/Headers" -O2 -g -Wall -c -fmessage-length=0 -MMD -MP -MF"Sources/CW_Interface_PersonalData.d" -MT"Sources/CW_Interface_PersonalData.d" -o "Sources/CW_Interface_PersonalData.o" "../Sources/CW_Interface_PersonalData.c"
-Finished building: ../Sources/CW_Interface_PersonalData.c
- 
-Building target: Cworking_Interfaces_C
-Invoking: GCC C++ Linker
-g++ -shared -o "Cworking_Interfaces_C"  ./Sources/CW_Interface_Main.o ./Sources/CW_Interface_PersonalData.o   
-/usr/bin/ld: ./Sources/CW_Interface_Main.o: relocation R_X86_64_32S against `CW_PersonalData_Init_1' can not be used when making a shared object; recompile with -fPIC
-./Sources/CW_Interface_Main.o: could not read symbols: Bad value
-collect2: ld returned 1 exit status
-make: *** [Cworking_Interfaces_C] Błąd 1
-
-**** Build Finished ****
-
-**** Build of configuration Default for project Cworking_Interfaces_C++ ****
-
-make all 
-Building file: ../Sources/CW_Interface_Main.cpp
-Invoking: GCC C++ Compiler
-g++ -I"/home/kamil/workspace/Cworking/Cworking_Interfaces_C++/Headers" -O2 -g -Wall -c -fmessage-length=0 -MMD -MP -MF"Sources/CW_Interface_Main.d" -MT"Sources/CW_Interface_Main.d" -o "Sources/CW_Interface_Main.o" "../Sources/CW_Interface_Main.cpp"
-Finished building: ../Sources/CW_Interface_Main.cpp
- 
-Building file: ../Sources/CW_Interface_PersonalData.cpp
-Invoking: GCC C++ Compiler
-g++ -I"/home/kamil/workspace/Cworking/Cworking_Interfaces_C++/Headers" -O2 -g -Wall -c -fmessage-length=0 -MMD -MP -MF"Sources/CW_Interface_PersonalData.d" -MT"Sources/CW_Interface_PersonalData.d" -o "Sources/CW_Interface_PersonalData.o" "../Sources/CW_Interface_PersonalData.cpp"
-Finished building: ../Sources/CW_Interface_PersonalData.cpp
- 
-Building target: Cworking_Interfaces_C++
-Invoking: GCC C++ Linker
-g++  -o "Cworking_Interfaces_C++"  ./Sources/CW_Interface_Main.o ./Sources/CW_Interface_PersonalData.o   
-Finished building target: Cworking_Interfaces_C++
- 
-
-**** Build Finished ****
-
-**** Build of configuration Default for project Cworking_Macros_C ****
-
-make all 
-Building file: ../Sources/CW_Interface_Main.c
-Invoking: GCC C Compiler
-gcc -I"/home/kamil/workspace/Cworking/Cworking_Macros_C/Headers" -O2 -g -Wall -c -fmessage-length=0 -MMD -MP -MF"Sources/CW_Interface_Main.d" -MT"Sources/CW_Interface_Main.d" -o "Sources/CW_Interface_Main.o" "../Sources/CW_Interface_Main.c"
-Finished building: ../Sources/CW_Interface_Main.c
- 
-Building file: ../Sources/CW_Interface_PersonalData.c
-Invoking: GCC C Compiler
-gcc -I"/home/kamil/workspace/Cworking/Cworking_Macros_C/Headers" -O2 -g -Wall -c -fmessage-length=0 -MMD -MP -MF"Sources/CW_Interface_PersonalData.d" -MT"Sources/CW_Interface_PersonalData.d" -o "Sources/CW_Interface_PersonalData.o" "../Sources/CW_Interface_PersonalData.c"
-Finished building: ../Sources/CW_Interface_PersonalData.c
- 
-Building file: ../Sources/CW_Macros_Definitions.c
-Invoking: GCC C Compiler
-gcc -I"/home/kamil/workspace/Cworking/Cworking_Macros_C/Headers" -O2 -g -Wall -c -fmessage-length=0 -MMD -MP -MF"Sources/CW_Macros_Definitions.d" -MT"Sources/CW_Macros_Definitions.d" -o "Sources/CW_Macros_Definitions.o" "../Sources/CW_Macros_Definitions.c"
-Finished building: ../Sources/CW_Macros_Definitions.c
- 
-Building target: Cworking_Macros_C
-Invoking: GCC C++ Linker
-g++  -o "Cworking_Macros_C"  ./Sources/CW_Interface_Main.o ./Sources/CW_Interface_PersonalData.o ./Sources/CW_Macros_Definitions.o   
-Finished building target: Cworking_Macros_C
- 
-
-**** Build Finished ****
-
-**** Build of configuration Default for project Cworking_Interfaces_C ****
-
-make all 
-Building file: ../Sources/CW_Interface_Main.c
-Invoking: GCC C Compiler
-gcc -I"/home/kamil/workspace/Cworking/Cworking_Interfaces_C/Headers" -O2 -g -Wall -c -fmessage-length=0 -MMD -MP -MF"Sources/CW_Interface_Main.d" -MT"Sources/CW_Interface_Main.d" -o "Sources/CW_Interface_Main.o" "../Sources/CW_Interface_Main.c"
-Finished building: ../Sources/CW_Interface_Main.c
- 
-Building file: ../Sources/CW_Interface_PersonalData.c
-Invoking: GCC C Compiler
-gcc -I"/home/kamil/workspace/Cworking/Cworking_Interfaces_C/Headers" -O2 -g -Wall -c -fmessage-length=0 -MMD -MP -MF"Sources/CW_Interface_PersonalData.d" -MT"Sources/CW_Interface_PersonalData.d" -o "Sources/CW_Interface_PersonalData.o" "../Sources/CW_Interface_PersonalData.c"
-Finished building: ../Sources/CW_Interface_PersonalData.c
- 
-Building target: Cworking_Interfaces_C
-Invoking: GCC C++ Linker
-g++ -shared -o "Cworking_Interfaces_C"  ./Sources/CW_Interface_Main.o ./Sources/CW_Interface_PersonalData.o   
-/usr/bin/ld: ./Sources/CW_Interface_Main.o: relocation R_X86_64_32S against `CW_PersonalData_Init_1' can not be used when making a shared object; recompile with -fPIC
-./Sources/CW_Interface_Main.o: could not read symbols: Bad value
-collect2: ld returned 1 exit status
-make: *** [Cworking_Interfaces_C] Błąd 1
-
-**** Build Finished ****
-
-**** Build of configuration Default for project Cworking_Interfaces_C++ ****
-
-make all 
-make: Nie ma nic do zrobienia w `all'.
-
-**** Build Finished ****
-
-**** Build of configuration Default for project Cworking_Macros_C ****
-
-make all 
-make: Nie ma nic do zrobienia w `all'.
-
-**** Build Finished ****
-
-**** Build of configuration Default for project Cworking_Interfaces_C ****
-
-make all 
-Building file: ../Sources/CW_Interface_Main.c
-Invoking: GCC C Compiler
-gcc -I"/home/kamil/workspace/Cworking/Cworking_Interfaces_C/Headers" -O2 -g -pedantic-errors -Wall -c -fmessage-length=0 -MMD -MP -MF"Sources/CW_Interface_Main.d" -MT"Sources/CW_Interface_Main.d" -o "Sources/CW_Interface_Main.o" "../Sources/CW_Interface_Main.c"
-Finished building: ../Sources/CW_Interface_Main.c
- 
-Building file: ../Sources/CW_Interface_PersonalData.c
-Invoking: GCC C Compiler
-gcc -I"/home/kamil/workspace/Cworking/Cworking_Interfaces_C/Headers" -O2 -g -pedantic-errors -Wall -c -fmessage-length=0 -MMD -MP -MF"Sources/CW_Interface_PersonalData.d" -MT"Sources/CW_Interface_PersonalData.d" -o "Sources/CW_Interface_PersonalData.o" "../Sources/CW_Interface_PersonalData.c"
-Finished building: ../Sources/CW_Interface_PersonalData.c
- 
-Building target: Cworking_Interfaces_C
-Invoking: GCC C++ Linker
-g++  -o "Cworking_Interfaces_C"  ./Sources/CW_Interface_Main.o ./Sources/CW_Interface_PersonalData.o   
-Finished building target: Cworking_Interfaces_C
- 
-
-**** Build Finished ****
-
-**** Build of configuration Default for project Cworking_Interfaces_C++ ****
-
-make all 
-Building file: ../Sources/CW_Interface_Main.cpp
-Invoking: GCC C++ Compiler
-g++ -I"/home/kamil/workspace/Cworking/Cworking_Interfaces_C++/Headers" -O2 -g -pedantic-errors -Wall -c -fmessage-length=0 -MMD -MP -MF"Sources/CW_Interface_Main.d" -MT"Sources/CW_Interface_Main.d" -o "Sources/CW_Interface_Main.o" "../Sources/CW_Interface_Main.cpp"
-Finished building: ../Sources/CW_Interface_Main.cpp
- 
-Building file: ../Sources/CW_Interface_PersonalData.cpp
-Invoking: GCC C++ Compiler
-g++ -I"/home/kamil/workspace/Cworking/Cworking_Interfaces_C++/Headers" -O2 -g -pedantic-errors -Wall -c -fmessage-length=0 -MMD -MP -MF"Sources/CW_Interface_PersonalData.d" -MT"Sources/CW_Interface_PersonalData.d" -o "Sources/CW_Interface_PersonalData.o" "../Sources/CW_Interface_PersonalData.cpp"
-Finished building: ../Sources/CW_Interface_PersonalData.cpp
- 
-Building target: Cworking_Interfaces_C++
-Invoking: GCC C++ Linker
-g++  -o "Cworking_Interfaces_C++"  ./Sources/CW_Interface_Main.o ./Sources/CW_Interface_PersonalData.o   
-Finished building target: Cworking_Interfaces_C++
- 
-
-**** Build Finished ****
-
-**** Build of configuration Default for project Cworking_Macros_C ****
-
-make all 
-Building file: ../Sources/CW_Interface_Main.c
-Invoking: GCC C Compiler
-gcc -I"/home/kamil/workspace/Cworking/Cworking_Macros_C/Headers" -O2 -g -pedantic-errors -Wall -c -fmessage-length=0 -MMD -MP -MF"Sources/CW_Interface_Main.d" -MT"Sources/CW_Interface_Main.d" -o "Sources/CW_Interface_Main.o" "../Sources/CW_Interface_Main.c"
-In file included from /home/kamil/workspace/Cworking/Cworking_Macros_C/Headers/CW_Interface_Main.h:16:0,
-                 from ../Sources/CW_Interface_Main.c:2:
-/home/kamil/workspace/Cworking/Cworking_Macros_C/Headers/CW_Macros_Definitions.h:20:30: error: anonymous variadic macros were introduced in C99 [-Wvariadic-macros]
-make: *** [Sources/CW_Interface_Main.o] Błąd 1
-
-**** Build Finished ****
-
-**** Build of configuration Default for project Cworking_Interfaces_C ****
-
-make all 
-Building file: ../Sources/CW_Interface_Main.c
-Invoking: GCC C Compiler
-gcc -I"/home/kamil/workspace/Cworking/Cworking_Interfaces_C/Headers" -O2 -g -pedantic -Wall -c -fmessage-length=0 -MMD -MP -MF"Sources/CW_Interface_Main.d" -MT"Sources/CW_Interface_Main.d" -o "Sources/CW_Interface_Main.o" "../Sources/CW_Interface_Main.c"
-Finished building: ../Sources/CW_Interface_Main.c
- 
-Building file: ../Sources/CW_Interface_PersonalData.c
-Invoking: GCC C Compiler
-gcc -I"/home/kamil/workspace/Cworking/Cworking_Interfaces_C/Headers" -O2 -g -pedantic -Wall -c -fmessage-length=0 -MMD -MP -MF"Sources/CW_Interface_PersonalData.d" -MT"Sources/CW_Interface_PersonalData.d" -o "Sources/CW_Interface_PersonalData.o" "../Sources/CW_Interface_PersonalData.c"
-Finished building: ../Sources/CW_Interface_PersonalData.c
- 
-Building target: Cworking_Interfaces_C
-Invoking: GCC C++ Linker
-g++  -o "Cworking_Interfaces_C"  ./Sources/CW_Interface_Main.o ./Sources/CW_Interface_PersonalData.o   
-Finished building target: Cworking_Interfaces_C
- 
-
-**** Build Finished ****
-
-**** Build of configuration Default for project Cworking_Interfaces_C++ ****
-
-make all 
-Building file: ../Sources/CW_Interface_Main.cpp
-Invoking: GCC C++ Compiler
-g++ -I"/home/kamil/workspace/Cworking/Cworking_Interfaces_C++/Headers" -O2 -g -pedantic -Wall -c -fmessage-length=0 -MMD -MP -MF"Sources/CW_Interface_Main.d" -MT"Sources/CW_Interface_Main.d" -o "Sources/CW_Interface_Main.o" "../Sources/CW_Interface_Main.cpp"
-Finished building: ../Sources/CW_Interface_Main.cpp
- 
-Building file: ../Sources/CW_Interface_PersonalData.cpp
-Invoking: GCC C++ Compiler
-g++ -I"/home/kamil/workspace/Cworking/Cworking_Interfaces_C++/Headers" -O2 -g -pedantic -Wall -c -fmessage-length=0 -MMD -MP -MF"Sources/CW_Interface_PersonalData.d" -MT"Sources/CW_Interface_PersonalData.d" -o "Sources/CW_Interface_PersonalData.o" "../Sources/CW_Interface_PersonalData.cpp"
-Finished building: ../Sources/CW_Interface_PersonalData.cpp
- 
-Building target: Cworking_Interfaces_C++
-Invoking: GCC C++ Linker
-g++  -o "Cworking_Interfaces_C++"  ./Sources/CW_Interface_Main.o ./Sources/CW_Interface_PersonalData.o   
-Finished building target: Cworking_Interfaces_C++
- 
-
-**** Build Finished ****
-
-**** Build of configuration Default for project Cworking_Macros_C ****
-
-make all 
-Building file: ../Sources/CW_Interface_Main.c
-Invoking: GCC C Compiler
-gcc -I"/home/kamil/workspace/Cworking/Cworking_Macros_C/Headers" -O2 -g -pedantic -Wall -c -fmessage-length=0 -MMD -MP -MF"Sources/CW_Interface_Main.d" -MT"Sources/CW_Interface_Main.d" -o "Sources/CW_Interface_Main.o" "../Sources/CW_Interface_Main.c"
-In file included from /home/kamil/workspace/Cworking/Cworking_Macros_C/Headers/CW_Interface_Main.h:16:0,
-                 from ../Sources/CW_Interface_Main.c:2:
-/home/kamil/workspace/Cworking/Cworking_Macros_C/Headers/CW_Macros_Definitions.h:20:30: warning: anonymous variadic macros were introduced in C99 [-Wvariadic-macros]
-Finished building: ../Sources/CW_Interface_Main.c
- 
-Building file: ../Sources/CW_Interface_PersonalData.c
-Invoking: GCC C Compiler
-gcc -I"/home/kamil/workspace/Cworking/Cworking_Macros_C/Headers" -O2 -g -pedantic -Wall -c -fmessage-length=0 -MMD -MP -MF"Sources/CW_Interface_PersonalData.d" -MT"Sources/CW_Interface_PersonalData.d" -o "Sources/CW_Interface_PersonalData.o" "../Sources/CW_Interface_PersonalData.c"
-Finished building: ../Sources/CW_Interface_PersonalData.c
- 
-Building file: ../Sources/CW_Macros_Definitions.c
-Invoking: GCC C Compiler
-gcc -I"/home/kamil/workspace/Cworking/Cworking_Macros_C/Headers" -O2 -g -pedantic -Wall -c -fmessage-length=0 -MMD -MP -MF"Sources/CW_Macros_Definitions.d" -MT"Sources/CW_Macros_Definitions.d" -o "Sources/CW_Macros_Definitions.o" "../Sources/CW_Macros_Definitions.c"
-In file included from ../Sources/CW_Macros_Definitions.c:1:0:
-/home/kamil/workspace/Cworking/Cworking_Macros_C/Headers/CW_Macros_Definitions.h:20:30: warning: anonymous variadic macros were introduced in C99 [-Wvariadic-macros]
-Finished building: ../Sources/CW_Macros_Definitions.c
- 
-Building target: Cworking_Macros_C
-Invoking: GCC C++ Linker
-g++  -o "Cworking_Macros_C"  ./Sources/CW_Interface_Main.o ./Sources/CW_Interface_PersonalData.o ./Sources/CW_Macros_Definitions.o   
-Finished building target: Cworking_Macros_C
- 
-
-**** Build Finished ****
+**** Internal Builder is used for build               ****
+Nothing to build for Cworking_Memory_Allocator
 
 **** Build of configuration Default for project Cworking_Interfaces_C ****
 
@@ -329,203 +74,41 @@ make: Nie ma nic do zrobienia w `all'.
 **** Build of configuration Default for project Cworking_Macros_C ****
 
 make all 
-Building file: ../Sources/CW_Interface_Main.c
-Invoking: GCC C Compiler
-gcc -I"/home/kamil/workspace/Cworking/Cworking_Macros_C/Headers" -O2 -g -pedantic -Wall -c -fmessage-length=0 -MMD -MP -MF"Sources/CW_Interface_Main.d" -MT"Sources/CW_Interface_Main.d" -o "Sources/CW_Interface_Main.o" "../Sources/CW_Interface_Main.c"
-In file included from /home/kamil/workspace/Cworking/Cworking_Macros_C/Headers/CW_Interface_Main.h:16:0,
-Finished building: ../Sources/CW_Interface_Main.c
-                 from ../Sources/CW_Interface_Main.c:2:
- 
-/home/kamil/workspace/Cworking/Cworking_Macros_C/Headers/CW_Macros_Definitions.h:19:28: warning: anonymous variadic macros were introduced in C99 [-Wvariadic-macros]
-Building file: ../Sources/CW_Macros_Definitions.c
-In file included from ../Sources/CW_Macros_Definitions.c:1:0:
-Invoking: GCC C Compiler
-/home/kamil/workspace/Cworking/Cworking_Macros_C/Headers/CW_Macros_Definitions.h:19:28: warning: anonymous variadic macros were introduced in C99 [-Wvariadic-macros]
-gcc -I"/home/kamil/workspace/Cworking/Cworking_Macros_C/Headers" -O2 -g -pedantic -Wall -c -fmessage-length=0 -MMD -MP -MF"Sources/CW_Macros_Definitions.d" -MT"Sources/CW_Macros_Definitions.d" -o "Sources/CW_Macros_Definitions.o" "../Sources/CW_Macros_Definitions.c"
-Finished building: ../Sources/CW_Macros_Definitions.c
- 
-Building target: Cworking_Macros_C
-Invoking: GCC C++ Linker
-g++  -o "Cworking_Macros_C"  ./Sources/CW_Interface_Main.o ./Sources/CW_Interface_PersonalData.o ./Sources/CW_Macros_Definitions.o   
-Finished building target: Cworking_Macros_C
- 
-
-**** Build Finished ****
-
-**** Build of configuration Default for project Cworking_Macros_C ****
-
-make all 
-Building target: Cworking_Macros_C
-Invoking: GCC C++ Linker
-g++  -o "Cworking_Macros_C"  ./Sources/CW_Interface_Main.o ./Sources/CW_Interface_PersonalData.o ./Sources/CW_Macros_Definitions.o   
-Finished building target: Cworking_Macros_C
- 
-
-**** Build Finished ****
-
-**** Build of configuration Default for project Cworking_Interfaces_C ****
-
-make all 
 make: Nie ma nic do zrobienia w `all'.
-
-**** Build Finished ****
-
-**** Build of configuration Default for project Cworking_Interfaces_C++ ****
-
-make all 
-make: Nie ma nic do zrobienia w `all'.
-
-**** Build Finished ****
-
-**** Build of configuration Default for project Cworking_Macros_C ****
-
-make all 
-Building file: ../Sources/CW_Interface_Main.c
-Invoking: GCC C Compiler
-gcc -DDEBUG_MODE -I"/home/kamil/workspace/Cworking/Cworking_Macros_C/Headers" -O2 -g -pedantic -Wall -c -fmessage-length=0 -MMD -MP -MF"Sources/CW_Interface_Main.d" -MT"Sources/CW_Interface_Main.d" -o "Sources/CW_Interface_Main.o" "../Sources/CW_Interface_Main.c"
-In file included from /home/kamil/workspace/Cworking/Cworking_Macros_C/Headers/CW_Interface_Main.h:16:0,
-                 from ../Sources/CW_Interface_Main.c:2:
-Finished building: ../Sources/CW_Interface_Main.c
-/home/kamil/workspace/Cworking/Cworking_Macros_C/Headers/CW_Macros_Definitions.h:17:30: warning: anonymous variadic macros were introduced in C99 [-Wvariadic-macros]
- 
-Building file: ../Sources/CW_Interface_PersonalData.c
-Invoking: GCC C Compiler
-gcc -DDEBUG_MODE -I"/home/kamil/workspace/Cworking/Cworking_Macros_C/Headers" -O2 -g -pedantic -Wall -c -fmessage-length=0 -MMD -MP -MF"Sources/CW_Interface_PersonalData.d" -MT"Sources/CW_Interface_PersonalData.d" -o "Sources/CW_Interface_PersonalData.o" "../Sources/CW_Interface_PersonalData.c"
-Finished building: ../Sources/CW_Interface_PersonalData.c
- 
-Building file: ../Sources/CW_Macros_Definitions.c
-Invoking: GCC C Compiler
-gcc -DDEBUG_MODE -I"/home/kamil/workspace/Cworking/Cworking_Macros_C/Headers" -O2 -g -pedantic -Wall -c -fmessage-length=0 -MMD -MP -MF"Sources/CW_Macros_Definitions.d" -MT"Sources/CW_Macros_Definitions.d" -o "Sources/CW_Macros_Definitions.o" "../Sources/CW_Macros_Definitions.c"
-In file included from ../Sources/CW_Macros_Definitions.c:1:0:
-Finished building: ../Sources/CW_Macros_Definitions.c
- 
-Building target: Cworking_Macros_C
-Invoking: GCC C++ Linker
-/home/kamil/workspace/Cworking/Cworking_Macros_C/Headers/CW_Macros_Definitions.h:17:30: warning: anonymous variadic macros were introduced in C99 [-Wvariadic-macros]
-g++  -o "Cworking_Macros_C"  ./Sources/CW_Interface_Main.o ./Sources/CW_Interface_PersonalData.o ./Sources/CW_Macros_Definitions.o   
-Finished building target: Cworking_Macros_C
- 
-
-**** Build Finished ****
-
-**** Build of configuration Default for project Cworking_Macros_C ****
-
-make all 
-make: Nie ma nic do zrobienia w `all'.
-
-**** Build Finished ****
-
-**** Build of configuration Default for project Cworking_Interfaces_C ****
-
-make all 
-make: Nie ma nic do zrobienia w `all'.
-
-**** Build Finished ****
-
-**** Build of configuration Default for project Cworking_Interfaces_C++ ****
-
-make all 
-make: Nie ma nic do zrobienia w `all'.
-
-**** Build Finished ****
-
-**** Build of configuration Default for project Cworking_Macros_C ****
-
-make all 
-Building file: ../Sources/CW_Interface_Main.c
-Invoking: GCC C Compiler
-gcc -DDEBUG_MODE -I"/home/kamil/workspace/Cworking/Cworking_Macros_C/Headers" -O2 -g -pedantic -Wall -c -fmessage-length=0 -MMD -MP -MF"Sources/CW_Interface_Main.d" -MT"Sources/CW_Interface_Main.d" -o "Sources/CW_Interface_Main.o" "../Sources/CW_Interface_Main.c"
-In file included from /home/kamil/workspace/Cworking/Cworking_Macros_C/Headers/CW_Interface_Main.h:16:0,
-Finished building: ../Sources/CW_Interface_Main.c
-                 from ../Sources/CW_Interface_Main.c:2:
- 
-/home/kamil/workspace/Cworking/Cworking_Macros_C/Headers/CW_Macros_Definitions.h:17:30: warning: anonymous variadic macros were introduced in C99 [-Wvariadic-macros]
-Building target: Cworking_Macros_C
-Invoking: GCC C++ Linker
-g++  -o "Cworking_Macros_C"  ./Sources/CW_Interface_Main.o ./Sources/CW_Interface_PersonalData.o ./Sources/CW_Macros_Definitions.o   
-../Sources/CW_Interface_Main.c: In function ‘main’:
-../Sources/CW_Interface_Main.c:29:25: warning: ISO C99 requires rest arguments to be used [enabled by default]
-Finished building target: Cworking_Macros_C
-../Sources/CW_Interface_Main.c:29:25: warning: invoking macro LOG argument 3: empty macro arguments are undefined in ISO C90 and ISO C++98 [enabled by default]
- 
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project Cworkint_Static_Allocator ****
-
-Nothing to build for project Cworkint_Static_Allocator
-
-**** Build of configuration Default for project Cworking_Interfaces_C ****
-
-make all 
-make: Nie ma nic do zrobienia w `all'.
-
-**** Build Finished ****
-
-**** Build of configuration Default for project Cworking_Interfaces_C++ ****
-
-make all 
-make: Nie ma nic do zrobienia w `all'.
-
-**** Build Finished ****
-
-**** Build of configuration Default for project Cworking_Macros_C ****
-
-make all 
-Building file: ../Sources/CW_Interface_Main.c
-Invoking: GCC C Compiler
-gcc -DDEBUG_MODE -I"/home/kamil/workspace/Cworking/Cworking_Macros_C/Headers" -O2 -g -pedantic -Wall -c -fmessage-length=0 -MMD -MP -MF"Sources/CW_Interface_Main.d" -MT"Sources/CW_Interface_Main.d" -o "Sources/CW_Interface_Main.o" "../Sources/CW_Interface_Main.c"
-In file included from /home/kamil/workspace/Cworking/Cworking_Macros_C/Headers/CW_Interface_Main.h:16:0,
-                 from ../Sources/CW_Interface_Main.c:2:
-/home/kamil/workspace/Cworking/Cworking_Macros_C/Headers/CW_Macros_Definitions.h:17:30: warning: anonymous variadic macros were introduced in C99 [-Wvariadic-macros]
-Finished building: ../Sources/CW_Interface_Main.c
- 
-Building target: Cworking_Macros_C
-Invoking: GCC C++ Linker
-g++  -o "Cworking_Macros_C"  ./Sources/CW_Interface_Main.o ./Sources/CW_Interface_PersonalData.o ./Sources/CW_Macros_Definitions.o   
-Finished building target: Cworking_Macros_C
- 
 
 **** Build Finished ****
 
 **** Build of configuration Debug for project Cworking_Memory_Allocator ****
 
-make all 
-Building file: ../Sources/CW_Memory_Allocator_Main.c
-Invoking: GCC C Compiler
-gcc -DDEBUG_MODE -I"/home/kamil/workspace/Cworking/Cworking_Memory_Allocator/Headers" -O0 -g3 -pedantic -Wall -c -fmessage-length=0 -MMD -MP -MF"Sources/CW_Memory_Allocator_Main.d" -MT"Sources/CW_Memory_Allocator_Main.d" -o "Sources/CW_Memory_Allocator_Main.o" "../Sources/CW_Memory_Allocator_Main.c"
-Finished building: ../Sources/CW_Memory_Allocator_Main.c
- 
-Building target: Cworking_Memory_Allocator
-Invoking: GCC C Linker
-gcc  -o "Cworking_Memory_Allocator"  ./Sources/CW_Memory_Allocator_Main.o   
-/usr/bin/ld: /usr/lib/debug/usr/lib/x86_64-linux-gnu/crt1.o(.debug_info): relocation 0 has invalid symbol index 10
-/usr/bin/ld: /usr/lib/debug/usr/lib/x86_64-linux-gnu/crt1.o(.debug_info): relocation 1 has invalid symbol index 11
-/usr/bin/ld: /usr/lib/debug/usr/lib/x86_64-linux-gnu/crt1.o(.debug_info): relocation 2 has invalid symbol index 2
-/usr/bin/ld: /usr/lib/debug/usr/lib/x86_64-linux-gnu/crt1.o(.debug_info): relocation 3 has invalid symbol index 2
-/usr/bin/ld: /usr/lib/debug/usr/lib/x86_64-linux-gnu/crt1.o(.debug_info): relocation 4 has invalid symbol index 10
-/usr/bin/ld: /usr/lib/debug/usr/lib/x86_64-linux-gnu/crt1.o(.debug_info): relocation 5 has invalid symbol index 12
-/usr/bin/ld: /usr/lib/debug/usr/lib/x86_64-linux-gnu/crt1.o(.debug_info): relocation 6 has invalid symbol index 12
-/usr/bin/ld: /usr/lib/debug/usr/lib/x86_64-linux-gnu/crt1.o(.debug_info): relocation 7 has invalid symbol index 12
-/usr/bin/ld: /usr/lib/debug/usr/lib/x86_64-linux-gnu/crt1.o(.debug_info): relocation 8 has invalid symbol index 2
-/usr/bin/ld: /usr/lib/debug/usr/lib/x86_64-linux-gnu/crt1.o(.debug_info): relocation 9 has invalid symbol index 2
-/usr/bin/ld: /usr/lib/debug/usr/lib/x86_64-linux-gnu/crt1.o(.debug_info): relocation 10 has invalid symbol index 11
-/usr/bin/ld: /usr/lib/debug/usr/lib/x86_64-linux-gnu/crt1.o(.debug_info): relocation 11 has invalid symbol index 12
-/usr/bin/ld: /usr/lib/debug/usr/lib/x86_64-linux-gnu/crt1.o(.debug_info): relocation 12 has invalid symbol index 12
-/usr/bin/ld: /usr/lib/debug/usr/lib/x86_64-linux-gnu/crt1.o(.debug_info): relocation 13 has invalid symbol index 12
-/usr/bin/ld: /usr/lib/debug/usr/lib/x86_64-linux-gnu/crt1.o(.debug_info): relocation 14 has invalid symbol index 12
-/usr/bin/ld: /usr/lib/debug/usr/lib/x86_64-linux-gnu/crt1.o(.debug_info): relocation 15 has invalid symbol index 12
-/usr/bin/ld: /usr/lib/debug/usr/lib/x86_64-linux-gnu/crt1.o(.debug_info): relocation 16 has invalid symbol index 12
-/usr/bin/ld: /usr/lib/debug/usr/lib/x86_64-linux-gnu/crt1.o(.debug_info): relocation 17 has invalid symbol index 12
-/usr/bin/ld: /usr/lib/debug/usr/lib/x86_64-linux-gnu/crt1.o(.debug_info): relocation 18 has invalid symbol index 12
-/usr/bin/ld: /usr/lib/debug/usr/lib/x86_64-linux-gnu/crt1.o(.debug_info): relocation 19 has invalid symbol index 12
-/usr/bin/ld: /usr/lib/debug/usr/lib/x86_64-linux-gnu/crt1.o(.debug_info): relocation 20 has invalid symbol index 19
-/usr/lib/gcc/x86_64-linux-gnu/4.6/../../../x86_64-linux-gnu/crt1.o: In function `_start':
-(.text+0x20): undefined reference to `main'
-collect2: ld returned 1 exit status
-make: *** [Cworking_Memory_Allocator] Błąd 1
+**** Internal Builder is used for build               ****
+gcc -DDEBUG_MODE -I/home/kamil/workspace/Cworking/Cworking_Memory_Allocator/Headers -O0 -g3 -pedantic -Wall -c -fmessage-length=0 -o Sources/CW_Memory_Allocator_Main.o ../Sources/CW_Memory_Allocator_Main.c
+In file included from /home/kamil/workspace/Cworking/Cworking_Memory_Allocator/Headers/CW_Memory_Allocator_Main.h:12:0,
+                 from ../Sources/CW_Memory_Allocator_Main.c:1:
+/home/kamil/workspace/Cworking/Cworking_Memory_Allocator/Headers/CW_Memory_Allocator_Definitions.h:19:30: warning: anonymous variadic macros were introduced in C99 [-Wvariadic-macros]
+gcc -o Cworking_Memory_Allocator Sources/CW_Memory_Allocator_Memory_Management.o Sources/CW_Memory_Allocator_Main.o
+Build complete for project Cworking_Memory_Allocator
+Time consumed: 160  ms.  
 
-**** Build Finished ****
+**** Build of configuration Debug for project Cworking_Memory_Allocator ****
+
+**** Internal Builder is used for build               ****
+Nothing to build for Cworking_Memory_Allocator
+
+**** Build of configuration Debug for project Cworking_Memory_Allocator ****
+
+**** Internal Builder is used for build               ****
+Nothing to build for Cworking_Memory_Allocator
+
+**** Build of configuration Debug for project Cworking_Memory_Allocator ****
+
+**** Internal Builder is used for build               ****
+gcc -DDEBUG_MODE -I/home/kamil/workspace/Cworking/Cworking_Memory_Allocator/Headers -O0 -g3 -pedantic -Wall -c -fmessage-length=0 -o Sources/CW_Memory_Allocator_Main.o ../Sources/CW_Memory_Allocator_Main.c
+In file included from /home/kamil/workspace/Cworking/Cworking_Memory_Allocator/Headers/CW_Memory_Allocator_Main.h:12:0,
+                 from ../Sources/CW_Memory_Allocator_Main.c:1:
+/home/kamil/workspace/Cworking/Cworking_Memory_Allocator/Headers/CW_Memory_Allocator_Definitions.h:19:30: warning: anonymous variadic macros were introduced in C99 [-Wvariadic-macros]
+gcc -o Cworking_Memory_Allocator Sources/CW_Memory_Allocator_Memory_Management.o Sources/CW_Memory_Allocator_Main.o
+Build complete for project Cworking_Memory_Allocator
+Time consumed: 146  ms.  
 
 **** Build of configuration Default for project Cworking_Interfaces_C ****
 
@@ -551,19 +134,35 @@ make: Nie ma nic do zrobienia w `all'.
 **** Build of configuration Debug for project Cworking_Memory_Allocator ****
 
 make all 
-Building file: ../Sources/CW_Memory_Allocator_Main.c
-Invoking: GCC C Compiler
-gcc -DDEBUG_MODE -I"/home/kamil/workspace/Cworking/Cworking_Memory_Allocator/Headers" -O0 -g3 -pedantic -Wall -c -fmessage-length=0 -MMD -MP -MF"Sources/CW_Memory_Allocator_Main.d" -MT"Sources/CW_Memory_Allocator_Main.d" -o "Sources/CW_Memory_Allocator_Main.o" "../Sources/CW_Memory_Allocator_Main.c"
-Finished building: ../Sources/CW_Memory_Allocator_Main.c
- 
 Building target: Cworking_Memory_Allocator
 Invoking: GCC C Linker
-gcc  -o "Cworking_Memory_Allocator"  ./Sources/CW_Memory_Allocator_Main.o   
+gcc  -o "Cworking_Memory_Allocator"  ./Sources/CW_Memory_Allocator_Main.o ./Sources/CW_Memory_Allocator_Memory_Management.o   
 Finished building target: Cworking_Memory_Allocator
  
 
 **** Build Finished ****
 
+**** Build of configuration Debug for project Cworking_Memory_Allocator ****
+
+make all 
+make: Nie ma nic do zrobienia w `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Cworking_Memory_Allocator ****
+
+make all 
+make: Nie ma nic do zrobienia w `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Cworking_Memory_Allocator ****
+
+make all 
+make: Nie ma nic do zrobienia w `all'.
+
+**** Build Finished ****
+
 **** Build of configuration Default for project Cworking_Interfaces_C ****
 
 make all 
@@ -588,6 +187,25 @@ make: Nie ma nic do zrobienia w `all'.
 **** Build of configuration Debug for project Cworking_Memory_Allocator ****
 
 make all 
+Building file: ../Sources/CW_Memory_Allocator_Main.c
+Invoking: GCC C Compiler
+gcc -DDEBUG_MODE -I"/home/kamil/workspace/Cworking/Cworking_Memory_Allocator/Headers" -O0 -g3 -pedantic -Wall -c -fmessage-length=0 -MMD -MP -MF"Sources/CW_Memory_Allocator_Main.d" -MT"Sources/CW_Memory_Allocator_Main.d" -o "Sources/CW_Memory_Allocator_Main.o" "../Sources/CW_Memory_Allocator_Main.c"
+Finished building: ../Sources/CW_Memory_Allocator_Main.c
+In file included from /home/kamil/workspace/Cworking/Cworking_Memory_Allocator/Headers/CW_Memory_Allocator_Main.h:12:0,
+ 
+                 from ../Sources/CW_Memory_Allocator_Main.c:1:
+Building target: Cworking_Memory_Allocator
+Invoking: GCC C Linker
+gcc  -o "Cworking_Memory_Allocator"  ./Sources/CW_Memory_Allocator_Main.o ./Sources/CW_Memory_Allocator_Memory_Management.o   
+/home/kamil/workspace/Cworking/Cworking_Memory_Allocator/Headers/CW_Memory_Allocator_Definitions.h:19:30: warning: anonymous variadic macros were introduced in C99 [-Wvariadic-macros]
+Finished building target: Cworking_Memory_Allocator
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Cworking_Memory_Allocator ****
+
+make all 
 make: Nie ma nic do zrobienia w `all'.
 
 **** Build Finished ****
@@ -595,21 +213,7 @@ make: Nie ma nic do zrobienia w `all'.
 **** Build of configuration Default for project Cworking_Interfaces_C ****
 
 make all 
-Building file: ../Sources/CW_Interface_Main.c
-Invoking: GCC C Compiler
-gcc -I"/home/kamil/workspace/Cworking/Cworking_Interfaces_C/Headers" -O2 -g -Wall -c -fmessage-length=0 -MMD -MP -MF"Sources/CW_Interface_Main.d" -MT"Sources/CW_Interface_Main.d" -o "Sources/CW_Interface_Main.o" "../Sources/CW_Interface_Main.c"
-Finished building: ../Sources/CW_Interface_Main.c
- 
-Building file: ../Sources/CW_Interface_PersonalData.c
-Invoking: GCC C Compiler
-gcc -I"/home/kamil/workspace/Cworking/Cworking_Interfaces_C/Headers" -O2 -g -Wall -c -fmessage-length=0 -MMD -MP -MF"Sources/CW_Interface_PersonalData.d" -MT"Sources/CW_Interface_PersonalData.d" -o "Sources/CW_Interface_PersonalData.o" "../Sources/CW_Interface_PersonalData.c"
-Finished building: ../Sources/CW_Interface_PersonalData.c
- 
-Building target: Cworking_Interfaces_C
-Invoking: GCC C++ Linker
-g++  -o "Cworking_Interfaces_C"  ./Sources/CW_Interface_Main.o ./Sources/CW_Interface_PersonalData.o   
-Finished building target: Cworking_Interfaces_C
- 
+make: Nie ma nic do zrobienia w `all'.
 
 **** Build Finished ****
 
@@ -621,6 +225,719 @@ make: Nie ma nic do zrobienia w `all'.
 **** Build Finished ****
 
 **** Build of configuration Default for project Cworking_Macros_C ****
+
+make all 
+make: Nie ma nic do zrobienia w `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Cworking_Memory_Allocator ****
+
+make all 
+Building file: ../Sources/CW_Memory_Allocator_Main.c
+Invoking: GCC C Compiler
+gcc -DDEBUG_MODE -I"/home/kamil/workspace/Cworking/Cworking_Memory_Allocator/Headers" -O0 -g3 -pedantic -Wall -c -fmessage-length=0 -MMD -MP -MF"Sources/CW_Memory_Allocator_Main.d" -MT"Sources/CW_Memory_Allocator_Main.d" -o "Sources/CW_Memory_Allocator_Main.o" "../Sources/CW_Memory_Allocator_Main.c"
+In file included from /home/kamil/workspace/Cworking/Cworking_Memory_Allocator/Headers/CW_Memory_Allocator_Main.h:12:0,
+                 from ../Sources/CW_Memory_Allocator_Main.c:1:
+Finished building: ../Sources/CW_Memory_Allocator_Main.c
+ 
+/home/kamil/workspace/Cworking/Cworking_Memory_Allocator/Headers/CW_Memory_Allocator_Definitions.h:19:30: warning: anonymous variadic macros were introduced in C99 [-Wvariadic-macros]
+Building target: Cworking_Memory_Allocator
+Invoking: GCC C Linker
+gcc  -o "Cworking_Memory_Allocator"  ./Sources/CW_Memory_Allocator_Main.o ./Sources/CW_Memory_Allocator_Memory_Management.o   
+Finished building target: Cworking_Memory_Allocator
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Cworking_Memory_Allocator ****
+
+make all 
+make: Nie ma nic do zrobienia w `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Cworking_Memory_Allocator ****
+
+make all 
+Building file: ../Sources/CW_Memory_Allocator_Main.c
+Invoking: GCC C Compiler
+gcc -DDEBUG_MODE -I"/home/kamil/workspace/Cworking/Cworking_Memory_Allocator/Headers" -O0 -g3 -pedantic -Wall -c -fmessage-length=0 -MMD -MP -MF"Sources/CW_Memory_Allocator_Main.d" -MT"Sources/CW_Memory_Allocator_Main.d" -o "Sources/CW_Memory_Allocator_Main.o" "../Sources/CW_Memory_Allocator_Main.c"
+Finished building: ../Sources/CW_Memory_Allocator_Main.c
+ 
+In file included from /home/kamil/workspace/Cworking/Cworking_Memory_Allocator/Headers/CW_Memory_Allocator_Main.h:12:0,
+                 from ../Sources/CW_Memory_Allocator_Main.c:1:
+Building target: Cworking_Memory_Allocator
+Invoking: GCC C Linker
+gcc  -o "Cworking_Memory_Allocator"  ./Sources/CW_Memory_Allocator_Main.o ./Sources/CW_Memory_Allocator_Memory_Management.o   
+/home/kamil/workspace/Cworking/Cworking_Memory_Allocator/Headers/CW_Memory_Allocator_Definitions.h:19:30: warning: anonymous variadic macros were introduced in C99 [-Wvariadic-macros]
+Finished building target: Cworking_Memory_Allocator
+../Sources/CW_Memory_Allocator_Main.c: In function ‘main’:
+ 
+../Sources/CW_Memory_Allocator_Main.c:16:15: warning: unused variable ‘array’ [-Wunused-variable]
+../Sources/CW_Memory_Allocator_Main.c:13:15: warning: unused variable ‘cw_block’ [-Wunused-variable]
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Cworking_Memory_Allocator ****
+
+make all 
+Building file: ../Sources/CW_Memory_Allocator_Main.c
+Invoking: GCC C Compiler
+gcc -DDEBUG_MODE -I"/home/kamil/workspace/Cworking/Cworking_Memory_Allocator/Headers" -O0 -g3 -pedantic -Wall -c -fmessage-length=0 -MMD -MP -MF"Sources/CW_Memory_Allocator_Main.d" -MT"Sources/CW_Memory_Allocator_Main.d" -o "Sources/CW_Memory_Allocator_Main.o" "../Sources/CW_Memory_Allocator_Main.c"
+In file included from /home/kamil/workspace/Cworking/Cworking_Memory_Allocator/Headers/CW_Memory_Allocator_Main.h:12:0,
+Finished building: ../Sources/CW_Memory_Allocator_Main.c
+ 
+                 from ../Sources/CW_Memory_Allocator_Main.c:1:
+Building target: Cworking_Memory_Allocator
+Invoking: GCC C Linker
+gcc  -o "Cworking_Memory_Allocator"  ./Sources/CW_Memory_Allocator_Main.o ./Sources/CW_Memory_Allocator_Memory_Management.o   
+Finished building target: Cworking_Memory_Allocator
+ 
+/home/kamil/workspace/Cworking/Cworking_Memory_Allocator/Headers/CW_Memory_Allocator_Definitions.h:19:30: warning: anonymous variadic macros were introduced in C99 [-Wvariadic-macros]
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Cworking_Memory_Allocator ****
+
+make all 
+make: Nie ma nic do zrobienia w `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Default for project Cworking_Interfaces_C ****
+
+make all 
+make: Nie ma nic do zrobienia w `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Default for project Cworking_Interfaces_C++ ****
+
+make all 
+make: Nie ma nic do zrobienia w `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Default for project Cworking_Macros_C ****
+
+make all 
+make: Nie ma nic do zrobienia w `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Cworking_Memory_Allocator ****
+
+make all 
+Building file: ../Sources/CW_Memory_Allocator_Main.c
+Invoking: GCC C Compiler
+gcc -DDEBUG_MODE -I"/home/kamil/workspace/Cworking/Cworking_Memory_Allocator/Headers" -O0 -g3 -pedantic -Wall -c -fmessage-length=0 -MMD -MP -MF"Sources/CW_Memory_Allocator_Main.d" -MT"Sources/CW_Memory_Allocator_Main.d" -o "Sources/CW_Memory_Allocator_Main.o" "../Sources/CW_Memory_Allocator_Main.c"
+In file included from /home/kamil/workspace/Cworking/Cworking_Memory_Allocator/Headers/CW_Memory_Allocator_Main.h:12:0,
+                 from ../Sources/CW_Memory_Allocator_Main.c:1:
+Finished building: ../Sources/CW_Memory_Allocator_Main.c
+/home/kamil/workspace/Cworking/Cworking_Memory_Allocator/Headers/CW_Memory_Allocator_Definitions.h:19:30: warning: anonymous variadic macros were introduced in C99 [-Wvariadic-macros]
+ 
+Building target: Cworking_Memory_Allocator
+Invoking: GCC C Linker
+gcc  -o "Cworking_Memory_Allocator"  ./Sources/CW_Memory_Allocator_Main.o ./Sources/CW_Memory_Allocator_Memory_Management.o   
+Finished building target: Cworking_Memory_Allocator
+ 
+../Sources/CW_Memory_Allocator_Main.c: In function ‘main’:
+../Sources/CW_Memory_Allocator_Main.c:16:15: warning: unused variable ‘array’ [-Wunused-variable]
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Cworking_Memory_Allocator ****
+
+make all 
+make: Nie ma nic do zrobienia w `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Cworking_Memory_Allocator ****
+
+make all 
+make: Nie ma nic do zrobienia w `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Default for project Cworking_Interfaces_C ****
+
+make all 
+make: Nie ma nic do zrobienia w `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Default for project Cworking_Interfaces_C++ ****
+
+make all 
+make: Nie ma nic do zrobienia w `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Default for project Cworking_Macros_C ****
+
+make all 
+make: Nie ma nic do zrobienia w `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Cworking_Memory_Allocator ****
+
+make all 
+Building file: ../Sources/CW_Memory_Allocator_Main.c
+Invoking: GCC C Compiler
+gcc -DDEBUG_MODE -I"/home/kamil/workspace/Cworking/Cworking_Memory_Allocator/Headers" -O0 -g3 -pedantic -Wall -c -fmessage-length=0 -MMD -MP -MF"Sources/CW_Memory_Allocator_Main.d" -MT"Sources/CW_Memory_Allocator_Main.d" -o "Sources/CW_Memory_Allocator_Main.o" "../Sources/CW_Memory_Allocator_Main.c"
+In file included from /home/kamil/workspace/Cworking/Cworking_Memory_Allocator/Headers/CW_Memory_Allocator_Main.h:12:0,
+Finished building: ../Sources/CW_Memory_Allocator_Main.c
+ 
+                 from ../Sources/CW_Memory_Allocator_Main.c:1:
+Building target: Cworking_Memory_Allocator
+Invoking: GCC C Linker
+gcc  -o "Cworking_Memory_Allocator"  ./Sources/CW_Memory_Allocator_Main.o ./Sources/CW_Memory_Allocator_Memory_Management.o   
+/home/kamil/workspace/Cworking/Cworking_Memory_Allocator/Headers/CW_Memory_Allocator_Definitions.h:19:30: warning: anonymous variadic macros were introduced in C99 [-Wvariadic-macros]
+Finished building target: Cworking_Memory_Allocator
+ 
+../Sources/CW_Memory_Allocator_Main.c: In function ‘main’:
+../Sources/CW_Memory_Allocator_Main.c:16:15: warning: unused variable ‘array’ [-Wunused-variable]
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Cworking_Memory_Allocator ****
+
+make all 
+make: Nie ma nic do zrobienia w `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Default for project Cworking_Interfaces_C ****
+
+make all 
+make: Nie ma nic do zrobienia w `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Default for project Cworking_Interfaces_C++ ****
+
+make all 
+make: Nie ma nic do zrobienia w `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Default for project Cworking_Macros_C ****
+
+make all 
+make: Nie ma nic do zrobienia w `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Cworking_Memory_Allocator ****
+
+make all 
+Building file: ../Sources/CW_Memory_Allocator_Main.c
+Invoking: GCC C Compiler
+gcc -DDEBUG_MODE -I"/home/kamil/workspace/Cworking/Cworking_Memory_Allocator/Headers" -O0 -g3 -pedantic -Wall -c -fmessage-length=0 -MMD -MP -MF"Sources/CW_Memory_Allocator_Main.d" -MT"Sources/CW_Memory_Allocator_Main.d" -o "Sources/CW_Memory_Allocator_Main.o" "../Sources/CW_Memory_Allocator_Main.c"
+In file included from /home/kamil/workspace/Cworking/Cworking_Memory_Allocator/Headers/CW_Memory_Allocator_Main.h:12:0,
+Finished building: ../Sources/CW_Memory_Allocator_Main.c
+ 
+                 from ../Sources/CW_Memory_Allocator_Main.c:1:
+Building target: Cworking_Memory_Allocator
+Invoking: GCC C Linker
+/home/kamil/workspace/Cworking/Cworking_Memory_Allocator/Headers/CW_Memory_Allocator_Definitions.h:19:30: warning: anonymous variadic macros were introduced in C99 [-Wvariadic-macros]
+gcc  -o "Cworking_Memory_Allocator"  ./Sources/CW_Memory_Allocator_Main.o ./Sources/CW_Memory_Allocator_Memory_Management.o   
+../Sources/CW_Memory_Allocator_Main.c: In function ‘main’:
+../Sources/CW_Memory_Allocator_Main.c:16:15: warning: variable ‘array’ set but not used [-Wunused-but-set-variable]
+Finished building target: Cworking_Memory_Allocator
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Cworking_Memory_Allocator ****
+
+make all 
+make: Nie ma nic do zrobienia w `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Default for project Cworking_Interfaces_C ****
+
+make all 
+make: Nie ma nic do zrobienia w `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Default for project Cworking_Interfaces_C++ ****
+
+make all 
+make: Nie ma nic do zrobienia w `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Default for project Cworking_Macros_C ****
+
+make all 
+make: Nie ma nic do zrobienia w `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Cworking_Memory_Allocator ****
+
+make all 
+Building file: ../Sources/CW_Memory_Allocator_Main.c
+Invoking: GCC C Compiler
+gcc -DDEBUG_MODE -I"/home/kamil/workspace/Cworking/Cworking_Memory_Allocator/Headers" -O0 -g3 -pedantic -Wall -c -fmessage-length=0 -MMD -MP -MF"Sources/CW_Memory_Allocator_Main.d" -MT"Sources/CW_Memory_Allocator_Main.d" -o "Sources/CW_Memory_Allocator_Main.o" "../Sources/CW_Memory_Allocator_Main.c"
+In file included from /home/kamil/workspace/Cworking/Cworking_Memory_Allocator/Headers/CW_Memory_Allocator_Main.h:12:0,
+                 from ../Sources/CW_Memory_Allocator_Main.c:1:
+/home/kamil/workspace/Cworking/Cworking_Memory_Allocator/Headers/CW_Memory_Allocator_Definitions.h:19:30: warning: anonymous variadic macros were introduced in C99 [-Wvariadic-macros]
+Finished building: ../Sources/CW_Memory_Allocator_Main.c
+ 
+Building target: Cworking_Memory_Allocator
+Invoking: GCC C Linker
+gcc  -o "Cworking_Memory_Allocator"  ./Sources/CW_Memory_Allocator_Main.o ./Sources/CW_Memory_Allocator_Memory_Management.o   
+Finished building target: Cworking_Memory_Allocator
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Cworking_Memory_Allocator ****
+
+make all 
+make: Nie ma nic do zrobienia w `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Default for project Cworking_Interfaces_C ****
+
+make all 
+make: Nie ma nic do zrobienia w `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Default for project Cworking_Interfaces_C++ ****
+
+make all 
+make: Nie ma nic do zrobienia w `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Default for project Cworking_Macros_C ****
+
+make all 
+make: Nie ma nic do zrobienia w `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Cworking_Memory_Allocator ****
+
+make all 
+Building file: ../Sources/CW_Memory_Allocator_Main.c
+Invoking: GCC C Compiler
+gcc -DDEBUG_MODE -I"/home/kamil/workspace/Cworking/Cworking_Memory_Allocator/Headers" -O0 -g3 -pedantic -Wall -c -fmessage-length=0 -MMD -MP -MF"Sources/CW_Memory_Allocator_Main.d" -MT"Sources/CW_Memory_Allocator_Main.d" -o "Sources/CW_Memory_Allocator_Main.o" "../Sources/CW_Memory_Allocator_Main.c"
+In file included from /home/kamil/workspace/Cworking/Cworking_Memory_Allocator/Headers/CW_Memory_Allocator_Main.h:12:0,
+                 from ../Sources/CW_Memory_Allocator_Main.c:1:
+/home/kamil/workspace/Cworking/Cworking_Memory_Allocator/Headers/CW_Memory_Allocator_Definitions.h:19:30: warning: anonymous variadic macros were introduced in C99 [-Wvariadic-macros]
+Finished building: ../Sources/CW_Memory_Allocator_Main.c
+ 
+../Sources/CW_Memory_Allocator_Main.c: In function ‘main’:
+../Sources/CW_Memory_Allocator_Main.c:25:3: warning: C++ style comments are not allowed in ISO C90 [enabled by default]
+../Sources/CW_Memory_Allocator_Main.c:25:3: warning: (this will be reported only once per input file) [enabled by default]
+Building target: Cworking_Memory_Allocator
+Invoking: GCC C Linker
+gcc  -o "Cworking_Memory_Allocator"  ./Sources/CW_Memory_Allocator_Main.o ./Sources/CW_Memory_Allocator_Memory_Management.o   
+Finished building target: Cworking_Memory_Allocator
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Cworking_Memory_Allocator ****
+
+make all 
+make: Nie ma nic do zrobienia w `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Default for project Cworking_Interfaces_C ****
+
+make all 
+make: Nie ma nic do zrobienia w `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Default for project Cworking_Interfaces_C++ ****
+
+make all 
+make: Nie ma nic do zrobienia w `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Default for project Cworking_Macros_C ****
+
+make all 
+make: Nie ma nic do zrobienia w `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Cworking_Memory_Allocator ****
+
+make all 
+Building file: ../Sources/CW_Memory_Allocator_Main.c
+Invoking: GCC C Compiler
+gcc -DDEBUG_MODE -I"/home/kamil/workspace/Cworking/Cworking_Memory_Allocator/Headers" -O0 -g3 -pedantic -Wall -c -fmessage-length=0 -MMD -MP -MF"Sources/CW_Memory_Allocator_Main.d" -MT"Sources/CW_Memory_Allocator_Main.d" -o "Sources/CW_Memory_Allocator_Main.o" "../Sources/CW_Memory_Allocator_Main.c"
+In file included from /home/kamil/workspace/Cworking/Cworking_Memory_Allocator/Headers/CW_Memory_Allocator_Main.h:12:0,
+Finished building: ../Sources/CW_Memory_Allocator_Main.c
+                 from ../Sources/CW_Memory_Allocator_Main.c:1:
+ 
+/home/kamil/workspace/Cworking/Cworking_Memory_Allocator/Headers/CW_Memory_Allocator_Definitions.h:19:30: warning: anonymous variadic macros were introduced in C99 [-Wvariadic-macros]
+Building file: ../Sources/CW_Memory_Allocator_Memory_Management.c
+In file included from /home/kamil/workspace/Cworking/Cworking_Memory_Allocator/Headers/CW_Memory_Allocator_Memory_Management.h:13:0,
+Invoking: GCC C Compiler
+                 from ../Sources/CW_Memory_Allocator_Memory_Management.c:1:
+gcc -DDEBUG_MODE -I"/home/kamil/workspace/Cworking/Cworking_Memory_Allocator/Headers" -O0 -g3 -pedantic -Wall -c -fmessage-length=0 -MMD -MP -MF"Sources/CW_Memory_Allocator_Memory_Management.d" -MT"Sources/CW_Memory_Allocator_Memory_Management.d" -o "Sources/CW_Memory_Allocator_Memory_Management.o" "../Sources/CW_Memory_Allocator_Memory_Management.c"
+/home/kamil/workspace/Cworking/Cworking_Memory_Allocator/Headers/CW_Memory_Allocator_Definitions.h:19:30: warning: anonymous variadic macros were introduced in C99 [-Wvariadic-macros]
+Finished building: ../Sources/CW_Memory_Allocator_Memory_Management.c
+ 
+Building target: Cworking_Memory_Allocator
+Invoking: GCC C Linker
+gcc  -o "Cworking_Memory_Allocator"  ./Sources/CW_Memory_Allocator_Main.o ./Sources/CW_Memory_Allocator_Memory_Management.o   
+Finished building target: Cworking_Memory_Allocator
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Cworking_Memory_Allocator ****
+
+make all 
+make: Nie ma nic do zrobienia w `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Default for project Cworking_Interfaces_C ****
+
+make all 
+make: Nie ma nic do zrobienia w `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Default for project Cworking_Interfaces_C++ ****
+
+make all 
+make: Nie ma nic do zrobienia w `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Default for project Cworking_Macros_C ****
+
+make all 
+make: Nie ma nic do zrobienia w `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Cworking_Memory_Allocator ****
+
+make all 
+Building file: ../Sources/CW_Memory_Allocator_Memory_Management.c
+Invoking: GCC C Compiler
+gcc -DDEBUG_MODE -I"/home/kamil/workspace/Cworking/Cworking_Memory_Allocator/Headers" -O0 -g3 -pedantic -Wall -c -fmessage-length=0 -MMD -MP -MF"Sources/CW_Memory_Allocator_Memory_Management.d" -MT"Sources/CW_Memory_Allocator_Memory_Management.d" -o "Sources/CW_Memory_Allocator_Memory_Management.o" "../Sources/CW_Memory_Allocator_Memory_Management.c"
+In file included from /home/kamil/workspace/Cworking/Cworking_Memory_Allocator/Headers/CW_Memory_Allocator_Memory_Management.h:13:0,
+Finished building: ../Sources/CW_Memory_Allocator_Memory_Management.c
+ 
+Building target: Cworking_Memory_Allocator
+Invoking: GCC C Linker
+gcc  -o "Cworking_Memory_Allocator"  ./Sources/CW_Memory_Allocator_Main.o ./Sources/CW_Memory_Allocator_Memory_Management.o   
+                 from ../Sources/CW_Memory_Allocator_Memory_Management.c:1:
+/home/kamil/workspace/Cworking/Cworking_Memory_Allocator/Headers/CW_Memory_Allocator_Definitions.h:19:30: warning: anonymous variadic macros were introduced in C99 [-Wvariadic-macros]
+Finished building target: Cworking_Memory_Allocator
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Cworking_Memory_Allocator ****
+
+make all 
+make: Nie ma nic do zrobienia w `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Default for project Cworking_Interfaces_C ****
+
+make all 
+make: Nie ma nic do zrobienia w `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Default for project Cworking_Interfaces_C++ ****
+
+make all 
+make: Nie ma nic do zrobienia w `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Default for project Cworking_Macros_C ****
+
+make all 
+make: Nie ma nic do zrobienia w `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Cworking_Memory_Allocator ****
+
+make all 
+Building file: ../Sources/CW_Memory_Allocator_Memory_Management.c
+Invoking: GCC C Compiler
+gcc -DDEBUG_MODE -I"/home/kamil/workspace/Cworking/Cworking_Memory_Allocator/Headers" -O0 -g3 -pedantic -Wall -c -fmessage-length=0 -MMD -MP -MF"Sources/CW_Memory_Allocator_Memory_Management.d" -MT"Sources/CW_Memory_Allocator_Memory_Management.d" -o "Sources/CW_Memory_Allocator_Memory_Management.o" "../Sources/CW_Memory_Allocator_Memory_Management.c"
+In file included from /home/kamil/workspace/Cworking/Cworking_Memory_Allocator/Headers/CW_Memory_Allocator_Memory_Management.h:13:0,
+                 from ../Sources/CW_Memory_Allocator_Memory_Management.c:1:
+/home/kamil/workspace/Cworking/Cworking_Memory_Allocator/Headers/CW_Memory_Allocator_Definitions.h:19:30: warning: anonymous variadic macros were introduced in C99 [-Wvariadic-macros]
+Finished building: ../Sources/CW_Memory_Allocator_Memory_Management.c
+ 
+Building target: Cworking_Memory_Allocator
+Invoking: GCC C Linker
+gcc  -o "Cworking_Memory_Allocator"  ./Sources/CW_Memory_Allocator_Main.o ./Sources/CW_Memory_Allocator_Memory_Management.o   
+Finished building target: Cworking_Memory_Allocator
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Cworking_Memory_Allocator ****
+
+make all 
+make: Nie ma nic do zrobienia w `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Default for project Cworking_Interfaces_C ****
+
+make all 
+make: Nie ma nic do zrobienia w `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Default for project Cworking_Interfaces_C++ ****
+
+make all 
+make: Nie ma nic do zrobienia w `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Default for project Cworking_Macros_C ****
+
+make all 
+make: Nie ma nic do zrobienia w `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Cworking_Memory_Allocator ****
+
+make all 
+Building file: ../Sources/CW_Memory_Allocator_Main.c
+Invoking: GCC C Compiler
+gcc -DDEBUG_MODE -I"/home/kamil/workspace/Cworking/Cworking_Memory_Allocator/Headers" -O0 -g3 -pedantic -Wall -c -fmessage-length=0 -MMD -MP -MF"Sources/CW_Memory_Allocator_Main.d" -MT"Sources/CW_Memory_Allocator_Main.d" -o "Sources/CW_Memory_Allocator_Main.o" "../Sources/CW_Memory_Allocator_Main.c"
+In file included from /home/kamil/workspace/Cworking/Cworking_Memory_Allocator/Headers/CW_Memory_Allocator_Main.h:12:0,
+Finished building: ../Sources/CW_Memory_Allocator_Main.c
+ 
+Building target: Cworking_Memory_Allocator
+Invoking: GCC C Linker
+gcc  -o "Cworking_Memory_Allocator"  ./Sources/CW_Memory_Allocator_Main.o ./Sources/CW_Memory_Allocator_Memory_Management.o   
+Finished building target: Cworking_Memory_Allocator
+ 
+                 from ../Sources/CW_Memory_Allocator_Main.c:1:
+/home/kamil/workspace/Cworking/Cworking_Memory_Allocator/Headers/CW_Memory_Allocator_Definitions.h:19:30: warning: anonymous variadic macros were introduced in C99 [-Wvariadic-macros]
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Cworking_Memory_Allocator ****
+
+make all 
+make: Nie ma nic do zrobienia w `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Default for project Cworking_Interfaces_C ****
+
+make all 
+make: Nie ma nic do zrobienia w `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Default for project Cworking_Interfaces_C++ ****
+
+make all 
+make: Nie ma nic do zrobienia w `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Default for project Cworking_Macros_C ****
+
+make all 
+make: Nie ma nic do zrobienia w `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Cworking_Memory_Allocator ****
+
+make all 
+Building file: ../Sources/CW_Memory_Allocator_Main.c
+Invoking: GCC C Compiler
+gcc -DDEBUG_MODE -I"/home/kamil/workspace/Cworking/Cworking_Memory_Allocator/Headers" -O0 -g3 -pedantic -Wall -c -fmessage-length=0 -MMD -MP -MF"Sources/CW_Memory_Allocator_Main.d" -MT"Sources/CW_Memory_Allocator_Main.d" -o "Sources/CW_Memory_Allocator_Main.o" "../Sources/CW_Memory_Allocator_Main.c"
+In file included from /home/kamil/workspace/Cworking/Cworking_Memory_Allocator/Headers/CW_Memory_Allocator_Main.h:12:0,
+                 from ../Sources/CW_Memory_Allocator_Main.c:1:
+Finished building: ../Sources/CW_Memory_Allocator_Main.c
+/home/kamil/workspace/Cworking/Cworking_Memory_Allocator/Headers/CW_Memory_Allocator_Definitions.h:19:30: warning: anonymous variadic macros were introduced in C99 [-Wvariadic-macros]
+ 
+../Sources/CW_Memory_Allocator_Main.c: In function ‘main’:
+Building target: Cworking_Memory_Allocator
+Invoking: GCC C Linker
+../Sources/CW_Memory_Allocator_Main.c:28:31: warning: ISO C99 requires rest arguments to be used [enabled by default]
+gcc  -o "Cworking_Memory_Allocator"  ./Sources/CW_Memory_Allocator_Main.o ./Sources/CW_Memory_Allocator_Memory_Management.o   
+../Sources/CW_Memory_Allocator_Main.c:28:31: warning: invoking macro LOG argument 3: empty macro arguments are undefined in ISO C90 and ISO C++98 [enabled by default]
+Finished building target: Cworking_Memory_Allocator
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Cworking_Memory_Allocator ****
+
+make all 
+make: Nie ma nic do zrobienia w `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Default for project Cworking_Interfaces_C ****
+
+make all 
+make: Nie ma nic do zrobienia w `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Default for project Cworking_Interfaces_C++ ****
+
+make all 
+make: Nie ma nic do zrobienia w `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Default for project Cworking_Macros_C ****
+
+make all 
+make: Nie ma nic do zrobienia w `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Cworking_Memory_Allocator ****
+
+make all 
+Building file: ../Sources/CW_Memory_Allocator_Main.c
+Invoking: GCC C Compiler
+gcc -DDEBUG_MODE -I"/home/kamil/workspace/Cworking/Cworking_Memory_Allocator/Headers" -O0 -g3 -pedantic -Wall -c -fmessage-length=0 -MMD -MP -MF"Sources/CW_Memory_Allocator_Main.d" -MT"Sources/CW_Memory_Allocator_Main.d" -o "Sources/CW_Memory_Allocator_Main.o" "../Sources/CW_Memory_Allocator_Main.c"
+In file included from /home/kamil/workspace/Cworking/Cworking_Memory_Allocator/Headers/CW_Memory_Allocator_Main.h:12:0,
+Finished building: ../Sources/CW_Memory_Allocator_Main.c
+ 
+Building file: ../Sources/CW_Memory_Allocator_Memory_Management.c
+Invoking: GCC C Compiler
+                 from ../Sources/CW_Memory_Allocator_Main.c:1:
+gcc -DDEBUG_MODE -I"/home/kamil/workspace/Cworking/Cworking_Memory_Allocator/Headers" -O0 -g3 -pedantic -Wall -c -fmessage-length=0 -MMD -MP -MF"Sources/CW_Memory_Allocator_Memory_Management.d" -MT"Sources/CW_Memory_Allocator_Memory_Management.d" -o "Sources/CW_Memory_Allocator_Memory_Management.o" "../Sources/CW_Memory_Allocator_Memory_Management.c"
+/home/kamil/workspace/Cworking/Cworking_Memory_Allocator/Headers/CW_Memory_Allocator_Definitions.h:20:30: warning: anonymous variadic macros were introduced in C99 [-Wvariadic-macros]
+Finished building: ../Sources/CW_Memory_Allocator_Memory_Management.c
+ 
+Building target: Cworking_Memory_Allocator
+Invoking: GCC C Linker
+gcc  -o "Cworking_Memory_Allocator"  ./Sources/CW_Memory_Allocator_Main.o ./Sources/CW_Memory_Allocator_Memory_Management.o   
+In file included from /home/kamil/workspace/Cworking/Cworking_Memory_Allocator/Headers/CW_Memory_Allocator_Memory_Management.h:13:0,
+Finished building target: Cworking_Memory_Allocator
+ 
+                 from ../Sources/CW_Memory_Allocator_Memory_Management.c:1:
+/home/kamil/workspace/Cworking/Cworking_Memory_Allocator/Headers/CW_Memory_Allocator_Definitions.h:20:30: warning: anonymous variadic macros were introduced in C99 [-Wvariadic-macros]
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Cworking_Memory_Allocator ****
+
+make all 
+make: Nie ma nic do zrobienia w `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Default for project Cworking_Interfaces_C ****
+
+make all 
+make: Nie ma nic do zrobienia w `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Default for project Cworking_Interfaces_C++ ****
+
+make all 
+make: Nie ma nic do zrobienia w `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Default for project Cworking_Macros_C ****
+
+make all 
+make: Nie ma nic do zrobienia w `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Cworking_Memory_Allocator ****
+
+make all 
+Building file: ../Sources/CW_Memory_Allocator_Main.c
+Invoking: GCC C Compiler
+gcc -DDEBUG_MODE -I"/home/kamil/workspace/Cworking/Cworking_Memory_Allocator/Headers" -O0 -g3 -pedantic -Wall -c -fmessage-length=0 -MMD -MP -MF"Sources/CW_Memory_Allocator_Main.d" -MT"Sources/CW_Memory_Allocator_Main.d" -o "Sources/CW_Memory_Allocator_Main.o" "../Sources/CW_Memory_Allocator_Main.c"
+Finished building: ../Sources/CW_Memory_Allocator_Main.c
+ 
+Building target: Cworking_Memory_Allocator
+In file included from /home/kamil/workspace/Cworking/Cworking_Memory_Allocator/Headers/CW_Memory_Allocator_Main.h:12:0,
+Invoking: GCC C Linker
+                 from ../Sources/CW_Memory_Allocator_Main.c:1:
+gcc  -o "Cworking_Memory_Allocator"  ./Sources/CW_Memory_Allocator_Main.o ./Sources/CW_Memory_Allocator_Memory_Management.o   
+/home/kamil/workspace/Cworking/Cworking_Memory_Allocator/Headers/CW_Memory_Allocator_Definitions.h:20:30: warning: anonymous variadic macros were introduced in C99 [-Wvariadic-macros]
+Finished building target: Cworking_Memory_Allocator
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Cworking_Memory_Allocator ****
+
+make all 
+make: Nie ma nic do zrobienia w `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Cworking_Memory_Allocator ****
+
+make all 
+Building file: ../Sources/CW_Memory_Allocator_Main.c
+Invoking: GCC C Compiler
+gcc -DDEBUG_MODE -I"/home/kamil/workspace/Cworking/Cworking_Memory_Allocator/Headers" -O0 -g3 -pedantic -Wall -c -fmessage-length=0 -MMD -MP -MF"Sources/CW_Memory_Allocator_Main.d" -MT"Sources/CW_Memory_Allocator_Main.d" -o "Sources/CW_Memory_Allocator_Main.o" "../Sources/CW_Memory_Allocator_Main.c"
+Finished building: ../Sources/CW_Memory_Allocator_Main.c
+ 
+Building target: Cworking_Memory_Allocator
+Invoking: GCC C Linker
+In file included from /home/kamil/workspace/Cworking/Cworking_Memory_Allocator/Headers/CW_Memory_Allocator_Main.h:12:0,
+gcc  -o "Cworking_Memory_Allocator"  ./Sources/CW_Memory_Allocator_Main.o ./Sources/CW_Memory_Allocator_Memory_Management.o   
+                 from ../Sources/CW_Memory_Allocator_Main.c:1:
+/home/kamil/workspace/Cworking/Cworking_Memory_Allocator/Headers/CW_Memory_Allocator_Definitions.h:20:30: warning: anonymous variadic macros were introduced in C99 [-Wvariadic-macros]
+Finished building target: Cworking_Memory_Allocator
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Cworking_Memory_Allocator ****
+
+make all 
+make: Nie ma nic do zrobienia w `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Cworking_Memory_Allocator ****
+
+make all 
+make: Nie ma nic do zrobienia w `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Cworking_Memory_Allocator ****
 
 make all 
 make: Nie ma nic do zrobienia w `all'.

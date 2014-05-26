@@ -2,20 +2,6 @@
 **** Build of configuration Default for project Cworking_Interfaces_C ****
 
 make all 
-Building file: ../Sources/CW_Interface_Main.c
-Invoking: GCC C Compiler
-gcc -I"/home/kamil/workspace/Cworking/Cworking_Interfaces_C/Headers" -O2 -g -Wall -c -fmessage-length=0 -MMD -MP -MF"Sources/CW_Interface_Main.d" -MT"Sources/CW_Interface_Main.d" -o "Sources/CW_Interface_Main.o" "../Sources/CW_Interface_Main.c"
-Finished building: ../Sources/CW_Interface_Main.c
- 
-Building file: ../Sources/CW_Interface_PersonalData.c
-Invoking: GCC C Compiler
-gcc -I"/home/kamil/workspace/Cworking/Cworking_Interfaces_C/Headers" -O2 -g -Wall -c -fmessage-length=0 -MMD -MP -MF"Sources/CW_Interface_PersonalData.d" -MT"Sources/CW_Interface_PersonalData.d" -o "Sources/CW_Interface_PersonalData.o" "../Sources/CW_Interface_PersonalData.c"
-Finished building: ../Sources/CW_Interface_PersonalData.c
- 
-Building target: Cworking_Interfaces_C
-Invoking: GCC C++ Linker
-g++  -o "Cworking_Interfaces_C"  ./Sources/CW_Interface_Main.o ./Sources/CW_Interface_PersonalData.o   
-Finished building target: Cworking_Interfaces_C
- 
+make: Nie ma nic do zrobienia w `all'.
 
 **** Build Finished ****

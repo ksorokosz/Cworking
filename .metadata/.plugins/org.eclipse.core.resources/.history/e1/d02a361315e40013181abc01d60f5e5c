@@ -1,0 +1,69 @@
+#include "CW_Memory_Allocator_Memory_Management.h"
+
+void* CW_allocate_memory( CW_uint32_t cw_memory_size )
+{
+	void* p = NULL;
+
+	/* Allocate memory */
+	p = malloc( cw_memory_size );
+	if(p == NULL)
+	{
+		exit(EXIT_FAILURE);
+	}
+
+	/* Initialize memory block to zero */
+	memset( p, 0, cw_memory_size );
+
+	/* Return memory block */
+	return p;
+}
+
+void CW_free_memory( void** cw_pointer )
+{
+	/* Check if not null */
+	if ( (*cw_pointer) == NULL )
+	{
+		exit(EXIT_FAILURE);
+	}
+
+	/* Free memory */
+	free( (*cw_pointer) );
+
+	/* Reset to NULL */
+	( *cw_pointer ) = NULL;
+}
+
+void CW_create_memory_pool( CW_uint32_t cw_block_size, CW_uint32_t cw_memory_pool_size, CW_Memory_Pool* const cw_memory_pool )
+{
+	/* Allocate memory for pool */
+	cw_memory_pool->cw_pool = CW_allocate_memory( cw_memory_pool_size );
+
+	/* Initialize memory pool parameters */
+	cw_memory_pool->cw_pool_size          = cw_memory_pool_size;
+	cw_memory_pool->cw_pool_block_size    = cw_block_size;
+	cw_memory_pool->cw_pool_blocks_number = cw_memory_pool_size / cw_block_size;
+
+	/* Memory pool hash init */
+	cw_memory_pool->cw_pool_block_map     = CW_allocate_memory( sizeof( CW_uint32_t ) * cw_memory_pool->cw_pool_blocks_number );
+}
+
+void* CW_allocate_memory_from_pool( CW_Memory_Pool* const cw_memory_pool, CW_uint32_t cw_memory_size )
+{
+
+}
+
+void CW_free_memory_from_pool( CW_Memory_Pool* const cw_memory_pool, void* cw_pointer )
+{
+
+}
+
+void CW_remove_memory_pool( CW_Memory_Pool* const cw_memory_pool )
+{
+	/* Reset pool parameters */
+	cw_memory_pool->cw_pool_size          = CW_MEMORY_MGMT_INIT;
+	cw_memory_pool->cw_pool_blocks_number = CW_MEMORY_MGMT_INIT;
+	cw_memory_pool->cw_pool_block_size    = CW_MEMORY_MGMT_INIT;
+
+	/* Free memory pool hash */
+	cw_memory_pool->cw_pool_block_map
+}
