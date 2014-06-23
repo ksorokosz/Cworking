@@ -1,0 +1,11 @@
+BEG_TEST_CASE simple_database_C
+	../Cworking_Interfaces_C/Default/Cworking_Interfaces_C
+	arg 1
+	b 2
+END_TEST_CASE simple_database_C
+
+This line will be ignored
+
+BEG_TEST_CASE simple_database_C++
+	../Cworking_Interfaces_C++/Default/Cworking_Interfaces_C++
+END_TEST_CASE simple_database_C++

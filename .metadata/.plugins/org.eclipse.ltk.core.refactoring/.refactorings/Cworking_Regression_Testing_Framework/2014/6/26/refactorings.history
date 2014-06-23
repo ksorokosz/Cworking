@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Cworking_Regression_Testing_Framework/Cworking_regression_testing.sh&apos; to &apos;Cworking_Regression_Testing.sh&apos;" description="Rename resource &apos;Cworking_regression_testing.sh&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Cworking_regression_testing.sh" name="Cworking_Regression_Testing.sh" stamp="1403544125941" updateReferences="true"/>
+</session>

@@ -1,2 +1,2 @@
-commit_dialog_history_messages=<?xml version\="1.0" encoding\="UTF-8"?>\n<messages>\n<message>Memory Allocator - init state</message>\n<message>Some fixes in project properties</message>\n</messages>
+commit_dialog_history_messages=<?xml version\="1.0" encoding\="UTF-8"?>\n<messages>\n<message>Memory allocator implemented and tested</message>\n<message>Memory Allocator - init state</message>\n<message>Some fixes in project properties</message>\n</messages>
 eclipse.preferences.version=1
