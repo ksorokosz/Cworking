@@ -1,0 +1,19 @@
+#include "Cworking_Signal_Processing.h"
+
+int main()
+{
+	/* Declare layers */
+
+	/* Infrastructure layer */
+	Cworking_Infrastructure_Layer infrastructure;
+
+	/* Application layer */
+	Cworking_Application_Layer application;
+
+	/* Presentation layer */
+	Cworking_Presentation_Layer presentation;
+
+
+
+	return 0;
+}

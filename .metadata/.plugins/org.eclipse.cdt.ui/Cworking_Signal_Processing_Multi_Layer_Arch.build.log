@@ -2,6 +2,30 @@
 **** Build of configuration Debug for project Cworking_Signal_Processing_Multi_Layer_Arch ****
 
 make all 
-make: Nie ma nic do zrobienia w `all'.
+Building file: ../Sources/Cworking_Signal_Processing.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/kamil/workspace/Cworking/Cworking_Signal_Processing_Multi_Layer_Arch/Headers" -I"/home/kamil/workspace/Cworking/Cworking_Signal_Processing_Multi_Layer_Arch/Headers/DSP_Library" -I"/home/kamil/workspace/Cworking/Cworking_Signal_Processing_Multi_Layer_Arch/Headers/DSP_Library/Interfaces" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++0x -fPIC -MMD -MP -MF"Sources/Cworking_Signal_Processing.d" -MT"Sources/Cworking_Signal_Processing.d" -o "Sources/Cworking_Signal_Processing.o" "../Sources/Cworking_Signal_Processing.cpp"
+Finished building: ../Sources/Cworking_Signal_Processing.cpp
+ 
+Building file: ../Sources/Cworking_Signal_Processing_Application_Layer.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/kamil/workspace/Cworking/Cworking_Signal_Processing_Multi_Layer_Arch/Headers" -I"/home/kamil/workspace/Cworking/Cworking_Signal_Processing_Multi_Layer_Arch/Headers/DSP_Library" -I"/home/kamil/workspace/Cworking/Cworking_Signal_Processing_Multi_Layer_Arch/Headers/DSP_Library/Interfaces" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++0x -fPIC -MMD -MP -MF"Sources/Cworking_Signal_Processing_Application_Layer.d" -MT"Sources/Cworking_Signal_Processing_Application_Layer.d" -o "Sources/Cworking_Signal_Processing_Application_Layer.o" "../Sources/Cworking_Signal_Processing_Application_Layer.cpp"
+Finished building: ../Sources/Cworking_Signal_Processing_Application_Layer.cpp
+ 
+Building file: ../Sources/Cworking_Signal_Processing_Infrastructure_Layer.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/kamil/workspace/Cworking/Cworking_Signal_Processing_Multi_Layer_Arch/Headers" -I"/home/kamil/workspace/Cworking/Cworking_Signal_Processing_Multi_Layer_Arch/Headers/DSP_Library" -I"/home/kamil/workspace/Cworking/Cworking_Signal_Processing_Multi_Layer_Arch/Headers/DSP_Library/Interfaces" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++0x -fPIC -MMD -MP -MF"Sources/Cworking_Signal_Processing_Infrastructure_Layer.d" -MT"Sources/Cworking_Signal_Processing_Infrastructure_Layer.d" -o "Sources/Cworking_Signal_Processing_Infrastructure_Layer.o" "../Sources/Cworking_Signal_Processing_Infrastructure_Layer.cpp"
+Finished building: ../Sources/Cworking_Signal_Processing_Infrastructure_Layer.cpp
+ 
+Building file: ../Sources/Cworking_Signal_Processing_Presentation_Layer.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/kamil/workspace/Cworking/Cworking_Signal_Processing_Multi_Layer_Arch/Headers" -I"/home/kamil/workspace/Cworking/Cworking_Signal_Processing_Multi_Layer_Arch/Headers/DSP_Library" -I"/home/kamil/workspace/Cworking/Cworking_Signal_Processing_Multi_Layer_Arch/Headers/DSP_Library/Interfaces" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++0x -fPIC -MMD -MP -MF"Sources/Cworking_Signal_Processing_Presentation_Layer.d" -MT"Sources/Cworking_Signal_Processing_Presentation_Layer.d" -o "Sources/Cworking_Signal_Processing_Presentation_Layer.o" "../Sources/Cworking_Signal_Processing_Presentation_Layer.cpp"
+Finished building: ../Sources/Cworking_Signal_Processing_Presentation_Layer.cpp
+ 
+Building target: Cworking_Signal_Processing_Multi_Layer_Arch
+Invoking: GCC C++ Linker
+g++ -L"/home/kamil/workspace/Cworking/Cworking_Signal_Processing_Multi_Layer_Arch/Libraries" -o "Cworking_Signal_Processing_Multi_Layer_Arch"  ./Sources/Cworking_Signal_Processing.o ./Sources/Cworking_Signal_Processing_Application_Layer.o ./Sources/Cworking_Signal_Processing_Infrastructure_Layer.o ./Sources/Cworking_Signal_Processing_Presentation_Layer.o   -lmuged_dsp
+Finished building target: Cworking_Signal_Processing_Multi_Layer_Arch
+ 
 
 **** Build Finished ****

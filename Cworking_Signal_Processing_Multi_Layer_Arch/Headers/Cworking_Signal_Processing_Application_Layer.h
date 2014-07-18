@@ -9,25 +9,25 @@
 #ifndef _SIGNAL_PROCESSING_UI_H_
 #define _SIGNAL_PROCESSING_UI_H_
 
-#include "MUGED_DSP.h"
+#include "Cworking_Signal_Processing_Common_Layer.h"
 
-/** Aliases for all DSP module types */
+/** Application layer object */
+class Cworking_Application_Layer
+{
+	public:
 
-/** DSP module */
-typedef MUGED_DSP Cworking_DSP;
+		/** Application layer processing - OFDM modulation */
+		void cworking_process_OFDM_modulation( Cworking_Input_Data& cworking_input,
+									           Cworking_Output_Data& cworking_output );
 
-/** DSP exception */
-typedef MUGED_DSPException Cworking_DSP_Exception;
+		/** Application layer processing - OFDM demodulation */
+		void cworking_process_OFDM_demodulation( Cworking_Input_Data& cworking_input,
+				                                 Cworking_Output_Data& cworking_output );
 
-/** Complex matrix */
-typedef muged_matrix Cworking_Complex_Matrix;
+	private:
 
-/** Complex vector */
-typedef muged_array Cworking_Complex_Vector;
-
-/** Complex scalar */
-typedef muged_scalar Cworking_Complex_Scalar;
-
-
+		/** DSP module */
+		Cworking_DSP cworking_dsp;
+};
 
 #endif /* _SIGNAL_PROCESSING_UI_H_ */

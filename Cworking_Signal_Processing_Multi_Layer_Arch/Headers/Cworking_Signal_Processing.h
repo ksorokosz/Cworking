@@ -13,4 +13,8 @@
 #include "Cworking_Signal_Processing_Application_Layer.h"
 #include "Cworking_Signal_Processing_Infrastructure_Layer.h"
 
+
+/** Input file - for test purposes */
+#define CWORKING_INPUT_FILE "reference_data.dat"
+
 #endif /* _CWORKING_SIGNAL_PROCESSING_H_ */
