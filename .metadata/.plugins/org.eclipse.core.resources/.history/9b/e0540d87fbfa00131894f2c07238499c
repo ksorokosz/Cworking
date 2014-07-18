@@ -1,9 +1,0 @@
-START_TEST simple_database_C
-	../Cworking_Interfaces_C/Default/Cworking_Interfaces_C
-END_TEST simple_database_C
-
-This line will be ignored
-
-START_TEST simple_database_C++
-	../Cworking_Interfaces_C++/Default/Cworking_Interfaces_C++
-END_TEST simple_database_C++

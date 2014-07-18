@@ -9,6 +9,9 @@
 	<list key="CommitDialog.committerValues">
 		<item value="Kamil Sorokosz &lt;ksorokosz@wp.pl&gt;"/>
 	</list>
+	<list key="RepositorySelectionPage.UsedUris">
+		<item value="https://github.com/ksorokosz/DSP-Library.git"/>
+	</list>
 	<section name="GitCommitMessageComponent">
 	</section>
 	<section name="org.eclipse.egit.ui.internal.push.PushResultDialog.dialogBounds">
