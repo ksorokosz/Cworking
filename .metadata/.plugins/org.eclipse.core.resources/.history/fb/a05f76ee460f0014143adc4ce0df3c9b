@@ -1,0 +1,16 @@
+#include "Cworking_Signal_Processing_Infrastructure_Layer.h"
+
+void Cworking_Infrastructure_Layer::cworking_parse_file(
+		const char* cworking_filename, Cworking_Input_Data& cworking_input_data)
+{
+
+	/* Symbols number */
+	cworking_input_data.cworking_matrix.cols = CWORKING_SYMBOLS_NUMBER;
+
+	/* Sub-carriers number */
+	cworking_input_data.cworking_matrix.rows = CWORKING_BLOCK_SIZE;
+
+	/* Create frame */
+	cworking_input_data.cworking_matrix.matrix =
+			new Cworking_Complex_Scalar[ CWORKING_BLOCK_SIZE ][ CWORKING_SYMBOLS_NUMBER ];
+}

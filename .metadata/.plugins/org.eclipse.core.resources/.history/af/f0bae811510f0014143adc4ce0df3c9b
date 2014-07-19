@@ -1,0 +1,58 @@
+#include "Cworking_Signal_Processing_Infrastructure_Layer.h"
+
+void Cworking_Infrastructure_Layer::cworking_create_random_data( Cworking_Input_Data& cworking_input_data )
+{
+
+	/* Symbols number */
+	cworking_input_data.cworking_radio_frame.cols = CWORKING_BLOCK_SIZE;
+
+	/* Sub-carriers number */
+	cworking_input_data.cworking_radio_frame.rows = CWORKING_SYMBOLS_NUMBER;
+
+	/* Create frame */
+	cworking_input_data.cworking_radio_frame.matrix = new Cworking_Complex_Scalar*[ cworking_input_data.cworking_radio_frame.rows ];
+
+	/* Initialize each block and symbol */
+	for ( int cworking_row = 0; cworking_row < cworking_input_data.cworking_radio_frame.rows; cworking_row++ )
+	{
+			/* Allocate memory */
+			cworking_input_data.cworking_radio_frame.matrix[ cworking_row ] = new Cworking_Complex_Scalar[ cworking_input_data.cworking_radio_frame.cols ];
+
+			/* Initialize memory */
+			for ( int cworking_col = 0; cworking_col < cworking_input_data.cworking_radio_frame.cols; cworking_col++ )
+			{
+				/* Initialize to 0 */
+				cworking_input_data.cworking_radio_frame.matrix[ cworking_row ][ cworking_col ] = MUGED_Complex( 0, 0 );
+			}
+	}
+
+	/* For each block and half symbols */
+	for ( int cworking_row = 0; cworking_row < cworking_input_data.cworking_radio_frame.rows / 2; cworking_row++ )
+	{
+		for ( int cworking_col = 0; cworking_col < cworking_input_data.cworking_radio_frame.cols; cworking_col++ )
+		{
+			/* Angle */
+			double cworking_angle = 135;
+
+			/*
+			 * QPSK symbols
+			 * Each could be written as 1 * exp(-j*angle), where angle equals: 45, 135, 225, 315
+			 */
+			Cworking_Complex_Scalar random_qpsk_value = MUGED_Complex( 1, cworking_angle * 180 / CWORKING_PI , false );
+
+			/* Store random value */
+			cworking_input_data.cworking_radio_frame.matrix[ cworking_row ][ cworking_col ] = random_qpsk_value;
+		}
+	}
+}
+
+void Cworking_Infrastructure_Layer::cworking_delete_random_data( Cworking_Input_Data& cworking_input_data )
+{
+	/* Clear memory */
+	for ( int cworking_row = 0; cworking_row < cworking_input_data.cworking_radio_frame.rows; cworking_row++ )
+	{
+		delete [] cworking_input_data.cworking_radio_frame.matrix[ cworking_row ];
+	}
+	delete [] cworking_input_data.cworking_radio_frame;
+}
+

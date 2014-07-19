@@ -1,0 +1,60 @@
+/**
+ * @file Cworking_Signal_Processing_Common_Layer.h
+ *
+ * @date 18-07-2014
+ * @author Kamil Sorokosz
+ * @brief File Cworking_Signal_Processing_Common_Layer.h contains ...
+ */
+
+#ifndef _CWORKING_SIGNAL_PROCESSING_COMMON_LAYER_H_
+#define _CWORKING_SIGNAL_PROCESSING_COMMON_LAYER_H_
+
+#include "MUGED_DSP.h"
+
+/** Aliases for all DSP module types */
+
+/** DSP module */
+typedef MUGED_DSP Cworking_DSP;
+
+/** DSP exception */
+typedef MUGED_DSPException Cworking_DSP_Exception;
+
+/** Complex matrix */
+typedef muged_matrix Cworking_Complex_Matrix;
+
+/** Complex vector */
+typedef muged_array Cworking_Complex_Vector;
+
+/** Complex scalar */
+typedef muged_scalar Cworking_Complex_Scalar;
+
+/** Input data */
+typedef struct Cworking_Input_Data
+{
+	/** Complex matrix */
+	Cworking_Complex_Matrix cworking_matrix;
+
+} Cworking_Input_Data;
+
+/** Output data */
+typedef struct Cworking_Output_Data
+{
+	/**
+	 * Complex matrix
+	 * Columns: subcarriers
+	 * Rows: symbols
+	 */
+	Cworking_Complex_Matrix cworking_matrix;
+
+} Cworking_Output_Data;
+
+/** PI value */
+#define CWORKING_PI 3.14159265
+
+/** OFDM Block size */
+#define CWORKING_BLOCK_SIZE 512
+
+/** OFDM symbols */
+#define CWORKING_SYMBOLS_NUMBER 14
+
+#endif /* _CWORKING_SIGNAL_PROCESSING_COMMON_LAYER_H_ */

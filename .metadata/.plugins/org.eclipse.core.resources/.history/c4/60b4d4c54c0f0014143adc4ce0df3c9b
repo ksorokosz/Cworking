@@ -1,0 +1,46 @@
+#include "Cworking_Signal_Processing_Infrastructure_Layer.h"
+
+void Cworking_Infrastructure_Layer::cworking_create_random_data( Cworking_Input_Data& cworking_input_data )
+{
+
+	/* Symbols number */
+	cworking_input_data.cworking_matrix.cols = CWORKING_SYMBOLS_NUMBER;
+
+	/* Sub-carriers number */
+	cworking_input_data.cworking_matrix.rows = CWORKING_BLOCK_SIZE;
+
+	/* Create frame */
+	cworking_input_data.cworking_matrix.matrix =
+			new Cworking_Complex_Scalar*[ CWORKING_BLOCK_SIZE ];
+
+	/* Initialize each block and symbol */
+	for ( int cworking_block = 0; cworking_block < CWORKING_BLOCK_SIZE; cworking_block++ )
+	{
+			/* Allocate memory */
+			cworking_input_data.cworking_matrix.matrix[cworking_block] = new Cworking_Complex_Scalar[ CWORKING_SYMBOLS_NUMBER ];
+
+			/* Initialize memory
+			for ( int cworking_symbol = 0; cworking_symbol < CWORKING_SYMBOLS_NUMBER; cworking_symbol++ )
+			{
+				/* Init to 0 */
+				cworking_input_data.cworking_matrix.matrix[ cworking_block ][ cworking_symbol ] = MUGED_Complex( 0, 0 );
+			}
+	}
+
+	/* For each block and each symbol */
+	for ( int cworking_block = 0; cworking_block < CWORKING_BLOCK_SIZE; cworking_block++ )
+		for ( int cworking_symbol = 0; cworking_symbol < CWORKING_SYMBOLS_NUMBER / 2; cworking_symbol++ )
+		{
+			/* Angle */
+			double cworking_angle = 135;
+
+			/*
+			 * QPSK symbols
+			 * Each could be written as 1 * exp(-j*angle), where angle equals: 45, 135, 225, 315
+			 */
+			Cworking_Complex_Scalar random_qpsk_value = MUGED_Complex( 1, cworking_angle * 180 / PI , false );
+
+			/* Store random value */
+			cworking_input_data.cworking_matrix.matrix[ cworking_block ][ cworking_symbol ] = random_qpsk_value;
+		}
+}

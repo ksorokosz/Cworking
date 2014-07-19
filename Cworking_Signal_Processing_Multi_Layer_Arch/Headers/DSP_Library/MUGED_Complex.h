@@ -41,7 +41,7 @@ public:
 	 * @param real_abs - real part or absolute value depends on flag
 	 * @param imag_angle - imaginary part or angle depends on flag
 	 * @param flag - if true arguments are treated as real and imaginary parts, otherwise
-	 * as absolute and angle of complex value. For default flag equals false.
+	 * as absolute and angle of complex value. For default flag equals true.
 	 */
 	MUGED_Complex(double real_abs, double imag_angle, bool flag = true);
 

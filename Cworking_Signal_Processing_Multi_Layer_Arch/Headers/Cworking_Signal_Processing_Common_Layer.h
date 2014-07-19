@@ -28,20 +28,36 @@ typedef muged_array Cworking_Complex_Vector;
 /** Complex scalar */
 typedef muged_scalar Cworking_Complex_Scalar;
 
-/** Input data */
-typedef struct Cworking_Input_Data
+/** Matrix data */
+typedef struct Cworking_Matrix_Data
 {
-	/** Complex vector */
-	Cworking_Complex_Vector cworking_vector;
+	/**
+	 * Complex matrix
+	 * Columns: sub-carriers
+	 *    Rows: symbols
+	 */
+	Cworking_Complex_Vector* cworking_radio_frame;
 
-} Cworking_Input_Data;
+	/**
+	 * Symbols number
+	 */
+	size_t cworking_symbols;
 
-/** Output data */
-typedef struct Cworking_Output_Data
-{
-	/** Complex vector */
-	Cworking_Complex_Vector cworking_vector;
+	/**
+	 * Sub-carriers number
+	 */
+	size_t cworking_subcarriers;
 
-} Cworking_Output_Data;
+} Cworking_Matrix_Data;
+
+
+/** PI value */
+#define CWORKING_PI 3.14159265
+
+/** OFDM Block size */
+#define CWORKING_BLOCK_SIZE 512
+
+/** OFDM symbols */
+#define CWORKING_SYMBOLS_NUMBER 14
 
 #endif /* _CWORKING_SIGNAL_PROCESSING_COMMON_LAYER_H_ */

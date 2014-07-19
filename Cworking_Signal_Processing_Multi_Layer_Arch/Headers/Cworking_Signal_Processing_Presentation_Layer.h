@@ -16,8 +16,8 @@ class Cworking_Presentation_Layer
 {
 	public:
 
-		/** Show chart */
-		void cworking_show_chart( Cworking_Output_Data& cworking_output_data );
+		/** Show data */
+		void cworking_show_data( Cworking_Matrix_Data& cworking_matrix );
 };
 
 #endif /* _CWORKING_SIGNAL_PROCESSING_PRESENTATION_LAYER_H_ */

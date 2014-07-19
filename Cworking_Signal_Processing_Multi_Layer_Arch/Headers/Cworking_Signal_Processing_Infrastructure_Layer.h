@@ -11,14 +11,19 @@
 
 #include "Cworking_Signal_Processing_Common_Layer.h"
 
-
 /** Infrastructure layer object */
 class Cworking_Infrastructure_Layer
 {
 	public:
 
-		/** Parse file - input data */
-		void cworking_parse_file( const char* cworking_filename, Cworking_Input_Data& cworking_input_data );
+		/** Allocate random data */
+		void cworking_allocate_matrix( Cworking_Matrix_Data& cworking_matrix );
+
+		/** Create random data */
+		void cworking_create_random_data( Cworking_Matrix_Data& cworking_input_data );
+
+		/** Destroy random data */
+		void cworking_delete_matrix( Cworking_Matrix_Data& cworking_input_data );
 };
 
 #endif /* _CWORKING_SIGNAL_PROCESSING_INFRASTRUCTURE_LAYER_H_ */
