@@ -1,0 +1,33 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+CPP_SRCS += \
+../Sources/Cworking_Signal_Processing.cpp \
+../Sources/Cworking_Signal_Processing_Application_Layer.cpp \
+../Sources/Cworking_Signal_Processing_Infrastructure_Layer.cpp \
+../Sources/Cworking_Signal_Processing_Presentation_Layer.cpp 
+
+OBJS += \
+./Sources/Cworking_Signal_Processing.o \
+./Sources/Cworking_Signal_Processing_Application_Layer.o \
+./Sources/Cworking_Signal_Processing_Infrastructure_Layer.o \
+./Sources/Cworking_Signal_Processing_Presentation_Layer.o 
+
+CPP_DEPS += \
+./Sources/Cworking_Signal_Processing.d \
+./Sources/Cworking_Signal_Processing_Application_Layer.d \
+./Sources/Cworking_Signal_Processing_Infrastructure_Layer.d \
+./Sources/Cworking_Signal_Processing_Presentation_Layer.d 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+Sources/%.o: ../Sources/%.cpp
+	@echo 'Building file: $<'
+	@echo 'Invoking: GCC C++ Compiler'
+	g++ -I"/home/kamil/workspace/Cworking/Cworking_Signal_Processing_Multi_Layer_Arch/Headers" -I"/home/kamil/workspace/Cworking/Cworking_Signal_Processing_Multi_Layer_Arch/Headers/DSP_Library" -O2 -g -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+

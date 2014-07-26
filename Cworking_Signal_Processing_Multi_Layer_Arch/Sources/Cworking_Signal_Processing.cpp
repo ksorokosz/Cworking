@@ -24,17 +24,29 @@ int main()
 	/* Declare output data */
 	Cworking_Matrix_Data cworking_output_data;
 
+	/* Declare thread engine configuration */
+	Cworking_Thread_Engine_Configuration cworking_thread_conf;
+
 	/* Initialize input and output data */
 	cworking_infrastructure.cworking_allocate_matrix( cworking_input_data  );
 	cworking_infrastructure.cworking_allocate_matrix( cworking_modulated_data );
 	cworking_infrastructure.cworking_allocate_matrix( cworking_output_data );
 
+	/* Create thread engine configuration */
+	cworking_infrastructure.cworking_create_thread_configuration( 3, cworking_thread_conf );
+
 	/* Load and parse input file */
 	cworking_infrastructure.cworking_create_random_data( cworking_input_data );
+
+	/* Get time - start point */
+	double start = omp_get_wtime();
 
 	/* Plot chart */
 	printf("\n-----------------------Input frame-----------------------\n\n");
 	cworking_presentation.cworking_show_data( cworking_input_data );
+
+	/* Initialize thread engine */
+	cworking_application.cworking_process_initialize_threads( cworking_thread_conf );
 
 	/* Run application */
 	cworking_application.cworking_process_OFDM_modulation( cworking_input_data, cworking_modulated_data );
@@ -52,6 +64,12 @@ int main()
 	cworking_infrastructure.cworking_delete_matrix( cworking_input_data  );
 	cworking_infrastructure.cworking_delete_matrix( cworking_modulated_data );
 	cworking_infrastructure.cworking_delete_matrix( cworking_output_data );
+
+	/* Get time - end point */
+	double end = omp_get_wtime();
+
+	/* Print execution time */
+	printf("Execution time: %f", end - start);
 
 	return 0;
 }

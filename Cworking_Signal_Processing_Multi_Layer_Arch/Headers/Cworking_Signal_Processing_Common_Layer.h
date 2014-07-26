@@ -9,6 +9,10 @@
 #ifndef _CWORKING_SIGNAL_PROCESSING_COMMON_LAYER_H_
 #define _CWORKING_SIGNAL_PROCESSING_COMMON_LAYER_H_
 
+/** Threads library */
+#include "omp.h"
+
+/** DSP module */
 #include "MUGED_DSP.h"
 
 /** Aliases for all DSP module types */
@@ -49,6 +53,14 @@ typedef struct Cworking_Matrix_Data
 	size_t cworking_subcarriers;
 
 } Cworking_Matrix_Data;
+
+/** Thread engine configuration - OpenMP configuration */
+typedef struct Cworking_Thread_Engine_Configuration
+{
+	/** Cores number */
+	int cworking_cores_number;
+
+} Cworking_Thread_Engine_Configuration;
 
 
 /** PI value */

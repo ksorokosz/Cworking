@@ -1,7 +1,11 @@
 
-**** Build of configuration Debug for project Cworking_Signal_Processing_Multi_Layer_Arch ****
+**** Build of configuration Default for project Cworking_Signal_Processing_Multi_Layer_Arch ****
 
-make all 
-make: Nie ma nic do zrobienia w `all'.
-
-**** Build Finished ****
+**** Internal Builder is used for build               ****
+g++ -I/home/kamil/workspace/Cworking/Cworking_Signal_Processing_Multi_Layer_Arch/Headers -I/home/kamil/workspace/Cworking/Cworking_Signal_Processing_Multi_Layer_Arch/Headers/DSP_Library/Interfaces -I/home/kamil/workspace/Cworking/Cworking_Signal_Processing_Multi_Layer_Arch/Headers/DSP_Library -O2 -g -Wall -c -fmessage-length=0 -std=c++0x -fopenmp -fPIC -o Sources/Cworking_Signal_Processing.o ../Sources/Cworking_Signal_Processing.cpp
+g++ -I/home/kamil/workspace/Cworking/Cworking_Signal_Processing_Multi_Layer_Arch/Headers -I/home/kamil/workspace/Cworking/Cworking_Signal_Processing_Multi_Layer_Arch/Headers/DSP_Library/Interfaces -I/home/kamil/workspace/Cworking/Cworking_Signal_Processing_Multi_Layer_Arch/Headers/DSP_Library -O2 -g -Wall -c -fmessage-length=0 -std=c++0x -fopenmp -fPIC -o Sources/Cworking_Signal_Processing_Presentation_Layer.o ../Sources/Cworking_Signal_Processing_Presentation_Layer.cpp
+g++ -I/home/kamil/workspace/Cworking/Cworking_Signal_Processing_Multi_Layer_Arch/Headers -I/home/kamil/workspace/Cworking/Cworking_Signal_Processing_Multi_Layer_Arch/Headers/DSP_Library/Interfaces -I/home/kamil/workspace/Cworking/Cworking_Signal_Processing_Multi_Layer_Arch/Headers/DSP_Library -O2 -g -Wall -c -fmessage-length=0 -std=c++0x -fopenmp -fPIC -o Sources/Cworking_Signal_Processing_Application_Layer.o ../Sources/Cworking_Signal_Processing_Application_Layer.cpp
+g++ -I/home/kamil/workspace/Cworking/Cworking_Signal_Processing_Multi_Layer_Arch/Headers -I/home/kamil/workspace/Cworking/Cworking_Signal_Processing_Multi_Layer_Arch/Headers/DSP_Library/Interfaces -I/home/kamil/workspace/Cworking/Cworking_Signal_Processing_Multi_Layer_Arch/Headers/DSP_Library -O2 -g -Wall -c -fmessage-length=0 -std=c++0x -fopenmp -fPIC -o Sources/Cworking_Signal_Processing_Infrastructure_Layer.o ../Sources/Cworking_Signal_Processing_Infrastructure_Layer.cpp
+g++ -L/home/kamil/workspace/Cworking/Cworking_Signal_Processing_Multi_Layer_Arch/Libraries -fopenmp -o Cworking_Signal_Processing_Multi_Layer_Arch Sources/Cworking_Signal_Processing_Presentation_Layer.o Sources/Cworking_Signal_Processing_Infrastructure_Layer.o Sources/Cworking_Signal_Processing_Application_Layer.o Sources/Cworking_Signal_Processing.o -lmuged_dsp
+Build complete for project Cworking_Signal_Processing_Multi_Layer_Arch
+Time consumed: 1495  ms.  

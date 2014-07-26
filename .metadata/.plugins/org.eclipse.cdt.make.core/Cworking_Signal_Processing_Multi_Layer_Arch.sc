@@ -2,7 +2,7 @@
 <?scdStore version="2"?>
 
 <scannerInfo id="org.eclipse.cdt.make.core.discoveredScannerInfo">
-<instance id="cdt.managedbuild.config.gnu.exe.debug.5786995;cdt.managedbuild.config.gnu.exe.debug.5786995.;cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.836047617;cdt.managedbuild.tool.gnu.cpp.compiler.input.324685879">
+<instance id="cdt.managedbuild.toolchain.gnu.base.441782105;cdt.managedbuild.toolchain.gnu.base.441782105.1186035477;cdt.managedbuild.tool.gnu.cpp.compiler.base.1465828391;cdt.managedbuild.tool.gnu.cpp.compiler.input.1077558247">
 <collector id="org.eclipse.cdt.make.core.PerProjectSICollector">
 <includePath path="/usr/include/c++/4.6"/>
 <includePath path="/usr/include/c++/4.6/x86_64-linux-gnu/."/>
@@ -235,7 +235,7 @@
 <definedSymbol symbol="_GNU_SOURCE=1"/>
 </collector>
 </instance>
-<instance id="cdt.managedbuild.config.gnu.exe.debug.5786995;cdt.managedbuild.config.gnu.exe.debug.5786995.;cdt.managedbuild.tool.gnu.c.compiler.exe.debug.311211884;cdt.managedbuild.tool.gnu.c.compiler.input.1686124009">
+<instance id="cdt.managedbuild.toolchain.gnu.base.441782105;cdt.managedbuild.toolchain.gnu.base.441782105.1186035477;cdt.managedbuild.tool.gnu.c.compiler.base.1121033632;cdt.managedbuild.tool.gnu.c.compiler.input.519147595">
 <collector id="org.eclipse.cdt.make.core.PerProjectSICollector">
 <includePath path="/usr/lib/gcc/x86_64-linux-gnu/4.6/include"/>
 <includePath path="/usr/local/include"/>
@@ -458,7 +458,7 @@
 <definedSymbol symbol="__DECIMAL_BID_FORMAT__=1"/>
 </collector>
 </instance>
-<instance id="cdt.managedbuild.config.gnu.exe.release.710719614;cdt.managedbuild.config.gnu.exe.release.710719614.;cdt.managedbuild.tool.gnu.cpp.compiler.exe.release.1181719914;cdt.managedbuild.tool.gnu.cpp.compiler.input.1365929133">
+<instance id="cdt.managedbuild.toolchain.gnu.base.1150951886;cdt.managedbuild.toolchain.gnu.base.1150951886.1363655540;cdt.managedbuild.tool.gnu.cpp.compiler.base.1135053280;cdt.managedbuild.tool.gnu.cpp.compiler.input.413431577">
 <collector id="org.eclipse.cdt.make.core.PerProjectSICollector">
 <includePath path="/usr/include/c++/4.6"/>
 <includePath path="/usr/include/c++/4.6/x86_64-linux-gnu/."/>
@@ -691,7 +691,7 @@
 <definedSymbol symbol="_GNU_SOURCE=1"/>
 </collector>
 </instance>
-<instance id="cdt.managedbuild.config.gnu.exe.release.710719614;cdt.managedbuild.config.gnu.exe.release.710719614.;cdt.managedbuild.tool.gnu.c.compiler.exe.release.1116344915;cdt.managedbuild.tool.gnu.c.compiler.input.1169710002">
+<instance id="cdt.managedbuild.toolchain.gnu.base.1150951886;cdt.managedbuild.toolchain.gnu.base.1150951886.1363655540;cdt.managedbuild.tool.gnu.c.compiler.base.1397376475;cdt.managedbuild.tool.gnu.c.compiler.input.622920400">
 <collector id="org.eclipse.cdt.make.core.PerProjectSICollector">
 <includePath path="/usr/lib/gcc/x86_64-linux-gnu/4.6/include"/>
 <includePath path="/usr/local/include"/>

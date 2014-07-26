@@ -16,6 +16,9 @@ class Cworking_Application_Layer
 {
 	public:
 
+		/** Application layer processing - Initialize threads */
+		void cworking_process_initialize_threads( const Cworking_Thread_Engine_Configuration& cworking_thread_conf );
+
 		/** Application layer processing - OFDM modulation */
 		void cworking_process_OFDM_modulation( Cworking_Matrix_Data& cworking_input,
 											   Cworking_Matrix_Data& cworking_output );

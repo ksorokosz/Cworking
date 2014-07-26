@@ -1,0 +1,38 @@
+Sources/Cworking_Signal_Processing.d: \
+ ../Sources/Cworking_Signal_Processing.cpp \
+ /home/kamil/workspace/Cworking/Cworking_Signal_Processing_Multi_Layer_Arch/Headers/Cworking_Signal_Processing.h \
+ /home/kamil/workspace/Cworking/Cworking_Signal_Processing_Multi_Layer_Arch/Headers/Cworking_Signal_Processing_Presentation_Layer.h \
+ /home/kamil/workspace/Cworking/Cworking_Signal_Processing_Multi_Layer_Arch/Headers/Cworking_Signal_Processing_Common_Layer.h \
+ /home/kamil/workspace/Cworking/Cworking_Signal_Processing_Multi_Layer_Arch/Headers/DSP_Library/MUGED_DSP.h \
+ /home/kamil/workspace/Cworking/Cworking_Signal_Processing_Multi_Layer_Arch/Headers/DSP_Library/MUGED_Definitions.h \
+ /home/kamil/workspace/Cworking/Cworking_Signal_Processing_Multi_Layer_Arch/Headers/DSP_Library/MUGED_Types.h \
+ /home/kamil/workspace/Cworking/Cworking_Signal_Processing_Multi_Layer_Arch/Headers/DSP_Library/MUGED_Complex.h \
+ /home/kamil/workspace/Cworking/Cworking_Signal_Processing_Multi_Layer_Arch/Headers/DSP_Library/Interfaces/_MUGED_DSP_.h \
+ /home/kamil/workspace/Cworking/Cworking_Signal_Processing_Multi_Layer_Arch/Headers/DSP_Library/MUGED_Definitions.h \
+ /home/kamil/workspace/Cworking/Cworking_Signal_Processing_Multi_Layer_Arch/Headers/DSP_Library/MUGED_Types.h \
+ /home/kamil/workspace/Cworking/Cworking_Signal_Processing_Multi_Layer_Arch/Headers/Cworking_Signal_Processing_Application_Layer.h \
+ /home/kamil/workspace/Cworking/Cworking_Signal_Processing_Multi_Layer_Arch/Headers/Cworking_Signal_Processing_Infrastructure_Layer.h
+
+/home/kamil/workspace/Cworking/Cworking_Signal_Processing_Multi_Layer_Arch/Headers/Cworking_Signal_Processing.h:
+
+/home/kamil/workspace/Cworking/Cworking_Signal_Processing_Multi_Layer_Arch/Headers/Cworking_Signal_Processing_Presentation_Layer.h:
+
+/home/kamil/workspace/Cworking/Cworking_Signal_Processing_Multi_Layer_Arch/Headers/Cworking_Signal_Processing_Common_Layer.h:
+
+/home/kamil/workspace/Cworking/Cworking_Signal_Processing_Multi_Layer_Arch/Headers/DSP_Library/MUGED_DSP.h:
+
+/home/kamil/workspace/Cworking/Cworking_Signal_Processing_Multi_Layer_Arch/Headers/DSP_Library/MUGED_Definitions.h:
+
+/home/kamil/workspace/Cworking/Cworking_Signal_Processing_Multi_Layer_Arch/Headers/DSP_Library/MUGED_Types.h:
+
+/home/kamil/workspace/Cworking/Cworking_Signal_Processing_Multi_Layer_Arch/Headers/DSP_Library/MUGED_Complex.h:
+
+/home/kamil/workspace/Cworking/Cworking_Signal_Processing_Multi_Layer_Arch/Headers/DSP_Library/Interfaces/_MUGED_DSP_.h:
+
+/home/kamil/workspace/Cworking/Cworking_Signal_Processing_Multi_Layer_Arch/Headers/DSP_Library/MUGED_Definitions.h:
+
+/home/kamil/workspace/Cworking/Cworking_Signal_Processing_Multi_Layer_Arch/Headers/DSP_Library/MUGED_Types.h:
+
+/home/kamil/workspace/Cworking/Cworking_Signal_Processing_Multi_Layer_Arch/Headers/Cworking_Signal_Processing_Application_Layer.h:
+
+/home/kamil/workspace/Cworking/Cworking_Signal_Processing_Multi_Layer_Arch/Headers/Cworking_Signal_Processing_Infrastructure_Layer.h:

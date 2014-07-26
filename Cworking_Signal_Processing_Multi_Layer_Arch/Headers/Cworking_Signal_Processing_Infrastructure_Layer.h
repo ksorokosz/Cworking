@@ -16,6 +16,10 @@ class Cworking_Infrastructure_Layer
 {
 	public:
 
+		/** Create thread engine configuration */
+		void cworking_create_thread_configuration( int cworking_cores_number,
+												   Cworking_Thread_Engine_Configuration& cworking_thread_conf );
+
 		/** Allocate random data */
 		void cworking_allocate_matrix( Cworking_Matrix_Data& cworking_matrix );
 

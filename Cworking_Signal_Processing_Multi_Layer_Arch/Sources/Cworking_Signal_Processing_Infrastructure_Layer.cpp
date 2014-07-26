@@ -55,6 +55,13 @@ void Cworking_Infrastructure_Layer::cworking_create_random_data( Cworking_Matrix
 	}
 }
 
+void Cworking_Infrastructure_Layer::cworking_create_thread_configuration( int cworking_cores_number,
+		                                                                  Cworking_Thread_Engine_Configuration& cworking_thread_conf )
+{
+	/* Set cores number */
+	cworking_thread_conf.cworking_cores_number = cworking_cores_number;
+}
+
 void Cworking_Infrastructure_Layer::cworking_delete_matrix( Cworking_Matrix_Data& cworking_matrix )
 {
 	/* Clear memory */
