@@ -1,0 +1,158 @@
+/**
+ * @file Algorithms_Graphs.h
+ *
+ * @date 27-10-2014
+ * @author Kamil Sorokosz
+ * @brief File Algorithms_Graphs.h contains graphs algorithms
+ */
+
+#ifndef _ALGORITHMS_GRAPHS_H_
+#define _ALGORITHMS_GRAPHS_H_
+
+/* Graph representation */
+#include "Graph_Structure.h"
+
+#include <algorithm>
+#include <cstdlib>
+#include <iostream>
+
+using namespace std;
+
+/* Union find */
+class Union_Find
+{
+public:
+
+	/* Create Union Find structure */
+	Union_Find( int objects_number )
+	{
+		/* Create union find object list */
+		for ( int object = 0; object < objects_number; object++ )
+		{
+			/* Store union find object */
+			this->components_map.push_back( object );
+
+			/* Initialize component size */
+			this->components_sizes.push_back( 1 );
+		}
+	}
+
+	/* Compare objects of two object */
+	bool compare( int fobject, int sobject )
+	{
+		cout << fobject << ": " << get_component_id( fobject ) << "\t" <<
+				sobject << ": " << get_component_id( sobject ) << endl;
+		return get_component_id( fobject ) == get_component_id( sobject );
+	}
+
+	/* Merge objects of two object */
+	void merge( int fobject, int sobject )
+	{
+		/* Get component id */
+		int fcomponent_id = get_component_id( fobject );
+		int scomponent_id = get_component_id( sobject );
+
+		/* Compare sizes */
+		if ( this->components_sizes[ fcomponent_id ] > this->components_sizes[ scomponent_id ] )
+		{
+			/* Update size */
+			this->components_sizes[ fcomponent_id ] += this->components_sizes[ scomponent_id ];
+			this->components_sizes[ scomponent_id ]  = 0;
+
+			/* Update component */
+			update_component( sobject, fcomponent_id );
+		}
+		else
+		{
+			/* Update size */
+			this->components_sizes[ scomponent_id ] += this->components_sizes[ scomponent_id ];
+			this->components_sizes[ fcomponent_id ]  = 0;
+
+			/* Update component */
+			update_component( fobject, scomponent_id );
+		}
+	}
+
+protected:
+
+	/* Get component id */
+	int get_component_id( int object )
+	{
+		/* Return component of current object */
+		return this->components_map[ object ];
+	}
+
+	/* Update component */
+	void update_component( int object, int component )
+	{
+		/* Get old component id */
+		int old_component = this->components_map[ object ];
+
+		/* Update component id */
+		this->components_map[ object ] = component;
+
+		/* Update component id */
+		while( object != this->components_map[ object ])
+		{
+			this->components_map[ component ] = this->components_map[ this->components_map[ component ] ];
+			component = this->components_map[ component ];
+		}
+	}
+
+private:
+
+	/* Components items */
+	vector< vector<int> > components_items;
+
+	/* Components map */
+	vector< int > components_map;
+
+	/* Components sizes */
+	vector< int > components_sizes;
+};
+
+/* Minimum spanning tree */
+inline Graph algorithm_minimum_spanning_tree_kruskal( int vertex_number, const Graph& graph )
+{
+	/* Get graph edges */
+	vector< Edge > sorted_edges = graph.get_edges();
+
+	/* Get graph vertices */
+	vector< Vertex > vertices   = graph.get_vertices();
+
+	/* Sort edges */
+	sort( sorted_edges.begin(), sorted_edges.end() );
+
+	/* Create union find structure */
+	Union_Find union_find = Union_Find( vertices.size() );
+
+	/* Minimum Spanning Tree */
+	vector< Edge > minimum_spanning_tree_edges;
+
+	/* For each edge in ascending order */
+	for ( vector< Edge >::const_iterator edge = sorted_edges.begin();
+		  edge != sorted_edges.end(); edge++ )
+	{
+		/* Get vertices */
+		int fvertex = edge->get_begin().get_id();
+		int svertex = edge->get_end().get_id();
+
+		/* If inside different components - omit cycles */
+		if ( ! union_find.compare( fvertex, svertex ) )
+		{
+			/* Add to minimum spanning tree */
+			minimum_spanning_tree_edges.push_back( (*edge) );
+
+			/* Merge components_map */
+			union_find.merge( fvertex, svertex );
+		}
+	}
+
+	/* Create graph from minimum spanning tree */
+	Graph minimum_spanning_tree = Graph( minimum_spanning_tree_edges );
+
+	/* Return MST */
+	return minimum_spanning_tree;
+}
+
+#endif /* _ALGORITHMS_GRAPHS_H_ */

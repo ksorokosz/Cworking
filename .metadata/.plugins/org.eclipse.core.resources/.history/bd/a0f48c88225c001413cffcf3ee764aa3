@@ -1,0 +1,85 @@
+#include <cstdio>
+
+/* Attention integer number should be changed in case bigger number! */
+
+/* Calculate NWD */
+inline int algorithm_euclidian(int a, int b)
+{
+	/* Absolute value for negative numbers */
+	a = a < 0 ? -a : a;
+	b = b < 0 ? -b : b;
+
+	/*Declare temporary value */
+	int c = 0;
+
+	/* Calculate rests */
+	while ( b != 0 )
+	{
+		/* Module division */
+		c = a % b;
+
+		/* Replacing */
+		a = b;
+		b = c;
+	}
+
+	/* Return NWD */
+	return a;
+}
+
+/* Extended euclidian algorithm */
+inline int algorithm_extended_euclidian( int a, int b )
+{
+	/*Declare temporary values */
+	int a_init, b_init;
+	int a_abs, b_abs;
+	int c, quot, r, q, p, s;
+	int r_tmp, s_tmp;
+
+	/* Store a and b in separate variables */
+	a_init = a > b ? a : b;
+	b_init = a > b ? b : a;
+	a = a_init; b = b_init;
+
+	/* Absolute value for negative numbers */
+	a_abs = a < 0 ? -a : a;
+	b_abs = b < 0 ? -b : b;
+
+	/* Initialize values */
+	c = quot = 0;
+	r = q = 0; p = s = 1;
+
+	/* Calculate rests */
+	while ( b_abs != 0 )
+	{
+		/* Modulo division */
+		c = a_abs % b_abs;
+
+		/* Integer division */
+		quot = a_abs / b_abs;
+
+		/* Replacing */
+		a_abs = b_abs; b_abs = c;
+
+		/* Store r, s in temporary */
+		r_tmp = r; s_tmp = s;
+
+		/* Update r and s */
+		r = p - quot * r;
+		s = q - quot * s;
+
+		/* Update p and q */
+		p = r_tmp; q = s_tmp;
+	}
+
+	pritnf ("%d %d %d %d", a, a_init, b, b_init);
+
+	/* Change sings appropriately */
+	p = a_init == a ? p : -p;
+	q = b_init == b ? q : -q;
+
+	printf ("%d * %d + %d * %d\n", p, a_init, q, b_init );
+
+	/* Return NWD */
+	return p * a_init + q * b_init;
+}
