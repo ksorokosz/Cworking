@@ -1,8 +1,0 @@
-
-**** Clean-only build of configuration Debug for project Algorithms ****
-
-make clean 
-rm -rf  ./Algorithms_Test.o  ./Algorithms_Test.d  Algorithms
- 
-
-**** Build Finished ****
