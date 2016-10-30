@@ -30,6 +30,12 @@ public:
 		this->vertex_id   = vertex_id;
 	}
 
+	Vertex( int vertex_id )
+	{
+		this->vertex_name = "unknown";
+		this->vertex_id = vertex_id;
+	}
+
 	/* Get vertex ID */
 	int get_id() const
 	{
@@ -103,6 +109,11 @@ public:
 	                                                             svertex( end.get_id(), end.get_name() )
 	{
 		this->weight  = weight;
+	}
+
+	Edge( int begin, int end, int weight ) : fvertex( begin ), svertex( end ), weight( weight )
+	{
+
 	}
 
 	/* Comparison operator < */

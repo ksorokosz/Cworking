@@ -165,6 +165,61 @@ inline Graph algorithm_minimum_spanning_tree_kruskal( const Graph& graph )
 	return minimum_spanning_tree;
 }
 
+/* Minimum spanning tree */
+inline Graph algorithm_minimum_spanning_tree_prim( const Graph& graph, int start_vertex )
+{
+	/* Get graph neighboring edges */
+	vector< list< Edge > > neighbor_list = graph.get_neighbor_list();
+
+	/* Minimum Spanning Tree */
+	vector< long > weights(neighbor_list.size(), INT_MAX);
+	vector< bool > flags(neighbor_list.size(), false);
+	vector< int > parent(neighbor_list.size(), -1 );
+	vector< Edge > minimum_spanning_tree_edges;
+
+	weights[ start_vertex ] = 0;
+
+	/* MST will have all vertices */
+	for ( unsigned int i = 0; i < neighbor_list.size(); i++ )
+	{
+		int minimum = INT_MAX;
+		int u;
+		// find vertex connected with minimum weight to the tree
+		for ( unsigned int j = 0; j < weights.size(); j++ )
+		{
+			if ( weights[j] < minimum && !flags[j] ) 
+			{
+				minimum = weights[j];
+				u = j;
+			}
+		}
+		flags[u] = true; // added to spanning tree
+		if ( parent[u] != -1 ) // update spanning tree
+		{
+			Edge e(parent[u], u, minimum);
+			minimum_spanning_tree_edges.push_back(e);
+		}
+		
+		// for all adjacent vertex update weights
+		for ( list< Edge >::const_iterator neighbor = neighbor_list[u].begin(); neighbor != neighbor_list[u].end(); neighbor++ )
+		{
+			int v = neighbor->get_end().get_id();
+			int weight = neighbor->get_weight();
+			if ( !flags[v] && weights[v] > weight ) // not in tree and minimum
+			{
+				weights[v] = weight;
+				parent[v] = u;
+			}
+		}
+	}
+
+	/* Create graph from minimum spanning tree */
+	Graph minimum_spanning_tree = Graph( minimum_spanning_tree_edges );
+
+	/* Return MST */
+	return minimum_spanning_tree;
+}
+
 inline void algorithm_bfs( const Graph& graph, int start_vertex, vector<int>& visited_vertices )
 {
 	/* Declare queue */

@@ -250,6 +250,75 @@ void kruskal_algorithm_test()
 	}
 }
 
+void prim_algorithm_test()
+{
+	/* Edges */
+	vector< Edge > edges;
+
+	/* Line from file */
+	int edges_number, vertices_number;
+
+	/* File stream */
+	ifstream file;
+
+	/* Open file */
+	file.open( "./Files/undirect_graph", ios::in );
+
+	/* Read edges number and vertices number */
+	file >> edges_number >> vertices_number;
+
+	/* For each line */
+	while ( ! file.eof() )
+	{
+		/* Declare vertices */
+		string fvertex, svertex;
+
+		/* Declare weight */
+		int weight;
+
+		/* Read line */
+		file >> fvertex >> svertex >> weight;
+
+		/* Calculate vertex id */
+		int fvertex_id = atoi( fvertex.c_str() ) - 1;
+		int svertex_id = atoi( svertex.c_str() ) - 1;
+
+		/* Add as edge */
+		edges.push_back( Edge( Vertex( fvertex_id, fvertex ),
+							   Vertex( svertex_id, svertex ), weight ) );
+	}
+
+	/* Close file */
+	file.close();
+
+	/* Create Graph */
+	Graph graph = Graph( edges );
+
+	/* Run Kruskal algorithm */
+	Graph mst = algorithm_minimum_spanning_tree_prim( graph, 0 );
+
+	/* Reference MST */
+	vector< pair<int, int> > reference_mst;
+
+	/* Create reference MST */
+	reference_mst.push_back( pair<int, int>(0, 4) );
+	reference_mst.push_back( pair<int, int>(4, 1) );
+	reference_mst.push_back( pair<int, int>(1, 2) );
+	reference_mst.push_back( pair<int, int>(0, 5) );
+	reference_mst.push_back( pair<int, int>(4, 3) );
+
+	/* Check the result */
+	int reference_branch = 0;
+	for ( vector< Edge >::const_iterator edge  = mst.get_edges().begin();
+			                             edge != mst.get_edges().end();
+			                             edge++ )
+	{
+		assert(reference_mst[reference_branch].first == edge->get_begin().get_id() );
+		assert(reference_mst[reference_branch].second == edge->get_end().get_id() );
+		reference_branch++;
+	}
+}
+
 void bfs_algorithm_test()
 {
 	/* Edges */
@@ -445,6 +514,7 @@ int main()
 	manacher_algorithm_test();
 	graph_creation_test();
 	kruskal_algorithm_test();
+	prim_algorithm_test();
 	bfs_algorithm_test();
 	dfs_algorithm_test();
 	dijkstra_algorithm_test();
