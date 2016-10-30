@@ -14,6 +14,8 @@
 
 #include <algorithm>
 #include <cstdlib>
+#include <climits>
+#include <cmath>
 
 using namespace std;
 
@@ -226,6 +228,62 @@ inline void algorithm_dfs( const Graph& graph, int start_vertex, vector<int>& vi
 			}
 		}
         }
+}
+
+struct PathPoint {
+	int id;
+	long distance;
+};
+
+struct OrderByDistance
+{
+    bool operator() (PathPoint const &a, PathPoint const &b) { return a.distance < b.distance; }
+};
+
+inline void algorithm_dijkstra( const Graph& graph, int source, vector<int>& shortest_path )
+{
+	priority_queue<PathPoint, std::vector<PathPoint>, OrderByDistance> queue;
+
+	/* Get graph */
+	vector< list< Edge > > neighbor_list = graph.get_neighbor_list();
+	vector<long> distances(neighbor_list.size());
+
+	/* Initialize distances from source to vertex to infinity */	
+	for ( unsigned int i = 0; i < distances.size(); i++ )
+	{
+		distances[i] = INT_MAX; // infinity
+	}
+	distances[source] = 0;
+
+	/* Initialize queue */
+	for ( unsigned int i = 0; i < distances.size(); i++ )
+	{
+		PathPoint pp = { i, distances[i] };
+		queue.push(pp);
+	}
+
+
+	while ( !queue.empty() )
+	{
+		PathPoint u = queue.top(); // get minimum point in terms of distance from the queue
+		queue.pop();
+
+		// for each neighbor
+		for ( list< Edge >::const_iterator neighbor = neighbor_list[u.id].begin(); neighbor != neighbor_list[u.id].end(); neighbor++ )
+		{
+			int v = neighbor->get_end().get_id();
+			int weight = neighbor->get_weight();
+			if ( distances[u.id] != INT_MAX && distances[v] > distances[u.id] + weight )
+			{
+				distances[v] = distances[u.id] + weight; // update shortest distance
+				
+				PathPoint pp = { v, distances[v] };
+				queue.push(pp);
+				
+				shortest_path[v] = u.id; // update path
+			} 
+		}
+	}
 }
 
 #endif /* _ALGORITHMS_GRAPHS_H_ */

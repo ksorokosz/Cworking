@@ -304,7 +304,7 @@ void bfs_algorithm_test()
 	reference_bfs.push_back(6);
 	reference_bfs.push_back(3);
 	reference_bfs.push_back(4);
-	for ( int i = 0; i < visited_vertices.size(); i++ )
+	for ( unsigned int i = 0; i < visited_vertices.size(); i++ )
 	{
 		assert( reference_bfs[i] == visited_vertices[i] + 1 );
 	}
@@ -365,9 +365,71 @@ void dfs_algorithm_test()
 	reference_dfs.push_back(2);
 	algorithm_dfs( graph, 0, visited_vertices );
 
-	for ( int i = 0; i < visited_vertices.size(); i++ )
+	for ( unsigned int i = 0; i < visited_vertices.size(); i++ )
 	{
 		assert( reference_dfs[i] == visited_vertices[i] + 1 );
+	}
+}
+
+void dijkstra_algorithm_test()
+{
+	/* Edges */
+	vector< Edge > edges;
+
+	/* Line from file */
+	int edges_number, vertices_number;
+
+	/* File stream */
+	ifstream file;
+
+	/* Open file */
+	file.open( "./Files/undirect_graph", ios::in );
+
+	/* Read edges number and vertices number */
+	file >> edges_number >> vertices_number;
+
+	/* For each line */
+	while ( ! file.eof() )
+	{
+		/* Declare vertices */
+		string fvertex, svertex;
+
+		/* Declare weight */
+		int weight;
+
+		/* Read line */
+		file >> fvertex >> svertex >> weight;
+
+		/* Calculate vertex id */
+		int fvertex_id = atoi( fvertex.c_str() ) - 1;
+		int svertex_id = atoi( svertex.c_str() ) - 1;
+
+		/* Add as edge */
+		edges.push_back( Edge( Vertex( fvertex_id, fvertex ),
+							   Vertex( svertex_id, svertex ), weight ) );
+	}
+
+	/* Close file */
+	file.close();
+
+	/* Create Graph */
+	Graph graph = Graph( edges );
+
+	/* Run Dijkstra algorithm */
+	vector<int> shortest_paths(graph.get_vertices().size());
+	vector<int> reference_dijkstra;
+	reference_dijkstra.push_back(0);
+	reference_dijkstra.push_back(4);
+	reference_dijkstra.push_back(1);
+	reference_dijkstra.push_back(4);
+	reference_dijkstra.push_back(0);
+	reference_dijkstra.push_back(0);
+
+	algorithm_dijkstra( graph, 0, shortest_paths );
+
+	for ( unsigned int i = 0; i < shortest_paths.size(); i++ )
+	{
+		assert( reference_dijkstra[i] == shortest_paths[i] );
 	}
 }
 
@@ -385,4 +447,5 @@ int main()
 	kruskal_algorithm_test();
 	bfs_algorithm_test();
 	dfs_algorithm_test();
+	dijkstra_algorithm_test();
 }
