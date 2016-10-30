@@ -120,7 +120,7 @@ private:
 };
 
 /* Minimum spanning tree */
-inline Graph algorithm_minimum_spanning_tree_kruskal( int vertex_number, const Graph& graph )
+inline Graph algorithm_minimum_spanning_tree_kruskal( const Graph& graph )
 {
 	/* Get graph edges */
 	vector< Edge > sorted_edges = graph.get_edges();
@@ -163,28 +163,69 @@ inline Graph algorithm_minimum_spanning_tree_kruskal( int vertex_number, const G
 	return minimum_spanning_tree;
 }
 
-void algorithm_bfs( const Graph& graph )
+inline void algorithm_bfs( const Graph& graph, int start_vertex, vector<int>& visited_vertices )
 {
 	/* Declare queue */
-	vector< int > queue;
+	queue< int > queue;
 
 	/* Get graph */
 	vector< list< Edge > > neighbor_list = graph.get_neighbor_list();
 
 	/* For each vertex */
-	queue.push_back( 0 );
+	queue.push( start_vertex );
+	vector<bool> visited(neighbor_list.size(),0);
+	vector<int> distance(neighbor_list.size(),0);
 
-	/* Visit all vertices from queue */
-	for ( int i = 0; i < queue.size(); i++ )
-	{
-		int vertex_id = queue[ i ];
-	}
-
+        while ( !queue.empty() )
+        {
+		int u = queue.front();
+		queue.pop();
+		visited_vertices.push_back(u);
+		for ( list< Edge >::const_iterator neighbor = neighbor_list[u].begin(); neighbor != neighbor_list[u].end(); neighbor++ )
+		{
+			int v = neighbor->get_end().get_id();
+			if ( !visited[v] )
+			{
+				distance[v] = distance[u] + 1;
+				queue.push(v);
+				visited[v] = 1;
+			}
+		}
+		visited[u] = 1;
+        }
 }
 
-void algorithm_dfs( const Graph& graph )
+inline void algorithm_dfs( const Graph& graph, int start_vertex, vector<int>& visited_vertices )
 {
+	/* Declare stack */
+	vector< int > stack;
 
+	/* Get graph */
+	vector< list< Edge > > neighbor_list = graph.get_neighbor_list();
+
+	/* For each vertex */
+	stack.push_back( start_vertex );
+	vector<bool> visited(neighbor_list.size(),0);
+	vector<int> distance(neighbor_list.size(),0);
+
+        while ( !stack.empty() )
+        {
+		int u = stack.back();
+		stack.pop_back();
+		visited_vertices.push_back(u);
+
+		visited[u] = 1;
+		for ( list< Edge >::const_iterator neighbor = neighbor_list[u].begin(); neighbor != neighbor_list[u].end(); neighbor++ )
+		{
+			int v = neighbor->get_end().get_id();
+			if ( !visited[v] )
+			{
+				visited[v] = 1;
+				distance[v] = distance[u] + 1;
+				stack.push_back(v);
+			}
+		}
+        }
 }
 
 #endif /* _ALGORITHMS_GRAPHS_H_ */

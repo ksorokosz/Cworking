@@ -180,7 +180,7 @@ void graph_creation_test()
 	}
 }
 
-void kruskal_algorith_test()
+void kruskal_algorithm_test()
 {
 	/* Edges */
 	vector< Edge > edges;
@@ -225,7 +225,7 @@ void kruskal_algorith_test()
 	Graph graph = Graph( edges );
 
 	/* Run Kruskal algorithm */
-	Graph mst = algorithm_minimum_spanning_tree_kruskal( vertices_number, graph );
+	Graph mst = algorithm_minimum_spanning_tree_kruskal( graph );
 
 	/* Reference MST */
 	vector< pair<int, int> > reference_mst;
@@ -238,11 +238,136 @@ void kruskal_algorith_test()
 	reference_mst.push_back( pair<int, int>(3, 4) );
 
 	/* Check the result */
+	int reference_branch = 0;
 	for ( vector< Edge >::const_iterator edge  = mst.get_edges().begin();
 			                             edge != mst.get_edges().end();
 			                             edge++ )
 	{
-		cout << edge->get_begin().get_id() << " " << edge->get_end().get_id() << " " << edge->get_weight() << endl;
+		
+		assert(reference_mst[reference_branch].first == edge->get_begin().get_id() );
+		assert(reference_mst[reference_branch].second == edge->get_end().get_id() );
+		reference_branch++;
+	}
+}
+
+void bfs_algorithm_test()
+{
+	/* Edges */
+	vector< Edge > edges;
+
+	/* Line from file */
+	int edges_number, vertices_number;
+
+	/* File stream */
+	ifstream file;
+
+	/* Open file */
+	file.open( "./Files/undirect_graph", ios::in );
+
+	/* Read edges number and vertices number */
+	file >> edges_number >> vertices_number;
+
+	/* For each line */
+	while ( ! file.eof() )
+	{
+		/* Declare vertices */
+		string fvertex, svertex;
+
+		/* Declare weight */
+		int weight;
+
+		/* Read line */
+		file >> fvertex >> svertex >> weight;
+
+		/* Calculate vertex id */
+		int fvertex_id = atoi( fvertex.c_str() ) - 1;
+		int svertex_id = atoi( svertex.c_str() ) - 1;
+
+		/* Add as edge */
+		edges.push_back( Edge( Vertex( fvertex_id, fvertex ),
+							   Vertex( svertex_id, svertex ), weight ) );
+	}
+
+	/* Close file */
+	file.close();
+
+	/* Create Graph */
+	Graph graph = Graph( edges );
+
+	/* Run Bread First Search algorithm */
+	vector<int> visited_vertices;
+	algorithm_bfs( graph, 0, visited_vertices );
+	vector<int> reference_bfs;
+	reference_bfs.push_back(1);
+	reference_bfs.push_back(2);
+	reference_bfs.push_back(5);
+	reference_bfs.push_back(6);
+	reference_bfs.push_back(3);
+	reference_bfs.push_back(4);
+	for ( int i = 0; i < visited_vertices.size(); i++ )
+	{
+		assert( reference_bfs[i] == visited_vertices[i] + 1 );
+	}
+}
+
+void dfs_algorithm_test()
+{
+	/* Edges */
+	vector< Edge > edges;
+
+	/* Line from file */
+	int edges_number, vertices_number;
+
+	/* File stream */
+	ifstream file;
+
+	/* Open file */
+	file.open( "./Files/undirect_graph", ios::in );
+
+	/* Read edges number and vertices number */
+	file >> edges_number >> vertices_number;
+
+	/* For each line */
+	while ( ! file.eof() )
+	{
+		/* Declare vertices */
+		string fvertex, svertex;
+
+		/* Declare weight */
+		int weight;
+
+		/* Read line */
+		file >> fvertex >> svertex >> weight;
+
+		/* Calculate vertex id */
+		int fvertex_id = atoi( fvertex.c_str() ) - 1;
+		int svertex_id = atoi( svertex.c_str() ) - 1;
+
+		/* Add as edge */
+		edges.push_back( Edge( Vertex( fvertex_id, fvertex ),
+							   Vertex( svertex_id, svertex ), weight ) );
+	}
+
+	/* Close file */
+	file.close();
+
+	/* Create Graph */
+	Graph graph = Graph( edges );
+
+	/* Run Depth First Search algorithm */
+	vector<int> visited_vertices;
+	vector<int> reference_dfs;
+	reference_dfs.push_back(1);
+	reference_dfs.push_back(6);
+	reference_dfs.push_back(4);
+	reference_dfs.push_back(3);
+	reference_dfs.push_back(5);
+	reference_dfs.push_back(2);
+	algorithm_dfs( graph, 0, visited_vertices );
+
+	for ( int i = 0; i < visited_vertices.size(); i++ )
+	{
+		assert( reference_dfs[i] == visited_vertices[i] + 1 );
 	}
 }
 
@@ -257,5 +382,7 @@ int main()
 	knuth_moris_prat_algorithm_test();
 	manacher_algorithm_test();
 	graph_creation_test();
-	kruskal_algorith_test();
+	kruskal_algorithm_test();
+	bfs_algorithm_test();
+	dfs_algorithm_test();
 }
