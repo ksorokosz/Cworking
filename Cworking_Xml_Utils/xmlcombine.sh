@@ -18,10 +18,10 @@ do
 
 	if [[ $LINE =~ \</$node_name\> ]]; then
 		if [ $start -eq $node_level ]; then
-			cat $xml_second
+			perl -pe "s|(.*?)<(.*?)>(.*)</|\1<\2>\n\1\t\3\n\1</|" $xml_second 
 		fi
 		start=$(( $start - 1 ))
 	fi
 	echo -e "$LINE"
 
-done < $xml_first
+done < <(perl -pe "s|(.*?)<(.*?)>(.*)</|\1<\2>\n\1\t\3\n\1</|" $xml_first)
