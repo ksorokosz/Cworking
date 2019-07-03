@@ -1,0 +1,10 @@
+<components>
+	<component>
+		<a>2</a>
+		<b>
+			<component>
+				<c>2</c>
+			</component>
+		</b>
+	</component>
+</components>
